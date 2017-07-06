@@ -1,0 +1,2933 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+                              ./utilities/fsl_debug_console.o (__aeabi_uidiv)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divsi3.o)
+                              ./utilities/fsl_debug_console.o (__aeabi_idiv)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_aeabi_uldivmod.o)
+                              ./source/_Timer.o (__aeabi_uldivmod)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_muldi3.o)
+                              ./source/_Timer.o (__aeabi_lmul)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivmoddi4.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_aeabi_uldivmod.o) (__udivmoddi4)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(divdf3.o)
+                              ./source/_ADCSense.o (__aeabi_ddiv)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(muldf3.o)
+                              ./source/_ADCSense.o (__aeabi_dmul)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(fixdfsi.o)
+                              ./source/_ADCSense.o (__aeabi_d2iz)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(floatunsidf.o)
+                              ./source/_ADCSense.o (__aeabi_ui2d)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_clzsi2.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(divdf3.o) (__clzsi2)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_clzdi2.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivmoddi4.o) (__clzdi2)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atoi.o)
+                              ./source/_Sys_Control.o (atoi)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-exit.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o (exit)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-impure.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-exit.o) (_global_impure_ptr)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o (__libc_init_array)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memcpy-stub.o)
+                              ./source/_Bluetooth.o (memcpy)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memset.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o (memset)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strcmp.o)
+                              ./source/_Sys_Control.o (strcmp)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strcpy.o)
+                              ./source/_Sys_Control.o (strcpy)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strlen-stub.o)
+                              ./utilities/fsl_debug_console.o (strlen)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strtol.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atoi.o) (_strtol_r)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-exit.o) (__call_exitprocs)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atexit.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o) (atexit)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-fini.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o) (__libc_fini_array)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-locale.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strtol.o) (__locale_ctype_ptr_l)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-mbtowc_r.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-locale.o) (__ascii_mbtowc)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-wctomb_r.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-locale.o) (__ascii_wctomb)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__atexit.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atexit.o) (__register_exitproc)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-ctype_.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-locale.o) (_ctype_)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(_cr__main.o)
+                              ./startup/startup_mkl43z4.o (__main)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(initio.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(_cr__main.o) (_initio)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(setvbuf.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(initio.o) (setvbuf)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_fdopen.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(initio.o) (_fdopen)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fclose.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(initio.o) (fclose)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fflush.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fclose.o) (fflush)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fseek.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_fdopen.o) (fseek)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(ftell.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fseek.o) (ftell)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(remove.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fclose.o) (remove)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_do_fflush.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fflush.o) (_do_fflush)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_fflush.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_do_fflush.o) (_fflush)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_writebuf.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_fflush.o) (_Cwritebuf)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(alloc.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fclose.o) (free)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(errno.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(ftell.o) (errno)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(__init_alloc.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(alloc.o) (__heaps)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_cr_sbrk.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(alloc.o) (_sbrk)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_deferredlazyseek.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_do_fflush.o) (_deferredlazyseek)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_cr_check_heap.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_cr_sbrk.o) (__check_heap_overflow)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__ciob.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(initio.o) (__Ciob)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_appexit.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(alloc.o) (__sys_appexit)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_close.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fclose.o) (__sys_close)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_flen.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fseek.o) (__sys_flen)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_istty.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fseek.o) (__sys_istty)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_remove.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(remove.o) (__sys_remove)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_rename.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(remove.o) (__sys_rename)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_seek.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_writebuf.o) (__sys_seek)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_tmpnam.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fclose.o) (__sys_tmpnam)
+c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_write.o)
+                              c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_writebuf.o) (__sys_write)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+ .text          0x00000000       0x60 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .data          0x00000000        0x4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .bss           0x00000000       0x1c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .init_array    0x00000000        0x4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .fini_array    0x00000000        0x4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .eh_frame      0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .jcr           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .ARM.attributes
+                0x00000000       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .text          0x00000000       0x78 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.extab     0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.exidx     0x00000000        0x8 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.attributes
+                0x00000000       0x1b c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .text          0x00000000        0x0 ./utilities/fsl_debug_console.o
+ .data          0x00000000        0x0 ./utilities/fsl_debug_console.o
+ .bss           0x00000000        0x0 ./utilities/fsl_debug_console.o
+ .text.UART_EnableTx
+                0x00000000       0x40 ./utilities/fsl_debug_console.o
+ .text.UART_EnableRx
+                0x00000000       0x40 ./utilities/fsl_debug_console.o
+ .text.LPUART_EnableTx
+                0x00000000       0x40 ./utilities/fsl_debug_console.o
+ .text.LPUART_EnableRx
+                0x00000000       0x40 ./utilities/fsl_debug_console.o
+ .text.DbgConsole_Init
+                0x00000000       0xf4 ./utilities/fsl_debug_console.o
+ .text.DbgConsole_Deinit
+                0x00000000       0x60 ./utilities/fsl_debug_console.o
+ .text.DbgConsole_Scanf
+                0x00000000       0xc4 ./utilities/fsl_debug_console.o
+ .text.DbgConsole_Getchar
+                0x00000000       0x40 ./utilities/fsl_debug_console.o
+ .text.DbgConsole_ScanIgnoreWhiteSpace
+                0x00000000       0x8c ./utilities/fsl_debug_console.o
+ .text.DbgConsole_ScanfFormattedData
+                0x00000000      0x510 ./utilities/fsl_debug_console.o
+ .rodata.DbgConsole_ScanfFormattedData
+                0x00000000      0x124 ./utilities/fsl_debug_console.o
+ .text          0x00000000        0x0 ./startup/startup_mkl43z4.o
+ .data          0x00000000        0x0 ./startup/startup_mkl43z4.o
+ .bss           0x00000000        0x0 ./startup/startup_mkl43z4.o
+ .text          0x00000000        0x0 ./source/SmartTorqueFW.o
+ .data          0x00000000        0x0 ./source/SmartTorqueFW.o
+ .bss           0x00000000        0x0 ./source/SmartTorqueFW.o
+ .text          0x00000000        0x0 ./source/_ADCSense.o
+ .data          0x00000000        0x0 ./source/_ADCSense.o
+ .bss           0x00000000        0x0 ./source/_ADCSense.o
+ .bss.gTorqueSense
+                0x00000000        0x4 ./source/_ADCSense.o
+ .bss.gMaxTorque
+                0x00000000        0x4 ./source/_ADCSense.o
+ .text          0x00000000        0x0 ./source/_Bluetooth.o
+ .data          0x00000000        0x0 ./source/_Bluetooth.o
+ .bss           0x00000000        0x0 ./source/_Bluetooth.o
+ .text          0x00000000        0x0 ./source/_Display.o
+ .data          0x00000000        0x0 ./source/_Display.o
+ .bss           0x00000000        0x0 ./source/_Display.o
+ .text          0x00000000        0x0 ./source/_FRAM.o
+ .data          0x00000000        0x0 ./source/_FRAM.o
+ .bss           0x00000000        0x0 ./source/_FRAM.o
+ .text          0x00000000        0x0 ./source/_HMI.o
+ .data          0x00000000        0x0 ./source/_HMI.o
+ .bss           0x00000000        0x0 ./source/_HMI.o
+ .text          0x00000000        0x0 ./source/_RTC.o
+ .data          0x00000000        0x0 ./source/_RTC.o
+ .bss           0x00000000        0x0 ./source/_RTC.o
+ .text.NVIC_EnableIRQ
+                0x00000000       0x2c ./source/_RTC.o
+ .text.EnableIRQ
+                0x00000000       0x2c ./source/_RTC.o
+ .text.RTC_EnableInterrupts
+                0x00000000       0x20 ./source/_RTC.o
+ .text.RTC_StartTimer
+                0x00000000       0x1c ./source/_RTC.o
+ .text.BOARD_SetRtcClock
+                0x00000000       0x1c ./source/_RTC.o
+ .text.RTC_INIT
+                0x00000000       0x58 ./source/_RTC.o
+ .text          0x00000000        0x0 ./source/_Sys_Control.o
+ .data          0x00000000        0x0 ./source/_Sys_Control.o
+ .bss           0x00000000        0x0 ./source/_Sys_Control.o
+ .text          0x00000000        0x0 ./source/_Timer.o
+ .data          0x00000000        0x0 ./source/_Timer.o
+ .bss           0x00000000        0x0 ./source/_Timer.o
+ .text          0x00000000        0x0 ./freertos/croutine.o
+ .data          0x00000000        0x0 ./freertos/croutine.o
+ .bss           0x00000000        0x0 ./freertos/croutine.o
+ .comment       0x00000000       0x6f ./freertos/croutine.o
+ .ARM.attributes
+                0x00000000       0x32 ./freertos/croutine.o
+ .text          0x00000000        0x0 ./freertos/event_groups.o
+ .data          0x00000000        0x0 ./freertos/event_groups.o
+ .bss           0x00000000        0x0 ./freertos/event_groups.o
+ .text.xEventGroupSync
+                0x00000000      0x118 ./freertos/event_groups.o
+ .text.xEventGroupWaitBits
+                0x00000000      0x148 ./freertos/event_groups.o
+ .text.xEventGroupClearBits
+                0x00000000       0x4c ./freertos/event_groups.o
+ .text.xEventGroupClearBitsFromISR
+                0x00000000       0x28 ./freertos/event_groups.o
+ .text.xEventGroupGetBitsFromISR
+                0x00000000       0x2c ./freertos/event_groups.o
+ .text.vEventGroupClearBitsCallback
+                0x00000000       0x20 ./freertos/event_groups.o
+ .text.prvTestWaitCondition
+                0x00000000       0x40 ./freertos/event_groups.o
+ .text.uxEventGroupGetNumber
+                0x00000000       0x28 ./freertos/event_groups.o
+ .text          0x00000000        0x0 ./freertos/fsl_tickless_lptmr.o
+ .data          0x00000000        0x0 ./freertos/fsl_tickless_lptmr.o
+ .bss           0x00000000        0x0 ./freertos/fsl_tickless_lptmr.o
+ .text          0x00000000        0x0 ./freertos/fsl_tickless_systick.o
+ .data          0x00000000        0x0 ./freertos/fsl_tickless_systick.o
+ .bss           0x00000000        0x0 ./freertos/fsl_tickless_systick.o
+ .text.prvSetupTimerInterrupt
+                0x00000000       0x3c ./freertos/fsl_tickless_systick.o
+ .comment       0x00000000       0x6f ./freertos/fsl_tickless_systick.o
+ .ARM.attributes
+                0x00000000       0x32 ./freertos/fsl_tickless_systick.o
+ .text          0x00000000        0x0 ./freertos/heap_4.o
+ .data          0x00000000        0x0 ./freertos/heap_4.o
+ .bss           0x00000000        0x0 ./freertos/heap_4.o
+ .rodata.xHeapStructSize
+                0x00000000        0x4 ./freertos/heap_4.o
+ .text.xPortGetMinimumEverFreeHeapSize
+                0x00000000       0x14 ./freertos/heap_4.o
+ .text.vPortInitialiseBlocks
+                0x00000000        0xc ./freertos/heap_4.o
+ .text          0x00000000        0x0 ./freertos/list.o
+ .data          0x00000000        0x0 ./freertos/list.o
+ .bss           0x00000000        0x0 ./freertos/list.o
+ .text          0x00000000        0x0 ./freertos/port.o
+ .data          0x00000000        0x0 ./freertos/port.o
+ .bss           0x00000000        0x0 ./freertos/port.o
+ .text.vPortEndScheduler
+                0x00000000       0x20 ./freertos/port.o
+ .text          0x00000000        0x0 ./freertos/queue.o
+ .data          0x00000000        0x0 ./freertos/queue.o
+ .bss           0x00000000        0x0 ./freertos/queue.o
+ .text.xQueueGiveMutexRecursive
+                0x00000000       0x58 ./freertos/queue.o
+ .text.xQueueTakeMutexRecursive
+                0x00000000       0x60 ./freertos/queue.o
+ .text.xQueueCreateCountingSemaphore
+                0x00000000       0x48 ./freertos/queue.o
+ .text.xQueueGiveFromISR
+                0x00000000       0xcc ./freertos/queue.o
+ .text.xQueueReceiveFromISR
+                0x00000000       0xc8 ./freertos/queue.o
+ .text.xQueuePeekFromISR
+                0x00000000       0x84 ./freertos/queue.o
+ .text.uxQueueMessagesWaiting
+                0x00000000       0x2c ./freertos/queue.o
+ .text.uxQueueSpacesAvailable
+                0x00000000       0x34 ./freertos/queue.o
+ .text.uxQueueMessagesWaitingFromISR
+                0x00000000       0x24 ./freertos/queue.o
+ .text.uxQueueGetQueueNumber
+                0x00000000       0x14 ./freertos/queue.o
+ .text.vQueueSetQueueNumber
+                0x00000000       0x18 ./freertos/queue.o
+ .text.ucQueueGetQueueType
+                0x00000000       0x18 ./freertos/queue.o
+ .text.xQueueIsQueueEmptyFromISR
+                0x00000000       0x30 ./freertos/queue.o
+ .text.xQueueIsQueueFullFromISR
+                0x00000000       0x34 ./freertos/queue.o
+ .text.pcQueueGetName
+                0x00000000       0x4c ./freertos/queue.o
+ .text          0x00000000        0x0 ./freertos/tasks.o
+ .data          0x00000000        0x0 ./freertos/tasks.o
+ .bss           0x00000000        0x0 ./freertos/tasks.o
+ .text.vTaskDelete
+                0x00000000       0xc8 ./freertos/tasks.o
+ .text.vTaskDelayUntil
+                0x00000000       0xb8 ./freertos/tasks.o
+ .text.eTaskGetState
+                0x00000000       0xbc ./freertos/tasks.o
+ .text.uxTaskPriorityGet
+                0x00000000       0x34 ./freertos/tasks.o
+ .text.uxTaskPriorityGetFromISR
+                0x00000000       0x3c ./freertos/tasks.o
+ .text.vTaskPrioritySet
+                0x00000000      0x124 ./freertos/tasks.o
+ .text.xTaskResumeFromISR
+                0x00000000       0xbc ./freertos/tasks.o
+ .text.vTaskEndScheduler
+                0x00000000       0x1c ./freertos/tasks.o
+ .text.xTaskGetTickCountFromISR
+                0x00000000       0x20 ./freertos/tasks.o
+ .text.uxTaskGetNumberOfTasks
+                0x00000000       0x14 ./freertos/tasks.o
+ .text.pcTaskGetName
+                0x00000000       0x34 ./freertos/tasks.o
+ .text.prvSearchForNameWithinSingleList
+                0x00000000       0xd4 ./freertos/tasks.o
+ .text.xTaskGetHandle
+                0x00000000       0xd4 ./freertos/tasks.o
+ .text.uxTaskGetSystemState
+                0x00000000      0x11c ./freertos/tasks.o
+ .text.vTaskPlaceOnUnorderedEventList
+                0x00000000       0x5c ./freertos/tasks.o
+ .text.uxTaskGetTaskNumber
+                0x00000000       0x28 ./freertos/tasks.o
+ .text.vTaskSetTaskNumber
+                0x00000000       0x24 ./freertos/tasks.o
+ .text.vTaskSetThreadLocalStoragePointer
+                0x00000000       0x40 ./freertos/tasks.o
+ .text.pvTaskGetThreadLocalStoragePointer
+                0x00000000       0x48 ./freertos/tasks.o
+ .text.vTaskGetInfo
+                0x00000000       0xc4 ./freertos/tasks.o
+ .text.prvListTasksWithinSingleList
+                0x00000000       0xa8 ./freertos/tasks.o
+ .text.prvTaskCheckFreeStackSpace
+                0x00000000       0x34 ./freertos/tasks.o
+ .text.xTaskGetCurrentTaskHandle
+                0x00000000       0x1c ./freertos/tasks.o
+ .text.uxTaskResetEventItemValue
+                0x00000000       0x2c ./freertos/tasks.o
+ .text.ulTaskNotifyTake
+                0x00000000       0x84 ./freertos/tasks.o
+ .text.xTaskNotifyWait
+                0x00000000       0xa8 ./freertos/tasks.o
+ .text.xTaskGenericNotify
+                0x00000000      0x118 ./freertos/tasks.o
+ .rodata.xTaskGenericNotify
+                0x00000000       0x14 ./freertos/tasks.o
+ .text.xTaskGenericNotifyFromISR
+                0x00000000      0x154 ./freertos/tasks.o
+ .rodata.xTaskGenericNotifyFromISR
+                0x00000000       0x14 ./freertos/tasks.o
+ .text.vTaskNotifyGiveFromISR
+                0x00000000       0xf4 ./freertos/tasks.o
+ .text.xTaskNotifyStateClear
+                0x00000000       0x4c ./freertos/tasks.o
+ .text          0x00000000        0x0 ./freertos/timers.o
+ .data          0x00000000        0x0 ./freertos/timers.o
+ .bss           0x00000000        0x0 ./freertos/timers.o
+ .text.xTimerCreate
+                0x00000000       0x40 ./freertos/timers.o
+ .text.prvInitialiseNewTimer
+                0x00000000       0x54 ./freertos/timers.o
+ .text.xTimerGetTimerDaemonTaskHandle
+                0x00000000       0x20 ./freertos/timers.o
+ .text.xTimerGetPeriod
+                0x00000000       0x24 ./freertos/timers.o
+ .text.xTimerGetExpiryTime
+                0x00000000       0x28 ./freertos/timers.o
+ .text.pcTimerGetName
+                0x00000000       0x24 ./freertos/timers.o
+ .text.xTimerIsTimerActive
+                0x00000000       0x34 ./freertos/timers.o
+ .text.pvTimerGetTimerID
+                0x00000000       0x30 ./freertos/timers.o
+ .text.vTimerSetTimerID
+                0x00000000       0x30 ./freertos/timers.o
+ .text.xTimerPendFunctionCall
+                0x00000000       0x60 ./freertos/timers.o
+ .text          0x00000000        0x0 ./drivers/fsl_adc16.o
+ .data          0x00000000        0x0 ./drivers/fsl_adc16.o
+ .bss           0x00000000        0x0 ./drivers/fsl_adc16.o
+ .text.CLOCK_DisableClock
+                0x00000000       0x38 ./drivers/fsl_adc16.o
+ .rodata.s_adc16Bases
+                0x00000000        0x4 ./drivers/fsl_adc16.o
+ .rodata.s_adc16Clocks
+                0x00000000        0x4 ./drivers/fsl_adc16.o
+ .text.ADC16_Deinit
+                0x00000000       0x24 ./drivers/fsl_adc16.o
+ .text.ADC16_SetHardwareCompareConfig
+                0x00000000       0x8c ./drivers/fsl_adc16.o
+ .text.ADC16_SetHardwareAverage
+                0x00000000       0x40 ./drivers/fsl_adc16.o
+ .text.ADC16_ClearStatusFlags
+                0x00000000       0x28 ./drivers/fsl_adc16.o
+ .text          0x00000000        0x0 ./drivers/fsl_clock.o
+ .data          0x00000000        0x0 ./drivers/fsl_clock.o
+ .bss           0x00000000        0x0 ./drivers/fsl_clock.o
+ .text.CLOCK_EnableClock
+                0x00000000       0x38 ./drivers/fsl_clock.o
+ .text.CLOCK_DisableClock
+                0x00000000       0x38 ./drivers/fsl_clock.o
+ .text.OSC_SetExtRefClkConfig
+                0x00000000       0x48 ./drivers/fsl_clock.o
+ .text.OSC_SetCapLoad
+                0x00000000       0x4c ./drivers/fsl_clock.o
+ .text.CLOCK_GetOscRangeFromFreq
+                0x00000000       0x4c ./drivers/fsl_clock.o
+ .text.CLOCK_GetPlatClkFreq
+                0x00000000       0x2c ./drivers/fsl_clock.o
+ .text.CLOCK_GetFlashClkFreq
+                0x00000000       0x50 ./drivers/fsl_clock.o
+ .text.CLOCK_GetBusClkFreq
+                0x00000000       0x50 ./drivers/fsl_clock.o
+ .text.CLOCK_GetCoreSysClkFreq
+                0x00000000       0x2c ./drivers/fsl_clock.o
+ .text.CLOCK_EnableUsbfs0Clock
+                0x00000000       0x9c ./drivers/fsl_clock.o
+ .text.CLOCK_GetMode
+                0x00000000       0x68 ./drivers/fsl_clock.o
+ .text.CLOCK_InitOsc0
+                0x00000000       0x98 ./drivers/fsl_clock.o
+ .text.CLOCK_DeinitOsc0
+                0x00000000       0x28 ./drivers/fsl_clock.o
+ .text          0x00000000        0x0 ./drivers/fsl_common.o
+ .data          0x00000000        0x0 ./drivers/fsl_common.o
+ .bss           0x00000000        0x0 ./drivers/fsl_common.o
+ .text.DisableGlobalIRQ
+                0x00000000       0x1c ./drivers/fsl_common.o
+ .text.EnableGlobalIRQ
+                0x00000000       0x1c ./drivers/fsl_common.o
+ .text.InstallIRQHandler
+                0x00000000       0x98 ./drivers/fsl_common.o
+ .comment       0x00000000       0x6f ./drivers/fsl_common.o
+ .ARM.attributes
+                0x00000000       0x32 ./drivers/fsl_common.o
+ .text          0x00000000        0x0 ./drivers/fsl_dma.o
+ .data          0x00000000        0x0 ./drivers/fsl_dma.o
+ .bss           0x00000000        0x0 ./drivers/fsl_dma.o
+ .text.CLOCK_DisableClock
+                0x00000000       0x38 ./drivers/fsl_dma.o
+ .text.DMA_EnableInterrupts
+                0x00000000       0x38 ./drivers/fsl_dma.o
+ .rodata.s_dmaBases
+                0x00000000        0x4 ./drivers/fsl_dma.o
+ .rodata.s_dmaClockName
+                0x00000000        0x4 ./drivers/fsl_dma.o
+ .text.DMA_Deinit
+                0x00000000       0x24 ./drivers/fsl_dma.o
+ .text.DMA_ResetChannel
+                0x00000000       0x7c ./drivers/fsl_dma.o
+ .text.DMA_SetChannelLinkConfig
+                0x00000000       0x68 ./drivers/fsl_dma.o
+ .text.DMA_SetModulo
+                0x00000000       0x6c ./drivers/fsl_dma.o
+ .text.DMA_SetCallback
+                0x00000000       0x20 ./drivers/fsl_dma.o
+ .text.DMA_SubmitTransfer
+                0x00000000       0x78 ./drivers/fsl_dma.o
+ .text.DMA_AbortTransfer
+                0x00000000       0x78 ./drivers/fsl_dma.o
+ .text          0x00000000        0x0 ./drivers/fsl_dmamux.o
+ .data          0x00000000        0x0 ./drivers/fsl_dmamux.o
+ .bss           0x00000000        0x0 ./drivers/fsl_dmamux.o
+ .text.CLOCK_DisableClock
+                0x00000000       0x38 ./drivers/fsl_dmamux.o
+ .rodata.s_dmamuxBases
+                0x00000000        0x4 ./drivers/fsl_dmamux.o
+ .rodata.s_dmamuxClockName
+                0x00000000        0x4 ./drivers/fsl_dmamux.o
+ .text.DMAMUX_Deinit
+                0x00000000       0x24 ./drivers/fsl_dmamux.o
+ .text          0x00000000        0x0 ./drivers/fsl_flash.o
+ .data          0x00000000        0x0 ./drivers/fsl_flash.o
+ .bss           0x00000000        0x0 ./drivers/fsl_flash.o
+ .rodata.kFCCOBx
+                0x00000000        0x4 ./drivers/fsl_flash.o
+ .rodata.kFPROTL
+                0x00000000        0x4 ./drivers/fsl_flash.o
+ .bss.callFlashRunCommand
+                0x00000000        0x4 ./drivers/fsl_flash.o
+ .bss.callFlashCommonBitOperation
+                0x00000000        0x4 ./drivers/fsl_flash.o
+ .rodata.s_flashRunCommandFunctionCode
+                0x00000000        0xc ./drivers/fsl_flash.o
+ .rodata.s_flashCommonBitOperationFunctionCode
+                0x00000000       0x1c ./drivers/fsl_flash.o
+ .bss.s_flashRunCommand
+                0x00000000       0x40 ./drivers/fsl_flash.o
+ .bss.s_flashCommonBitOperation
+                0x00000000       0x40 ./drivers/fsl_flash.o
+ .bss.s_flashExecuteInRamFunctionInfo
+                0x00000000        0xc ./drivers/fsl_flash.o
+ .rodata.kPFlashDensities
+                0x00000000       0x1e ./drivers/fsl_flash.o
+ .text.FLASH_Init
+                0x00000000       0xd0 ./drivers/fsl_flash.o
+ .text.FLASH_SetCallback
+                0x00000000       0x24 ./drivers/fsl_flash.o
+ .text.FLASH_PrepareExecuteInRamFunctions
+                0x00000000       0x3c ./drivers/fsl_flash.o
+ .text.FLASH_EraseAll
+                0x00000000       0x60 ./drivers/fsl_flash.o
+ .text.FLASH_Erase
+                0x00000000       0xf8 ./drivers/fsl_flash.o
+ .text.FLASH_EraseAllUnsecure
+                0x00000000       0x60 ./drivers/fsl_flash.o
+ .text.FLASH_EraseAllExecuteOnlySegments
+                0x00000000       0x60 ./drivers/fsl_flash.o
+ .text.FLASH_Program
+                0x00000000      0x104 ./drivers/fsl_flash.o
+ .text.FLASH_ProgramOnce
+                0x00000000       0x8c ./drivers/fsl_flash.o
+ .text.FLASH_ReadResource
+                0x00000000      0x100 ./drivers/fsl_flash.o
+ .text.FLASH_ReadOnce
+                0x00000000       0x80 ./drivers/fsl_flash.o
+ .text.FLASH_GetSecurityState
+                0x00000000       0x64 ./drivers/fsl_flash.o
+ .text.FLASH_SecurityBypass
+                0x00000000       0xb0 ./drivers/fsl_flash.o
+ .text.FLASH_VerifyEraseAll
+                0x00000000       0x40 ./drivers/fsl_flash.o
+ .text.FLASH_VerifyErase
+                0x00000000      0x110 ./drivers/fsl_flash.o
+ .text.FLASH_VerifyProgram
+                0x00000000       0xec ./drivers/fsl_flash.o
+ .text.FLASH_VerifyEraseAllExecuteOnlySegments
+                0x00000000       0x40 ./drivers/fsl_flash.o
+ .text.FLASH_IsProtected
+                0x00000000      0x2bc ./drivers/fsl_flash.o
+ .text.FLASH_IsExecuteOnly
+                0x00000000       0x44 ./drivers/fsl_flash.o
+ .text.FLASH_GetProperty
+                0x00000000       0xb0 ./drivers/fsl_flash.o
+ .rodata.FLASH_GetProperty
+                0x00000000       0x28 ./drivers/fsl_flash.o
+ .text.FLASH_SetProperty
+                0x00000000       0x64 ./drivers/fsl_flash.o
+ .text.FLASH_PflashSetProtection
+                0x00000000       0x3c ./drivers/fsl_flash.o
+ .text.FLASH_PflashGetProtection
+                0x00000000       0x30 ./drivers/fsl_flash.o
+ .text.FLASH_PflashSetPrefetchSpeculation
+                0x00000000       0x78 ./drivers/fsl_flash.o
+ .text.FLASH_PflashGetPrefetchSpeculation
+                0x00000000       0x5c ./drivers/fsl_flash.o
+ .text.copy_flash_run_command
+                0x00000000       0x30 ./drivers/fsl_flash.o
+ .text.flash_command_sequence
+                0x00000000       0x7c ./drivers/fsl_flash.o
+ .text.copy_flash_common_bit_operation
+                0x00000000       0x3c ./drivers/fsl_flash.o
+ .text.mcm_flash_cache_clear
+                0x00000000       0x2c ./drivers/fsl_flash.o
+ .text.flash_cache_clear
+                0x00000000       0x1c ./drivers/fsl_flash.o
+ .text.flash_cache_clear_process
+                0x00000000       0x3c ./drivers/fsl_flash.o
+ .text.flash_check_execute_in_ram_function_info
+                0x00000000       0x38 ./drivers/fsl_flash.o
+ .text.flash_check_range
+                0x00000000       0x5c ./drivers/fsl_flash.o
+ .text.flash_get_matched_operation_info
+                0x00000000       0x78 ./drivers/fsl_flash.o
+ .text.flash_check_user_key
+                0x00000000       0x24 ./drivers/fsl_flash.o
+ .text.flash_check_resource_range
+                0x00000000       0x90 ./drivers/fsl_flash.o
+ .text.flash_get_protection_info
+                0x00000000       0x68 ./drivers/fsl_flash.o
+ .comment       0x00000000       0x6f ./drivers/fsl_flash.o
+ .ARM.attributes
+                0x00000000       0x32 ./drivers/fsl_flash.o
+ .text          0x00000000        0x0 ./drivers/fsl_gpio.o
+ .data          0x00000000        0x0 ./drivers/fsl_gpio.o
+ .bss           0x00000000        0x0 ./drivers/fsl_gpio.o
+ .text.FGPIO_WritePinOutput
+                0x00000000       0x3c ./drivers/fsl_gpio.o
+ .text.GPIO_GetPinsInterruptFlags
+                0x00000000       0x38 ./drivers/fsl_gpio.o
+ .rodata.s_fgpioBases
+                0x00000000       0x14 ./drivers/fsl_gpio.o
+ .text.FGPIO_GetInstance
+                0x00000000       0x3c ./drivers/fsl_gpio.o
+ .text.FGPIO_PinInit
+                0x00000000       0x54 ./drivers/fsl_gpio.o
+ .text.FGPIO_GetPinsInterruptFlags
+                0x00000000       0x38 ./drivers/fsl_gpio.o
+ .text.FGPIO_ClearPinsInterruptFlags
+                0x00000000       0x3c ./drivers/fsl_gpio.o
+ .text          0x00000000        0x0 ./drivers/fsl_i2c.o
+ .data          0x00000000        0x0 ./drivers/fsl_i2c.o
+ .bss           0x00000000        0x0 ./drivers/fsl_i2c.o
+ .text.CLOCK_DisableClock
+                0x00000000       0x38 ./drivers/fsl_i2c.o
+ .text.I2C_Enable
+                0x00000000       0x44 ./drivers/fsl_i2c.o
+ .text.I2C_SlaveGetStatusFlags
+                0x00000000       0x1c ./drivers/fsl_i2c.o
+ .text.I2C_SlaveClearStatusFlags
+                0x00000000       0x20 ./drivers/fsl_i2c.o
+ .text.I2C_SetHoldTime
+                0x00000000       0xfc ./drivers/fsl_i2c.o
+ .text.I2C_MasterDeinit
+                0x00000000       0x34 ./drivers/fsl_i2c.o
+ .text.I2C_MasterWriteBlocking
+                0x00000000       0xec ./drivers/fsl_i2c.o
+ .text.I2C_MasterReadBlocking
+                0x00000000       0xf0 ./drivers/fsl_i2c.o
+ .text.I2C_MasterTransferBlocking
+                0x00000000      0x220 ./drivers/fsl_i2c.o
+ .text.I2C_MasterTransferAbort
+                0x00000000       0xb0 ./drivers/fsl_i2c.o
+ .text.I2C_MasterTransferGetCount
+                0x00000000       0x30 ./drivers/fsl_i2c.o
+ .text.I2C_SlaveInit
+                0x00000000      0x140 ./drivers/fsl_i2c.o
+ .text.I2C_SlaveDeinit
+                0x00000000       0x34 ./drivers/fsl_i2c.o
+ .text.I2C_SlaveGetDefaultConfig
+                0x00000000       0x38 ./drivers/fsl_i2c.o
+ .text.I2C_SlaveWriteBlocking
+                0x00000000       0xa4 ./drivers/fsl_i2c.o
+ .text.I2C_SlaveReadBlocking
+                0x00000000       0xc8 ./drivers/fsl_i2c.o
+ .text.I2C_SlaveTransferCreateHandle
+                0x00000000       0x6c ./drivers/fsl_i2c.o
+ .text.I2C_SlaveTransferNonBlocking
+                0x00000000       0x6c ./drivers/fsl_i2c.o
+ .text.I2C_SlaveTransferAbort
+                0x00000000       0x3c ./drivers/fsl_i2c.o
+ .text.I2C_SlaveTransferGetCount
+                0x00000000       0x44 ./drivers/fsl_i2c.o
+ .text.I2C_SlaveTransferHandleIRQ
+                0x00000000      0x350 ./drivers/fsl_i2c.o
+ .text          0x00000000        0x0 ./drivers/fsl_i2c_freertos.o
+ .data          0x00000000        0x0 ./drivers/fsl_i2c_freertos.o
+ .bss           0x00000000        0x0 ./drivers/fsl_i2c_freertos.o
+ .text.I2C_RTOS_Callback
+                0x00000000       0x44 ./drivers/fsl_i2c_freertos.o
+ .text.I2C_RTOS_Init
+                0x00000000       0x9c ./drivers/fsl_i2c_freertos.o
+ .text.I2C_RTOS_Deinit
+                0x00000000       0x30 ./drivers/fsl_i2c_freertos.o
+ .text.I2C_RTOS_Transfer
+                0x00000000       0x80 ./drivers/fsl_i2c_freertos.o
+ .comment       0x00000000       0x6f ./drivers/fsl_i2c_freertos.o
+ .ARM.attributes
+                0x00000000       0x32 ./drivers/fsl_i2c_freertos.o
+ .text          0x00000000        0x0 ./drivers/fsl_lptmr.o
+ .data          0x00000000        0x0 ./drivers/fsl_lptmr.o
+ .bss           0x00000000        0x0 ./drivers/fsl_lptmr.o
+ .text.CLOCK_DisableClock
+                0x00000000       0x38 ./drivers/fsl_lptmr.o
+ .rodata.s_lptmrBases
+                0x00000000        0x4 ./drivers/fsl_lptmr.o
+ .rodata.s_lptmrClocks
+                0x00000000        0x4 ./drivers/fsl_lptmr.o
+ .text.LPTMR_Deinit
+                0x00000000       0x38 ./drivers/fsl_lptmr.o
+ .text          0x00000000        0x0 ./drivers/fsl_lpuart.o
+ .data          0x00000000        0x0 ./drivers/fsl_lpuart.o
+ .bss           0x00000000        0x0 ./drivers/fsl_lpuart.o
+ .text.NVIC_EnableIRQ
+                0x00000000       0x2c ./drivers/fsl_lpuart.o
+ .text.CLOCK_EnableClock
+                0x00000000       0x38 ./drivers/fsl_lpuart.o
+ .text.CLOCK_DisableClock
+                0x00000000       0x38 ./drivers/fsl_lpuart.o
+ .text.EnableIRQ
+                0x00000000       0x2c ./drivers/fsl_lpuart.o
+ .rodata.s_lpuartBases
+                0x00000000        0x8 ./drivers/fsl_lpuart.o
+ .rodata.s_lpuartIRQ
+                0x00000000        0x2 ./drivers/fsl_lpuart.o
+ .rodata.s_lpuartClock
+                0x00000000        0x8 ./drivers/fsl_lpuart.o
+ .text.LPUART_GetInstance
+                0x00000000       0x3c ./drivers/fsl_lpuart.o
+ .text.LPUART_TransferGetRxRingBufferLength
+                0x00000000       0x50 ./drivers/fsl_lpuart.o
+ .text.LPUART_TransferIsRxRingBufferFull
+                0x00000000       0x44 ./drivers/fsl_lpuart.o
+ .text.LPUART_WriteNonBlocking
+                0x00000000       0x38 ./drivers/fsl_lpuart.o
+ .text.LPUART_ReadNonBlocking
+                0x00000000       0x38 ./drivers/fsl_lpuart.o
+ .text.LPUART_Init
+                0x00000000      0x26c ./drivers/fsl_lpuart.o
+ .text.LPUART_Deinit
+                0x00000000       0x6c ./drivers/fsl_lpuart.o
+ .text.LPUART_GetDefaultConfig
+                0x00000000       0x3c ./drivers/fsl_lpuart.o
+ .text.LPUART_SetBaudRate
+                0x00000000      0x180 ./drivers/fsl_lpuart.o
+ .text.LPUART_EnableInterrupts
+                0x00000000       0x3c ./drivers/fsl_lpuart.o
+ .text.LPUART_DisableInterrupts
+                0x00000000       0x40 ./drivers/fsl_lpuart.o
+ .text.LPUART_GetEnabledInterrupts
+                0x00000000       0x34 ./drivers/fsl_lpuart.o
+ .text.LPUART_GetStatusFlags
+                0x00000000       0x18 ./drivers/fsl_lpuart.o
+ .text.LPUART_ClearStatusFlags
+                0x00000000       0x88 ./drivers/fsl_lpuart.o
+ .text.LPUART_WriteBlocking
+                0x00000000       0x3c ./drivers/fsl_lpuart.o
+ .text.LPUART_ReadBlocking
+                0x00000000       0xc8 ./drivers/fsl_lpuart.o
+ .text.LPUART_TransferCreateHandle
+                0x00000000       0x7c ./drivers/fsl_lpuart.o
+ .text.LPUART_TransferStartRingBuffer
+                0x00000000       0x3c ./drivers/fsl_lpuart.o
+ .text.LPUART_TransferStopRingBuffer
+                0x00000000       0x44 ./drivers/fsl_lpuart.o
+ .text.LPUART_TransferSendNonBlocking
+                0x00000000       0x60 ./drivers/fsl_lpuart.o
+ .text.LPUART_TransferAbortSend
+                0x00000000       0x30 ./drivers/fsl_lpuart.o
+ .text.LPUART_TransferGetSendCount
+                0x00000000       0x34 ./drivers/fsl_lpuart.o
+ .text.LPUART_TransferReceiveNonBlocking
+                0x00000000      0x16c ./drivers/fsl_lpuart.o
+ .text.LPUART_TransferAbortReceive
+                0x00000000       0x38 ./drivers/fsl_lpuart.o
+ .text.LPUART_TransferGetReceiveCount
+                0x00000000       0x34 ./drivers/fsl_lpuart.o
+ .text.LPUART_TransferHandleIRQ
+                0x00000000      0x290 ./drivers/fsl_lpuart.o
+ .text.LPUART_TransferHandleErrorIRQ
+                0x00000000       0x14 ./drivers/fsl_lpuart.o
+ .text          0x00000000        0x0 ./drivers/fsl_lpuart_freertos.o
+ .data          0x00000000        0x0 ./drivers/fsl_lpuart_freertos.o
+ .bss           0x00000000        0x0 ./drivers/fsl_lpuart_freertos.o
+ .text.LPUART_EnableTx
+                0x00000000       0x40 ./drivers/fsl_lpuart_freertos.o
+ .text.LPUART_EnableRx
+                0x00000000       0x40 ./drivers/fsl_lpuart_freertos.o
+ .text.LPUART_RTOS_Callback
+                0x00000000       0xd0 ./drivers/fsl_lpuart_freertos.o
+ .text.LPUART_RTOS_Init
+                0x00000000      0x178 ./drivers/fsl_lpuart_freertos.o
+ .text.LPUART_RTOS_Deinit
+                0x00000000       0x6c ./drivers/fsl_lpuart_freertos.o
+ .text.LPUART_RTOS_Send
+                0x00000000       0xa8 ./drivers/fsl_lpuart_freertos.o
+ .text.LPUART_RTOS_Receive
+                0x00000000      0x138 ./drivers/fsl_lpuart_freertos.o
+ .comment       0x00000000       0x6f ./drivers/fsl_lpuart_freertos.o
+ .ARM.attributes
+                0x00000000       0x32 ./drivers/fsl_lpuart_freertos.o
+ .text          0x00000000        0x0 ./drivers/fsl_pmc.o
+ .data          0x00000000        0x0 ./drivers/fsl_pmc.o
+ .bss           0x00000000        0x0 ./drivers/fsl_pmc.o
+ .text.PMC_ConfigureLowVoltDetect
+                0x00000000       0x38 ./drivers/fsl_pmc.o
+ .text.PMC_ConfigureLowVoltWarning
+                0x00000000       0x2c ./drivers/fsl_pmc.o
+ .text.PMC_ConfigureBandgapBuffer
+                0x00000000       0x28 ./drivers/fsl_pmc.o
+ .comment       0x00000000       0x6f ./drivers/fsl_pmc.o
+ .ARM.attributes
+                0x00000000       0x32 ./drivers/fsl_pmc.o
+ .text          0x00000000        0x0 ./drivers/fsl_rtc.o
+ .data          0x00000000        0x0 ./drivers/fsl_rtc.o
+ .bss           0x00000000        0x0 ./drivers/fsl_rtc.o
+ .text.CLOCK_EnableClock
+                0x00000000       0x38 ./drivers/fsl_rtc.o
+ .text.RTC_GetStatusFlags
+                0x00000000       0x18 ./drivers/fsl_rtc.o
+ .text.RTC_Reset
+                0x00000000       0x30 ./drivers/fsl_rtc.o
+ .rodata        0x00000000       0x2a ./drivers/fsl_rtc.o
+ .text.RTC_CheckDatetimeFormat
+                0x00000000       0xd0 ./drivers/fsl_rtc.o
+ .text.RTC_ConvertDatetimeToSeconds
+                0x00000000       0xc4 ./drivers/fsl_rtc.o
+ .text.RTC_ConvertSecondsToDatetime
+                0x00000000      0x150 ./drivers/fsl_rtc.o
+ .text.RTC_Init
+                0x00000000       0x9c ./drivers/fsl_rtc.o
+ .text.RTC_GetDefaultConfig
+                0x00000000       0x30 ./drivers/fsl_rtc.o
+ .text.RTC_SetDatetime
+                0x00000000       0x3c ./drivers/fsl_rtc.o
+ .text.RTC_GetDatetime
+                0x00000000       0x28 ./drivers/fsl_rtc.o
+ .text.RTC_SetAlarm
+                0x00000000       0x5c ./drivers/fsl_rtc.o
+ .text.RTC_GetAlarm
+                0x00000000       0x28 ./drivers/fsl_rtc.o
+ .text.RTC_ClearStatusFlags
+                0x00000000       0x3c ./drivers/fsl_rtc.o
+ .comment       0x00000000       0x6f ./drivers/fsl_rtc.o
+ .ARM.attributes
+                0x00000000       0x32 ./drivers/fsl_rtc.o
+ .text          0x00000000        0x0 ./drivers/fsl_slcd.o
+ .data          0x00000000        0x0 ./drivers/fsl_slcd.o
+ .bss           0x00000000        0x0 ./drivers/fsl_slcd.o
+ .text.NVIC_DisableIRQ
+                0x00000000       0x30 ./drivers/fsl_slcd.o
+ .text.CLOCK_DisableClock
+                0x00000000       0x38 ./drivers/fsl_slcd.o
+ .text.DisableIRQ
+                0x00000000       0x2c ./drivers/fsl_slcd.o
+ .text.SLCD_StopDisplay
+                0x00000000       0x20 ./drivers/fsl_slcd.o
+ .rodata.s_slcdClock
+                0x00000000        0x4 ./drivers/fsl_slcd.o
+ .rodata.s_slcdBases
+                0x00000000        0x4 ./drivers/fsl_slcd.o
+ .text.SLCD_Deinit
+                0x00000000       0x38 ./drivers/fsl_slcd.o
+ .text.SLCD_EnableInterrupts
+                0x00000000       0x30 ./drivers/fsl_slcd.o
+ .text.SLCD_DisableInterrupts
+                0x00000000       0x34 ./drivers/fsl_slcd.o
+ .text.SLCD_ClearInterruptStatus
+                0x00000000       0x28 ./drivers/fsl_slcd.o
+ .text.SLCD_GetInterruptStatus
+                0x00000000       0x24 ./drivers/fsl_slcd.o
+ .text          0x00000000        0x0 ./drivers/fsl_smc.o
+ .data          0x00000000        0x0 ./drivers/fsl_smc.o
+ .bss           0x00000000        0x0 ./drivers/fsl_smc.o
+ .rodata        0x00000000        0x2 ./drivers/fsl_smc.o
+ .text.SMC_PreEnterStopModes
+                0x00000000       0x30 ./drivers/fsl_smc.o
+ .text.SMC_PostExitStopModes
+                0x00000000       0x28 ./drivers/fsl_smc.o
+ .text.SMC_SetPowerModeRun
+                0x00000000       0x44 ./drivers/fsl_smc.o
+ .text.SMC_SetPowerModeWait
+                0x00000000       0x2c ./drivers/fsl_smc.o
+ .text.SMC_SetPowerModeStop
+                0x00000000       0xb8 ./drivers/fsl_smc.o
+ .text.SMC_SetPowerModeVlpr
+                0x00000000       0x48 ./drivers/fsl_smc.o
+ .text.SMC_SetPowerModeVlpw
+                0x00000000       0x2c ./drivers/fsl_smc.o
+ .text.SMC_SetPowerModeVlps
+                0x00000000       0x7c ./drivers/fsl_smc.o
+ .text.SMC_SetPowerModeLls
+                0x00000000       0x7c ./drivers/fsl_smc.o
+ .text.SMC_SetPowerModeVlls
+                0x00000000       0xe4 ./drivers/fsl_smc.o
+ .comment       0x00000000       0x6f ./drivers/fsl_smc.o
+ .ARM.attributes
+                0x00000000       0x32 ./drivers/fsl_smc.o
+ .text          0x00000000        0x0 ./drivers/fsl_tpm.o
+ .data          0x00000000        0x0 ./drivers/fsl_tpm.o
+ .bss           0x00000000        0x0 ./drivers/fsl_tpm.o
+ .text.CLOCK_DisableClock
+                0x00000000       0x38 ./drivers/fsl_tpm.o
+ .text.TPM_Deinit
+                0x00000000       0x38 ./drivers/fsl_tpm.o
+ .text.TPM_SetupPwm
+                0x00000000      0x1b4 ./drivers/fsl_tpm.o
+ .text.TPM_UpdatePwmDutycycle
+                0x00000000       0x84 ./drivers/fsl_tpm.o
+ .text.TPM_UpdateChnlEdgeLevelSelect
+                0x00000000       0xc4 ./drivers/fsl_tpm.o
+ .text.TPM_SetupInputCapture
+                0x00000000       0x9c ./drivers/fsl_tpm.o
+ .text.TPM_SetupOutputCompare
+                0x00000000       0xc4 ./drivers/fsl_tpm.o
+ .text.TPM_DisableInterrupts
+                0x00000000       0x88 ./drivers/fsl_tpm.o
+ .text.TPM_GetEnabledInterrupts
+                0x00000000       0xb4 ./drivers/fsl_tpm.o
+ .text          0x00000000        0x0 ./drivers/fsl_uart.o
+ .data          0x00000000        0x0 ./drivers/fsl_uart.o
+ .bss           0x00000000        0x0 ./drivers/fsl_uart.o
+ .text.CLOCK_DisableClock
+                0x00000000       0x38 ./drivers/fsl_uart.o
+ .text.UART_Deinit
+                0x00000000       0x40 ./drivers/fsl_uart.o
+ .text.UART_SetBaudRate
+                0x00000000      0x13c ./drivers/fsl_uart.o
+ .text.UART_GetEnabledInterrupts
+                0x00000000       0x38 ./drivers/fsl_uart.o
+ .text.UART_WriteBlocking
+                0x00000000       0x3c ./drivers/fsl_uart.o
+ .text.UART_ReadBlocking
+                0x00000000       0x88 ./drivers/fsl_uart.o
+ .text.UART_TransferStopRingBuffer
+                0x00000000       0x64 ./drivers/fsl_uart.o
+ .text.UART_TransferSendNonBlocking
+                0x00000000       0x5c ./drivers/fsl_uart.o
+ .text.UART_TransferAbortSend
+                0x00000000       0x30 ./drivers/fsl_uart.o
+ .text.UART_TransferGetSendCount
+                0x00000000       0x34 ./drivers/fsl_uart.o
+ .text.UART_TransferReceiveNonBlocking
+                0x00000000      0x184 ./drivers/fsl_uart.o
+ .text.UART_TransferAbortReceive
+                0x00000000       0x54 ./drivers/fsl_uart.o
+ .text.UART_TransferGetReceiveCount
+                0x00000000       0x40 ./drivers/fsl_uart.o
+ .text.UART_TransferHandleErrorIRQ
+                0x00000000       0x14 ./drivers/fsl_uart.o
+ .text.UART2_DriverIRQHandler
+                0x00000000       0x24 ./drivers/fsl_uart.o
+ .text.UART2_RX_TX_DriverIRQHandler
+                0x00000000       0x10 ./drivers/fsl_uart.o
+ .text          0x00000000        0x0 ./drivers/fsl_uart_freertos.o
+ .data          0x00000000        0x0 ./drivers/fsl_uart_freertos.o
+ .bss           0x00000000        0x0 ./drivers/fsl_uart_freertos.o
+ .text.UART_RTOS_Deinit
+                0x00000000       0x6c ./drivers/fsl_uart_freertos.o
+ .text.UART_RTOS_Send
+                0x00000000       0xa8 ./drivers/fsl_uart_freertos.o
+ .text.UART_RTOS_Receive
+                0x00000000      0x138 ./drivers/fsl_uart_freertos.o
+ .text          0x00000000        0x0 ./board/board.o
+ .data          0x00000000        0x0 ./board/board.o
+ .bss           0x00000000        0x0 ./board/board.o
+ .text.CLOCK_SetLpuart0Clock
+                0x00000000       0x38 ./board/board.o
+ .text.BOARD_InitDebugConsole
+                0x00000000       0x34 ./board/board.o
+ .comment       0x00000000       0x6f ./board/board.o
+ .ARM.attributes
+                0x00000000       0x32 ./board/board.o
+ .text          0x00000000        0x0 ./board/clock_config.o
+ .data          0x00000000        0x0 ./board/clock_config.o
+ .bss           0x00000000        0x0 ./board/clock_config.o
+ .text.SMC_SetPowerModeProtection
+                0x00000000       0x20 ./board/clock_config.o
+ .text.SMC_GetPowerModeState
+                0x00000000       0x18 ./board/clock_config.o
+ .rodata.oscConfig_BOARD_BootClockRUN
+                0x00000000        0x8 ./board/clock_config.o
+ .rodata.mcgliteConfig_BOARD_BootClockVLPR
+                0x00000000        0x6 ./board/clock_config.o
+ .rodata.simConfig_BOARD_BootClockVLPR
+                0x00000000        0x8 ./board/clock_config.o
+ .rodata.oscConfig_BOARD_BootClockVLPR
+                0x00000000        0x8 ./board/clock_config.o
+ .text.BOARD_BootClockVLPR
+                0x00000000       0x5c ./board/clock_config.o
+ .text          0x00000000        0x0 ./board/mtb.o
+ .data          0x00000000        0x0 ./board/mtb.o
+ .bss           0x00000000        0x0 ./board/mtb.o
+ .text          0x00000000        0x0 ./board/pin_mux.o
+ .data          0x00000000        0x0 ./board/pin_mux.o
+ .bss           0x00000000        0x0 ./board/pin_mux.o
+ .text.BOARD_InitBootPins
+                0x00000000       0x10 ./board/pin_mux.o
+ .text.BOARD_InitUSB
+                0x00000000       0x68 ./board/pin_mux.o
+ .text.BOARD_InitACCEL_I2C
+                0x00000000       0xd4 ./board/pin_mux.o
+ .text.BOARD_InitOSC
+                0x00000000       0x34 ./board/pin_mux.o
+ .text          0x00000000        0x0 ./CMSIS/system_MKL43Z4.o
+ .data          0x00000000        0x0 ./CMSIS/system_MKL43Z4.o
+ .bss           0x00000000        0x0 ./CMSIS/system_MKL43Z4.o
+ .text.SystemCoreClockUpdate
+                0x00000000       0xa8 ./CMSIS/system_MKL43Z4.o
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divsi3.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_aeabi_uldivmod.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_muldi3.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_muldi3.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivmoddi4.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivmoddi4.o)
+ .ARM.extab     0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivmoddi4.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(divdf3.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(divdf3.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(muldf3.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(muldf3.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(fixdfsi.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(fixdfsi.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(floatunsidf.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(floatunsidf.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_clzsi2.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_clzsi2.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_clzdi2.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_clzdi2.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atoi.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atoi.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atoi.o)
+ .text._atoi_r  0x00000000        0xc c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atoi.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-exit.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x20 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-exit.o)
+ .debug_frame   0x00000000       0x28 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-exit.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-exit.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+ .text.__libc_init_array
+                0x00000000       0x48 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+ .debug_frame   0x00000000       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-init.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memcpy-stub.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memcpy-stub.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memcpy-stub.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strcmp.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strcmp.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strcpy.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strcpy.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strcpy.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strlen-stub.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strlen-stub.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strlen-stub.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strtol.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strtol.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strtol.o)
+ .text._strtol_r
+                0x00000000       0x24 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strtol.o)
+ .text.strtol_l
+                0x00000000       0x20 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strtol.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o)
+ .text.startup.register_fini
+                0x00000000       0x18 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o)
+ .init_array.00000
+                0x00000000        0x4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o)
+ .text.__call_exitprocs
+                0x00000000       0xfc c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00000000       0x54 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__call_atexit.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atexit.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atexit.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atexit.o)
+ .text.atexit   0x00000000       0x10 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atexit.o)
+ .debug_frame   0x00000000       0x28 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atexit.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atexit.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-fini.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-fini.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-fini.o)
+ .text.__libc_fini_array
+                0x00000000       0x34 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-fini.o)
+ .debug_frame   0x00000000       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-fini.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-fini.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-locale.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-locale.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-locale.o)
+ .text.__get_current_locale
+                0x00000000       0x18 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-locale.o)
+ .text._setlocale_r
+                0x00000000       0x44 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-locale.o)
+ .text.__locale_mb_cur_max
+                0x00000000       0x20 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-locale.o)
+ .text.__locale_ctype_ptr
+                0x00000000       0x14 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-locale.o)
+ .text.setlocale
+                0x00000000       0x18 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-locale.o)
+ .bss._PathLocale
+                0x00000000        0x4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-locale.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-mbtowc_r.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-mbtowc_r.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-mbtowc_r.o)
+ .text._mbtowc_r
+                0x00000000       0x28 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-mbtowc_r.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-wctomb_r.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-wctomb_r.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-wctomb_r.o)
+ .text._wctomb_r
+                0x00000000       0x20 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-wctomb_r.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__atexit.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__atexit.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__atexit.o)
+ .text.__register_exitproc
+                0x00000000       0xd4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__atexit.o)
+ .debug_frame   0x00000000       0x3c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__atexit.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-ctype_.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-ctype_.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-ctype_.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ .eh_frame      0x00000000        0x4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ .jcr           0x00000000        0x4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ .ARM.attributes
+                0x00000000       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+ .init          0x00000000        0x8 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+ .fini          0x00000000        0x8 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+ .ARM.attributes
+                0x00000000       0x1e c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(_cr__main.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(_cr__main.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(_cr__main.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(initio.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(initio.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(initio.o)
+ .text._terminateio
+                0x00000000       0x50 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(initio.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(setvbuf.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(setvbuf.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(setvbuf.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_fdopen.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_fdopen.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_fdopen.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fclose.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fclose.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fclose.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fflush.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fflush.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fflush.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fseek.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fseek.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fseek.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(ftell.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(ftell.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(ftell.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(remove.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(remove.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(remove.o)
+ .text.rename   0x00000000       0x26 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(remove.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_do_fflush.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_do_fflush.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_do_fflush.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_fflush.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_fflush.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_fflush.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_writebuf.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_writebuf.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_writebuf.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(alloc.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(alloc.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(alloc.o)
+ .text.malloc   0x00000000       0xcc c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(alloc.o)
+ .text.calloc   0x00000000       0x50 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(alloc.o)
+ .text._Csys_alloc
+                0x00000000       0x20 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(alloc.o)
+ .text.realloc  0x00000000       0x26 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(alloc.o)
+ .rodata.str1.1
+                0x00000000       0x18 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(alloc.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(errno.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(errno.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(errno.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(__init_alloc.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(__init_alloc.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(__init_alloc.o)
+ .text._init_alloc
+                0x00000000       0x14 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(__init_alloc.o)
+ .bss.__heaps   0x00000000        0x4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(__init_alloc.o)
+ .bss.__end_of_heap
+                0x00000000        0x4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(__init_alloc.o)
+ .comment       0x00000000       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(__init_alloc.o)
+ .ARM.attributes
+                0x00000000       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(__init_alloc.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_cr_sbrk.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_cr_sbrk.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_cr_sbrk.o)
+ .text._sbrk    0x00000000       0x40 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_cr_sbrk.o)
+ .comment       0x00000000       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_cr_sbrk.o)
+ .ARM.attributes
+                0x00000000       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_cr_sbrk.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_deferredlazyseek.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_deferredlazyseek.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_deferredlazyseek.o)
+ .text.__flsbuf
+                0x00000000      0x14c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_deferredlazyseek.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_cr_check_heap.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_cr_check_heap.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_cr_check_heap.o)
+ .text.__check_heap_overflow
+                0x00000000       0x14 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_cr_check_heap.o)
+ .comment       0x00000000       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_cr_check_heap.o)
+ .ARM.attributes
+                0x00000000       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_cr_check_heap.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__ciob.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__ciob.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__ciob.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_appexit.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_appexit.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_appexit.o)
+ .text.__sys_appexit
+                0x00000000        0x2 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_appexit.o)
+ .comment       0x00000000       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_appexit.o)
+ .ARM.attributes
+                0x00000000       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_appexit.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_close.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_close.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_close.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_flen.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_flen.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_flen.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_istty.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_istty.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_istty.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_remove.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_remove.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_remove.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_rename.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_rename.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_rename.o)
+ .text.__sys_rename
+                0x00000000        0x6 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_rename.o)
+ .comment       0x00000000       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_rename.o)
+ .ARM.attributes
+                0x00000000       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_rename.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_seek.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_seek.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_seek.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_tmpnam.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_tmpnam.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_tmpnam.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_write.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_write.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_write.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+PROGRAM_FLASH    0x00000000         0x00040000         xr
+SRAM             0x1fffe000         0x00008000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+LOAD c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+LOAD c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+LOAD ./utilities/fsl_debug_console.o
+LOAD ./startup/startup_mkl43z4.o
+LOAD ./source/SmartTorqueFW.o
+LOAD ./source/_ADCSense.o
+LOAD ./source/_Bluetooth.o
+LOAD ./source/_Display.o
+LOAD ./source/_FRAM.o
+LOAD ./source/_HMI.o
+LOAD ./source/_RTC.o
+LOAD ./source/_Sys_Control.o
+LOAD ./source/_Timer.o
+LOAD ./freertos/croutine.o
+LOAD ./freertos/event_groups.o
+LOAD ./freertos/fsl_tickless_lptmr.o
+LOAD ./freertos/fsl_tickless_systick.o
+LOAD ./freertos/heap_4.o
+LOAD ./freertos/list.o
+LOAD ./freertos/port.o
+LOAD ./freertos/queue.o
+LOAD ./freertos/tasks.o
+LOAD ./freertos/timers.o
+LOAD ./drivers/fsl_adc16.o
+LOAD ./drivers/fsl_clock.o
+LOAD ./drivers/fsl_common.o
+LOAD ./drivers/fsl_dma.o
+LOAD ./drivers/fsl_dmamux.o
+LOAD ./drivers/fsl_flash.o
+LOAD ./drivers/fsl_gpio.o
+LOAD ./drivers/fsl_i2c.o
+LOAD ./drivers/fsl_i2c_freertos.o
+LOAD ./drivers/fsl_lptmr.o
+LOAD ./drivers/fsl_lpuart.o
+LOAD ./drivers/fsl_lpuart_freertos.o
+LOAD ./drivers/fsl_pmc.o
+LOAD ./drivers/fsl_rtc.o
+LOAD ./drivers/fsl_slcd.o
+LOAD ./drivers/fsl_smc.o
+LOAD ./drivers/fsl_tpm.o
+LOAD ./drivers/fsl_uart.o
+LOAD ./drivers/fsl_uart_freertos.o
+LOAD ./board/board.o
+LOAD ./board/clock_config.o
+LOAD ./board/mtb.o
+LOAD ./board/pin_mux.o
+LOAD ./CMSIS/system_MKL43Z4.o
+START GROUP
+LOAD c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a
+LOAD c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a
+END GROUP
+LOAD c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+LOAD c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+START GROUP
+LOAD c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a
+LOAD c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a
+LOAD c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libcr_eabihelpers.a
+END GROUP
+                0x00000000                __base_PROGRAM_FLASH = 0x0
+                0x00000000                __base_Flash = 0x0
+                0x00040000                __top_PROGRAM_FLASH = 0x40000
+                0x00040000                __top_Flash = 0x40000
+                0x1fffe000                __base_SRAM = 0x1fffe000
+                0x1fffe000                __base_RAM = 0x1fffe000
+                0x20006000                __top_SRAM = 0x20006000
+                0x20006000                __top_RAM = 0x20006000
+
+.text           0x00000000     0xaa1c
+ FILL mask 0xff
+                0x00000000                __vectors_start__ = ABSOLUTE (.)
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xc0 ./startup/startup_mkl43z4.o
+                0x00000000                g_pfnVectors
+                0x00000000                __Vectors
+                0x000000c0                . = ALIGN (0x4)
+                0x000000c0                __section_table_start = .
+                0x000000c0                __data_section_table = .
+                0x000000c0        0x4 LONG 0xaa2c LOADADDR (.data)
+                0x000000c4        0x4 LONG 0x1fffe080 ADDR (.data)
+                0x000000c8        0x4 LONG 0x5b8 SIZEOF (.data)
+                0x000000cc                __data_section_table_end = .
+                0x000000cc                __bss_section_table = .
+                0x000000cc        0x4 LONG 0x1fffe638 ADDR (.bss)
+                0x000000d0        0x4 LONG 0x2d90 SIZEOF (.bss)
+                0x000000d4                __bss_section_table_end = .
+                0x000000d4                __section_table_end = .
+ *(.after_vectors*)
+ .after_vectors.init_data
+                0x000000d4       0x40 ./startup/startup_mkl43z4.o
+                0x000000d4                data_init
+ .after_vectors.init_bss
+                0x00000114       0x34 ./startup/startup_mkl43z4.o
+                0x00000114                bss_init
+ .after_vectors.reset
+                0x00000148       0x84 ./startup/startup_mkl43z4.o
+                0x00000148                ResetISR
+ .after_vectors
+                0x000001cc      0x230 ./startup/startup_mkl43z4.o
+                0x000001cc                NMI_Handler
+                0x000001d4                HardFault_Handler
+                0x000001f4                Reserved42_DriverIRQHandler
+                0x000001f4                PIT_DriverIRQHandler
+                0x000001f4                SPI1_DriverIRQHandler
+                0x000001f4                LPTMR0_DriverIRQHandler
+                0x000001f4                PORTC_PORTD_DriverIRQHandler
+                0x000001f4                PMC_DriverIRQHandler
+                0x000001f4                Reserved43_DriverIRQHandler
+                0x000001f4                CMP0_DriverIRQHandler
+                0x000001f4                I2S0_DriverIRQHandler
+                0x000001f4                ADC0_DriverIRQHandler
+                0x000001f4                TPM2_DriverIRQHandler
+                0x000001f4                SPI0_DriverIRQHandler
+                0x000001f4                LCD_DriverIRQHandler
+                0x000001f4                RTC_DriverIRQHandler
+                0x000001f4                RTC_Seconds_DriverIRQHandler
+                0x000001f4                LLWU_DriverIRQHandler
+                0x000001f4                TPM1_DriverIRQHandler
+                0x000001f4                PORTA_DriverIRQHandler
+                0x000001f4                UART2_FLEXIO_DriverIRQHandler
+                0x000001f4                FTFA_DriverIRQHandler
+                0x000001f4                IntDefaultHandler
+                0x000001f4                USB0_DriverIRQHandler
+                0x000001f4                DAC0_DriverIRQHandler
+                0x000001f4                TPM0_DriverIRQHandler
+                0x000001f4                Reserved20_DriverIRQHandler
+                0x0000020c                DMA1_IRQHandler
+                0x0000021c                DMA2_IRQHandler
+                0x0000022c                DMA3_IRQHandler
+                0x0000023c                Reserved20_IRQHandler
+                0x0000024c                FTFA_IRQHandler
+                0x0000025c                PMC_IRQHandler
+                0x0000026c                LLWU_IRQHandler
+                0x0000027c                I2C0_IRQHandler
+                0x0000028c                I2C1_IRQHandler
+                0x0000029c                SPI0_IRQHandler
+                0x000002ac                SPI1_IRQHandler
+                0x000002bc                LPUART0_IRQHandler
+                0x000002cc                LPUART1_IRQHandler
+                0x000002ec                ADC0_IRQHandler
+                0x000002fc                CMP0_IRQHandler
+                0x0000030c                TPM0_IRQHandler
+                0x0000032c                TPM2_IRQHandler
+                0x0000033c                RTC_IRQHandler
+                0x0000035c                PIT_IRQHandler
+                0x0000036c                I2S0_IRQHandler
+                0x0000037c                USB0_IRQHandler
+                0x0000038c                DAC0_IRQHandler
+                0x0000039c                Reserved42_IRQHandler
+                0x000003ac                Reserved43_IRQHandler
+                0x000003bc                LPTMR0_IRQHandler
+                0x000003cc                LCD_IRQHandler
+                0x00000400                . = 0x400
+ *fill*         0x000003fc        0x4 ff
+                0x00000400                PROVIDE (__FLASH_CONFIG_START__, .)
+ *(.FlashConfig)
+ .FlashConfig   0x00000400       0x10 ./startup/startup_mkl43z4.o
+                0x00000400                Flash_Config
+                0x00000410                PROVIDE (__FLASH_CONFIG_END__, .)
+                0x00000001                ASSERT (! ((__FLASH_CONFIG_START__ == __FLASH_CONFIG_END__)), Linker Flash Config Support Enabled, but no .FlashConfig section provided within application)
+ *(.text*)
+ .text.DbgConsole_Printf
+                0x00000410       0x44 ./utilities/fsl_debug_console.o
+                0x00000410                DbgConsole_Printf
+ .text.DbgConsole_Putchar
+                0x00000454       0x34 ./utilities/fsl_debug_console.o
+                0x00000454                DbgConsole_Putchar
+ .text.DbgConsole_PrintfPaddingCharacter
+                0x00000488       0x48 ./utilities/fsl_debug_console.o
+ .text.DbgConsole_ConvertRadixNumToString
+                0x000004d0      0x114 ./utilities/fsl_debug_console.o
+ .text.DbgConsole_PrintfFormattedData
+                0x000005e4      0x334 ./utilities/fsl_debug_console.o
+ .text.main     0x00000918       0xa4 ./source/SmartTorqueFW.o
+                0x00000918                main
+ .text.vApplicationTickHook
+                0x000009bc       0x2c ./source/SmartTorqueFW.o
+                0x000009bc                vApplicationTickHook
+ .text.vApplicationMallocFailedHook
+                0x000009e8        0x8 ./source/SmartTorqueFW.o
+                0x000009e8                vApplicationMallocFailedHook
+ .text.vApplicationStackOverflowHook
+                0x000009f0        0xc ./source/SmartTorqueFW.o
+                0x000009f0                vApplicationStackOverflowHook
+ .text.vApplicationIdleHook
+                0x000009fc       0x18 ./source/SmartTorqueFW.o
+                0x000009fc                vApplicationIdleHook
+ .text.NVIC_EnableIRQ
+                0x00000a14       0x2c ./source/_ADCSense.o
+ .text.ADC16_EnableDMA
+                0x00000a40       0x3c ./source/_ADCSense.o
+ .text.ADC16_EnableHardwareTrigger
+                0x00000a7c       0x3c ./source/_ADCSense.o
+ .text.DMA_EnableCycleSteal
+                0x00000ab8       0x4c ./source/_ADCSense.o
+ .text.DMA_EnableAsyncRequest
+                0x00000b04       0x4c ./source/_ADCSense.o
+ .text.DMA_EnableInterrupts
+                0x00000b50       0x38 ./source/_ADCSense.o
+ .text.DMA_ClearChannelStatusFlags
+                0x00000b88       0x40 ./source/_ADCSense.o
+ .text.DMA_StartTransfer
+                0x00000bc8       0x44 ./source/_ADCSense.o
+ .text.LPTMR_SetTimerPeriod
+                0x00000c0c       0x1c ./source/_ADCSense.o
+ .text.LPTMR_StartTimer
+                0x00000c28       0x2c ./source/_ADCSense.o
+ .text.LPTMR_StopTimer
+                0x00000c54       0x2c ./source/_ADCSense.o
+ .text.DMAMUX_EnableChannel
+                0x00000c80       0x30 ./source/_ADCSense.o
+ .text.DMAMUX_SetSource
+                0x00000cb0       0x3c ./source/_ADCSense.o
+ .text.ADC_INIT
+                0x00000cec       0xd0 ./source/_ADCSense.o
+                0x00000cec                ADC_INIT
+ .text.BOARD_ConfigTrigger
+                0x00000dbc       0x24 ./source/_ADCSense.o
+                0x00000dbc                BOARD_ConfigTrigger
+ .text.DMA_CONFIG
+                0x00000de0       0xb0 ./source/_ADCSense.o
+                0x00000de0                DMA_CONFIG
+ .text.DMA0_IRQHandler
+                0x00000e90       0xe0 ./source/_ADCSense.o
+                0x00000e90                DMA0_IRQHandler
+ .text.getMeasurements
+                0x00000f70      0x118 ./source/_ADCSense.o
+                0x00000f70                getMeasurements
+ .text.LPTMR_TRIG
+                0x00001088       0x30 ./source/_ADCSense.o
+                0x00001088                LPTMR_TRIG
+ .text.vADC16Task
+                0x000010b8       0x40 ./source/_ADCSense.o
+                0x000010b8                vADC16Task
+ .text.NVIC_EnableIRQ
+                0x000010f8       0x2c ./source/_Bluetooth.o
+ .text.NVIC_SetPriority
+                0x00001124       0xdc ./source/_Bluetooth.o
+ .text.EnableIRQ
+                0x00001200       0x2c ./source/_Bluetooth.o
+ .text.UART_WriteByte
+                0x0000122c       0x20 ./source/_Bluetooth.o
+ .text.UART_ReadByte
+                0x0000124c       0x18 ./source/_Bluetooth.o
+ .text.on_message_send
+                0x00001264       0xcc ./source/_Bluetooth.o
+                0x00001264                on_message_send
+ .text.Bluetooth_INIT
+                0x00001330       0x74 ./source/_Bluetooth.o
+                0x00001330                Bluetooth_INIT
+ .text.UART2_FLEXIO_IRQHandler
+                0x000013a4       0x78 ./source/_Bluetooth.o
+                0x000013a4                UART2_FLEXIO_IRQHandler
+ .text.vBluetoothTask
+                0x0000141c      0x5a4 ./source/_Bluetooth.o
+                0x0000141c                vBluetoothTask
+ .text.Bluetooth_Send
+                0x000019c0       0x80 ./source/_Bluetooth.o
+                0x000019c0                Bluetooth_Send
+ .text.Bluetooth_Reset
+                0x00001a40       0x30 ./source/_Bluetooth.o
+                0x00001a40                Bluetooth_Reset
+ .text.print_address
+                0x00001a70       0x54 ./source/_Bluetooth.o
+                0x00001a70                print_address
+ .text.CLOCK_EnableClock
+                0x00001ac4       0x38 ./source/_Display.o
+ .text.SLCD_StartDisplay
+                0x00001afc       0x1c ./source/_Display.o
+ .text.SLCD_StopBlinkMode
+                0x00001b18       0x20 ./source/_Display.o
+ .text.SLCD_SetBackPlanePhase
+                0x00001b38       0x28 ./source/_Display.o
+ .text.SLCD_SetFrontPlaneSegments
+                0x00001b60       0x28 ./source/_Display.o
+ .text.PORT_SetPinMux
+                0x00001b88       0x40 ./source/_Display.o
+ .text.InitPins
+                0x00001bc8       0xdc ./source/_Display.o
+                0x00001bc8                InitPins
+ .text.Display_Init
+                0x00001ca4       0xcc ./source/_Display.o
+                0x00001ca4                Display_Init
+ .text.Display_Blink
+                0x00001d70       0x1c ./source/_Display.o
+                0x00001d70                Display_Blink
+ .text.Display_Stop_Blink
+                0x00001d8c       0x18 ./source/_Display.o
+                0x00001d8c                Display_Stop_Blink
+ .text.Set_Display
+                0x00001da4       0xd4 ./source/_Display.o
+                0x00001da4                Set_Display
+ .text.Display_Number
+                0x00001e78      0x170 ./source/_Display.o
+                0x00001e78                Display_Number
+ .text.CLOCK_EnableClock
+                0x00001fe8       0x38 ./source/_FRAM.o
+ .text.PORT_SetPinConfig
+                0x00002020       0x28 ./source/_FRAM.o
+ .text.GPIO_WritePinOutput
+                0x00002048       0x34 ./source/_FRAM.o
+ .text.i2c_master_callback
+                0x0000207c       0x48 ./source/_FRAM.o
+                0x0000207c                i2c_master_callback
+ .text.FRAM_INIT
+                0x000020c4       0x88 ./source/_FRAM.o
+                0x000020c4                FRAM_INIT
+ .text.i2c_release_bus_delay
+                0x0000214c       0x28 ./source/_FRAM.o
+ .text.BOARD_I2C_ReleaseBus
+                0x00002174      0x178 ./source/_FRAM.o
+                0x00002174                BOARD_I2C_ReleaseBus
+ .text.write    0x000022ec       0xbc ./source/_FRAM.o
+                0x000022ec                write
+ .text.read     0x000023a8       0xb8 ./source/_FRAM.o
+                0x000023a8                read
+ .text.NVIC_EnableIRQ
+                0x00002460       0x2c ./source/_HMI.o
+ .text.EnableIRQ
+                0x0000248c       0x2c ./source/_HMI.o
+ .text.PORT_SetPinInterruptConfig
+                0x000024b8       0x40 ./source/_HMI.o
+ .text.PORTA_IRQHandler
+                0x000024f8       0xa4 ./source/_HMI.o
+                0x000024f8                PORTA_IRQHandler
+ .text.PORTC_PORTD_IRQHandler
+                0x0000259c       0x74 ./source/_HMI.o
+                0x0000259c                PORTC_PORTD_IRQHandler
+ .text.HMI_INIT
+                0x00002610       0x68 ./source/_HMI.o
+                0x00002610                HMI_INIT
+ .text.RTC_Seconds_IRQHandler
+                0x00002678       0x90 ./source/_RTC.o
+                0x00002678                RTC_Seconds_IRQHandler
+ .text.GPIO_WritePinOutput
+                0x00002708       0x34 ./source/_Sys_Control.o
+ .text.GPIO_SetPinsOutput
+                0x0000273c       0x18 ./source/_Sys_Control.o
+ .text.GPIO_ClearPinsOutput
+                0x00002754       0x18 ./source/_Sys_Control.o
+ .text.Sys_Control_INIT
+                0x0000276c       0xec ./source/_Sys_Control.o
+                0x0000276c                Sys_Control_INIT
+ .text.HandleButtons
+                0x00002858       0xa0 ./source/_Sys_Control.o
+                0x00002858                HandleButtons
+ .text.UpdateDisplay
+                0x000028f8       0x1c ./source/_Sys_Control.o
+                0x000028f8                UpdateDisplay
+ .text.vSystemControllerTask
+                0x00002914      0x208 ./source/_Sys_Control.o
+                0x00002914                vSystemControllerTask
+ .text.ConfigurationBuilder
+                0x00002b1c      0x3f8 ./source/_Sys_Control.o
+                0x00002b1c                ConfigurationBuilder
+ .text.Set_Configuration_default
+                0x00002f14       0x60 ./source/_Sys_Control.o
+                0x00002f14                Set_Configuration_default
+ .text.NVIC_EnableIRQ
+                0x00002f74       0x2c ./source/_Timer.o
+ .text.CLOCK_SetTpmClock
+                0x00002fa0       0x38 ./source/_Timer.o
+ .text.EnableIRQ
+                0x00002fd8       0x2c ./source/_Timer.o
+ .text.TPM_ClearStatusFlags
+                0x00003004       0x18 ./source/_Timer.o
+ .text.TPM_SetTimerPeriod
+                0x0000301c       0x18 ./source/_Timer.o
+ .text.TPM_StartTimer
+                0x00003034       0x3c ./source/_Timer.o
+ .text.TPM_StopTimer
+                0x00003070       0x2c ./source/_Timer.o
+ .text.Timer_INIT
+                0x0000309c       0x4c ./source/_Timer.o
+                0x0000309c                Timer_INIT
+ .text.delay_ms
+                0x000030e8       0x60 ./source/_Timer.o
+                0x000030e8                delay_ms
+ .text.delay_us
+                0x00003148       0x84 ./source/_Timer.o
+                0x00003148                delay_us
+ .text.TPM1_IRQHandler
+                0x000031cc       0x2c ./source/_Timer.o
+                0x000031cc                TPM1_IRQHandler
+ .text.xEventGroupCreate
+                0x000031f8       0x30 ./freertos/event_groups.o
+                0x000031f8                xEventGroupCreate
+ .text.xEventGroupSetBits
+                0x00003228       0xf4 ./freertos/event_groups.o
+                0x00003228                xEventGroupSetBits
+ .text.vEventGroupDelete
+                0x0000331c       0x54 ./freertos/event_groups.o
+                0x0000331c                vEventGroupDelete
+ .text.vEventGroupSetBitsCallback
+                0x00003370       0x20 ./freertos/event_groups.o
+                0x00003370                vEventGroupSetBitsCallback
+ .text.xEventGroupSetBitsFromISR
+                0x00003390       0x2c ./freertos/event_groups.o
+                0x00003390                xEventGroupSetBitsFromISR
+ .text.prvSetupTimerInterrupt
+                0x000033bc       0x3c ./freertos/fsl_tickless_lptmr.o
+                0x000033bc                prvSetupTimerInterrupt
+ .text.pvPortMalloc
+                0x000033f8      0x154 ./freertos/heap_4.o
+                0x000033f8                pvPortMalloc
+ .text.vPortFree
+                0x0000354c       0x90 ./freertos/heap_4.o
+                0x0000354c                vPortFree
+ .text.xPortGetFreeHeapSize
+                0x000035dc       0x14 ./freertos/heap_4.o
+                0x000035dc                xPortGetFreeHeapSize
+ .text.prvHeapInit
+                0x000035f0       0xc0 ./freertos/heap_4.o
+ .text.prvInsertBlockIntoFreeList
+                0x000036b0       0xb0 ./freertos/heap_4.o
+ .text.vListInitialise
+                0x00003760       0x3c ./freertos/list.o
+                0x00003760                vListInitialise
+ .text.vListInitialiseItem
+                0x0000379c       0x18 ./freertos/list.o
+                0x0000379c                vListInitialiseItem
+ .text.vListInsertEnd
+                0x000037b4       0x44 ./freertos/list.o
+                0x000037b4                vListInsertEnd
+ .text.vListInsert
+                0x000037f8       0x6c ./freertos/list.o
+                0x000037f8                vListInsert
+ .text.uxListRemove
+                0x00003864       0x50 ./freertos/list.o
+                0x00003864                uxListRemove
+ .text.pxPortInitialiseStack
+                0x000038b4       0x54 ./freertos/port.o
+                0x000038b4                pxPortInitialiseStack
+ .text.prvTaskExitError
+                0x00003908       0x18 ./freertos/port.o
+ .text.SVC_Handler
+                0x00003920        0xc ./freertos/port.o
+                0x00003920                SVC_Handler
+ *fill*         0x0000392c        0x4 ff
+ .text.vPortStartFirstTask
+                0x00003930       0x38 ./freertos/port.o
+ .text.xPortStartScheduler
+                0x00003968       0x44 ./freertos/port.o
+                0x00003968                xPortStartScheduler
+ .text.vPortYield
+                0x000039ac       0x20 ./freertos/port.o
+                0x000039ac                vPortYield
+ .text.vPortEnterCritical
+                0x000039cc       0x24 ./freertos/port.o
+                0x000039cc                vPortEnterCritical
+ .text.vPortExitCritical
+                0x000039f0       0x30 ./freertos/port.o
+                0x000039f0                vPortExitCritical
+ .text.ulSetInterruptMaskFromISR
+                0x00003a20        0xc ./freertos/port.o
+                0x00003a20                ulSetInterruptMaskFromISR
+ .text.vClearInterruptMaskFromISR
+                0x00003a2c        0x8 ./freertos/port.o
+                0x00003a2c                vClearInterruptMaskFromISR
+ *fill*         0x00003a34        0xc ff
+ .text.PendSV_Handler
+                0x00003a40       0x48 ./freertos/port.o
+                0x00003a40                PendSV_Handler
+ .text.SysTick_Handler
+                0x00003a88       0x34 ./freertos/port.o
+                0x00003a88                SysTick_Handler
+ .text.xQueueGenericReset
+                0x00003abc       0xa8 ./freertos/queue.o
+                0x00003abc                xQueueGenericReset
+ .text.xQueueGenericCreate
+                0x00003b64       0x64 ./freertos/queue.o
+                0x00003b64                xQueueGenericCreate
+ .text.prvInitialiseNewQueue
+                0x00003bc8       0x50 ./freertos/queue.o
+ .text.prvInitialiseMutex
+                0x00003c18       0x34 ./freertos/queue.o
+ .text.xQueueCreateMutex
+                0x00003c4c       0x38 ./freertos/queue.o
+                0x00003c4c                xQueueCreateMutex
+ .text.xQueueGenericSend
+                0x00003c84      0x188 ./freertos/queue.o
+                0x00003c84                xQueueGenericSend
+ .text.xQueueGenericSendFromISR
+                0x00003e0c       0xe4 ./freertos/queue.o
+                0x00003e0c                xQueueGenericSendFromISR
+ .text.xQueueGenericReceive
+                0x00003ef0      0x1c8 ./freertos/queue.o
+                0x00003ef0                xQueueGenericReceive
+ .text.vQueueDelete
+                0x000040b8       0x30 ./freertos/queue.o
+                0x000040b8                vQueueDelete
+ .text.prvCopyDataToQueue
+                0x000040e8       0xd8 ./freertos/queue.o
+ .text.prvCopyDataFromQueue
+                0x000041c0       0x4c ./freertos/queue.o
+ .text.prvUnlockQueue
+                0x0000420c       0xc0 ./freertos/queue.o
+ .text.prvIsQueueEmpty
+                0x000042cc       0x2c ./freertos/queue.o
+ .text.prvIsQueueFull
+                0x000042f8       0x30 ./freertos/queue.o
+ .text.vQueueAddToRegistry
+                0x00004328       0x50 ./freertos/queue.o
+                0x00004328                vQueueAddToRegistry
+ .text.vQueueUnregisterQueue
+                0x00004378       0x54 ./freertos/queue.o
+                0x00004378                vQueueUnregisterQueue
+ .text.vQueueWaitForMessageRestricted
+                0x000043cc       0x68 ./freertos/queue.o
+                0x000043cc                vQueueWaitForMessageRestricted
+ .text.xTaskCreate
+                0x00004434       0x90 ./freertos/tasks.o
+                0x00004434                xTaskCreate
+ .text.prvInitialiseNewTask
+                0x000044c4      0x12c ./freertos/tasks.o
+ .text.prvAddNewTaskToReadyList
+                0x000045f0       0xd0 ./freertos/tasks.o
+ .text.vTaskDelay
+                0x000046c0       0x4c ./freertos/tasks.o
+                0x000046c0                vTaskDelay
+ .text.vTaskSuspend
+                0x0000470c       0xb8 ./freertos/tasks.o
+                0x0000470c                vTaskSuspend
+ .text.prvTaskIsTaskSuspended
+                0x000047c4       0x60 ./freertos/tasks.o
+ .text.vTaskResume
+                0x00004824       0x9c ./freertos/tasks.o
+                0x00004824                vTaskResume
+ .text.vTaskStartScheduler
+                0x000048c0       0x78 ./freertos/tasks.o
+                0x000048c0                vTaskStartScheduler
+ .text.vTaskSuspendAll
+                0x00004938       0x18 ./freertos/tasks.o
+                0x00004938                vTaskSuspendAll
+ .text.xTaskResumeAll
+                0x00004950      0x118 ./freertos/tasks.o
+                0x00004950                xTaskResumeAll
+ .text.xTaskGetTickCount
+                0x00004a68       0x1c ./freertos/tasks.o
+                0x00004a68                xTaskGetTickCount
+ .text.xTaskIncrementTick
+                0x00004a84      0x160 ./freertos/tasks.o
+                0x00004a84                xTaskIncrementTick
+ .text.vTaskSwitchContext
+                0x00004be4       0xf4 ./freertos/tasks.o
+                0x00004be4                vTaskSwitchContext
+ .text.vTaskPlaceOnEventList
+                0x00004cd8       0x3c ./freertos/tasks.o
+                0x00004cd8                vTaskPlaceOnEventList
+ .text.vTaskPlaceOnEventListRestricted
+                0x00004d14       0x4c ./freertos/tasks.o
+                0x00004d14                vTaskPlaceOnEventListRestricted
+ .text.xTaskRemoveFromEventList
+                0x00004d60       0xb8 ./freertos/tasks.o
+                0x00004d60                xTaskRemoveFromEventList
+ .text.xTaskRemoveFromUnorderedEventList
+                0x00004e18       0xb0 ./freertos/tasks.o
+                0x00004e18                xTaskRemoveFromUnorderedEventList
+ .text.vTaskSetTimeOutState
+                0x00004ec8       0x34 ./freertos/tasks.o
+                0x00004ec8                vTaskSetTimeOutState
+ .text.xTaskCheckForTimeOut
+                0x00004efc       0x9c ./freertos/tasks.o
+                0x00004efc                xTaskCheckForTimeOut
+ .text.vTaskMissedYield
+                0x00004f98       0x14 ./freertos/tasks.o
+                0x00004f98                vTaskMissedYield
+ .text.prvIdleTask
+                0x00004fac       0x24 ./freertos/tasks.o
+ .text.prvInitialiseTaskLists
+                0x00004fd0       0x88 ./freertos/tasks.o
+ .text.prvCheckTasksWaitingTermination
+                0x00005058       0x74 ./freertos/tasks.o
+ .text.prvDeleteTCB
+                0x000050cc       0x24 ./freertos/tasks.o
+ .text.prvResetNextTaskUnblockTime
+                0x000050f0       0x48 ./freertos/tasks.o
+ .text.xTaskGetSchedulerState
+                0x00005138       0x38 ./freertos/tasks.o
+                0x00005138                xTaskGetSchedulerState
+ .text.vTaskPriorityInherit
+                0x00005170       0xbc ./freertos/tasks.o
+                0x00005170                vTaskPriorityInherit
+ .text.xTaskPriorityDisinherit
+                0x0000522c       0xb8 ./freertos/tasks.o
+                0x0000522c                xTaskPriorityDisinherit
+ .text.pvTaskIncrementMutexHeldCount
+                0x000052e4       0x24 ./freertos/tasks.o
+                0x000052e4                pvTaskIncrementMutexHeldCount
+ .text.prvAddCurrentTaskToDelayedList
+                0x00005308       0xa8 ./freertos/tasks.o
+ .text.xTimerCreateTimerTask
+                0x000053b0       0x54 ./freertos/timers.o
+                0x000053b0                xTimerCreateTimerTask
+ .text.xTimerGenericCommand
+                0x00005404       0x9c ./freertos/timers.o
+                0x00005404                xTimerGenericCommand
+ .text.prvProcessExpiredTimer
+                0x000054a0       0x70 ./freertos/timers.o
+ .text.prvTimerTask
+                0x00005510       0x28 ./freertos/timers.o
+ .text.prvProcessTimerOrBlockTask
+                0x00005538       0x8c ./freertos/timers.o
+ .text.prvGetNextExpireTime
+                0x000055c4       0x40 ./freertos/timers.o
+ .text.prvSampleTimeNow
+                0x00005604       0x40 ./freertos/timers.o
+ .text.prvInsertTimerInActiveList
+                0x00005644       0x84 ./freertos/timers.o
+ .text.prvProcessReceivedCommands
+                0x000056c8      0x12c ./freertos/timers.o
+ .text.prvSwitchTimerLists
+                0x000057f4       0xb4 ./freertos/timers.o
+ .text.prvCheckForValidListAndQueue
+                0x000058a8       0x74 ./freertos/timers.o
+ .text.xTimerPendFunctionCallFromISR
+                0x0000591c       0x54 ./freertos/timers.o
+                0x0000591c                xTimerPendFunctionCallFromISR
+ .text.CLOCK_EnableClock
+                0x00005970       0x38 ./drivers/fsl_adc16.o
+ .text.ADC16_GetInstance
+                0x000059a8       0x34 ./drivers/fsl_adc16.o
+ .text.ADC16_Init
+                0x000059dc      0x100 ./drivers/fsl_adc16.o
+                0x000059dc                ADC16_Init
+ .text.ADC16_GetDefaultConfig
+                0x00005adc       0x48 ./drivers/fsl_adc16.o
+                0x00005adc                ADC16_GetDefaultConfig
+ .text.ADC16_DoAutoCalibration
+                0x00005b24      0x11c ./drivers/fsl_adc16.o
+                0x00005b24                ADC16_DoAutoCalibration
+ .text.ADC16_SetChannelMuxMode
+                0x00005c40       0x3c ./drivers/fsl_adc16.o
+                0x00005c40                ADC16_SetChannelMuxMode
+ .text.ADC16_GetStatusFlags
+                0x00005c7c       0x3c ./drivers/fsl_adc16.o
+                0x00005c7c                ADC16_GetStatusFlags
+ .text.ADC16_SetChannelConfig
+                0x00005cb8       0x48 ./drivers/fsl_adc16.o
+                0x00005cb8                ADC16_SetChannelConfig
+ .text.ADC16_GetChannelStatusFlags
+                0x00005d00       0x30 ./drivers/fsl_adc16.o
+                0x00005d00                ADC16_GetChannelStatusFlags
+ .text.CLOCK_SetEr32kClock
+                0x00005d30       0x30 ./drivers/fsl_clock.o
+ .text.CLOCK_GetLircClkFreq
+                0x00005d60       0x48 ./drivers/fsl_clock.o
+ .text.CLOCK_GetOsc0ErClkFreq
+                0x00005da8       0x28 ./drivers/fsl_clock.o
+                0x00005da8                CLOCK_GetOsc0ErClkFreq
+ .text.CLOCK_GetEr32kClkFreq
+                0x00005dd0       0x60 ./drivers/fsl_clock.o
+                0x00005dd0                CLOCK_GetEr32kClkFreq
+ .text.CLOCK_GetFreq
+                0x00005e30       0xc4 ./drivers/fsl_clock.o
+                0x00005e30                CLOCK_GetFreq
+ .text.CLOCK_SetSimConfig
+                0x00005ef4       0x2c ./drivers/fsl_clock.o
+                0x00005ef4                CLOCK_SetSimConfig
+ .text.CLOCK_GetInternalRefClkFreq
+                0x00005f20       0x48 ./drivers/fsl_clock.o
+                0x00005f20                CLOCK_GetInternalRefClkFreq
+ .text.CLOCK_GetPeriphClkFreq
+                0x00005f68       0x34 ./drivers/fsl_clock.o
+                0x00005f68                CLOCK_GetPeriphClkFreq
+ .text.CLOCK_GetOutClkFreq
+                0x00005f9c       0x68 ./drivers/fsl_clock.o
+                0x00005f9c                CLOCK_GetOutClkFreq
+ .text.CLOCK_SetMcgliteConfig
+                0x00006004      0x104 ./drivers/fsl_clock.o
+                0x00006004                CLOCK_SetMcgliteConfig
+ .text.NVIC_EnableIRQ
+                0x00006108       0x2c ./drivers/fsl_dma.o
+ .text.CLOCK_EnableClock
+                0x00006134       0x38 ./drivers/fsl_dma.o
+ .text.EnableIRQ
+                0x0000616c       0x2c ./drivers/fsl_dma.o
+ .text.DMA_ClearChannelStatusFlags
+                0x00006198       0x40 ./drivers/fsl_dma.o
+ .text.DMA_GetInstance
+                0x000061d8       0x34 ./drivers/fsl_dma.o
+ .text.DMA_Init
+                0x0000620c       0x24 ./drivers/fsl_dma.o
+                0x0000620c                DMA_Init
+ .text.DMA_SetTransferConfig
+                0x00006230       0xb8 ./drivers/fsl_dma.o
+                0x00006230                DMA_SetTransferConfig
+ .text.DMA_CreateHandle
+                0x000062e8       0x6c ./drivers/fsl_dma.o
+                0x000062e8                DMA_CreateHandle
+ .text.DMA_PrepareTransfer
+                0x00006354       0xb8 ./drivers/fsl_dma.o
+                0x00006354                DMA_PrepareTransfer
+ .text.DMA_HandleIRQ
+                0x0000640c       0x3c ./drivers/fsl_dma.o
+                0x0000640c                DMA_HandleIRQ
+ .text.DMA0_DriverIRQHandler
+                0x00006448       0x18 ./drivers/fsl_dma.o
+                0x00006448                DMA0_DriverIRQHandler
+ .text.DMA1_DriverIRQHandler
+                0x00006460       0x18 ./drivers/fsl_dma.o
+                0x00006460                DMA1_DriverIRQHandler
+ .text.DMA2_DriverIRQHandler
+                0x00006478       0x18 ./drivers/fsl_dma.o
+                0x00006478                DMA2_DriverIRQHandler
+ .text.DMA3_DriverIRQHandler
+                0x00006490       0x18 ./drivers/fsl_dma.o
+                0x00006490                DMA3_DriverIRQHandler
+ .text.CLOCK_EnableClock
+                0x000064a8       0x38 ./drivers/fsl_dmamux.o
+ .text.DMAMUX_GetInstance
+                0x000064e0       0x34 ./drivers/fsl_dmamux.o
+ .text.DMAMUX_Init
+                0x00006514       0x24 ./drivers/fsl_dmamux.o
+                0x00006514                DMAMUX_Init
+ .text.GPIO_WritePinOutput
+                0x00006538       0x34 ./drivers/fsl_gpio.o
+ .text.GPIO_GetInstance
+                0x0000656c       0x3c ./drivers/fsl_gpio.o
+ .text.GPIO_PinInit
+                0x000065a8       0x54 ./drivers/fsl_gpio.o
+                0x000065a8                GPIO_PinInit
+ .text.GPIO_ClearPinsInterruptFlags
+                0x000065fc       0x3c ./drivers/fsl_gpio.o
+                0x000065fc                GPIO_ClearPinsInterruptFlags
+ .text.NVIC_EnableIRQ
+                0x00006638       0x2c ./drivers/fsl_i2c.o
+ .text.CLOCK_EnableClock
+                0x00006664       0x38 ./drivers/fsl_i2c.o
+ .text.EnableIRQ
+                0x0000669c       0x2c ./drivers/fsl_i2c.o
+ .text.I2C_MasterClearStatusFlags
+                0x000066c8       0x58 ./drivers/fsl_i2c.o
+ .text.I2C_GetInstance
+                0x00006720       0x3c ./drivers/fsl_i2c.o
+                0x00006720                I2C_GetInstance
+ .text.I2C_InitTransferStateMachine
+                0x0000675c       0xa0 ./drivers/fsl_i2c.o
+ .text.I2C_CheckAndClearError
+                0x000067fc       0x40 ./drivers/fsl_i2c.o
+ .text.I2C_MasterTransferRunStateMachine
+                0x0000683c      0x268 ./drivers/fsl_i2c.o
+ .text.I2C_TransferCommonIRQHandler
+                0x00006aa4       0x54 ./drivers/fsl_i2c.o
+ .text.I2C_MasterInit
+                0x00006af8       0xf4 ./drivers/fsl_i2c.o
+                0x00006af8                I2C_MasterInit
+ .text.I2C_MasterGetDefaultConfig
+                0x00006bec       0x2c ./drivers/fsl_i2c.o
+                0x00006bec                I2C_MasterGetDefaultConfig
+ .text.I2C_EnableInterrupts
+                0x00006c18       0x68 ./drivers/fsl_i2c.o
+                0x00006c18                I2C_EnableInterrupts
+ .text.I2C_DisableInterrupts
+                0x00006c80       0x44 ./drivers/fsl_i2c.o
+                0x00006c80                I2C_DisableInterrupts
+ .text.I2C_MasterSetBaudRate
+                0x00006cc4       0xf4 ./drivers/fsl_i2c.o
+                0x00006cc4                I2C_MasterSetBaudRate
+ .text.I2C_MasterStart
+                0x00006db8       0x84 ./drivers/fsl_i2c.o
+                0x00006db8                I2C_MasterStart
+ .text.I2C_MasterRepeatedStart
+                0x00006e3c       0xd4 ./drivers/fsl_i2c.o
+                0x00006e3c                I2C_MasterRepeatedStart
+ .text.I2C_MasterStop
+                0x00006f10       0x68 ./drivers/fsl_i2c.o
+                0x00006f10                I2C_MasterStop
+ .text.I2C_MasterGetStatusFlags
+                0x00006f78       0x4c ./drivers/fsl_i2c.o
+                0x00006f78                I2C_MasterGetStatusFlags
+ .text.I2C_MasterTransferCreateHandle
+                0x00006fc4       0x6c ./drivers/fsl_i2c.o
+                0x00006fc4                I2C_MasterTransferCreateHandle
+ .text.I2C_MasterTransferNonBlocking
+                0x00007030       0x4c ./drivers/fsl_i2c.o
+                0x00007030                I2C_MasterTransferNonBlocking
+ .text.I2C_MasterTransferHandleIRQ
+                0x0000707c       0xac ./drivers/fsl_i2c.o
+                0x0000707c                I2C_MasterTransferHandleIRQ
+ .text.I2C0_DriverIRQHandler
+                0x00007128       0x20 ./drivers/fsl_i2c.o
+                0x00007128                I2C0_DriverIRQHandler
+ .text.I2C1_DriverIRQHandler
+                0x00007148       0x20 ./drivers/fsl_i2c.o
+                0x00007148                I2C1_DriverIRQHandler
+ .text.CLOCK_EnableClock
+                0x00007168       0x38 ./drivers/fsl_lptmr.o
+ .text.LPTMR_GetInstance
+                0x000071a0       0x34 ./drivers/fsl_lptmr.o
+ .text.LPTMR_Init
+                0x000071d4       0x84 ./drivers/fsl_lptmr.o
+                0x000071d4                LPTMR_Init
+ .text.LPTMR_GetDefaultConfig
+                0x00007258       0x3c ./drivers/fsl_lptmr.o
+                0x00007258                LPTMR_GetDefaultConfig
+ .text.LPUART0_DriverIRQHandler
+                0x00007294       0x24 ./drivers/fsl_lpuart.o
+                0x00007294                LPUART0_DriverIRQHandler
+ .text.LPUART1_DriverIRQHandler
+                0x000072b8       0x24 ./drivers/fsl_lpuart.o
+                0x000072b8                LPUART1_DriverIRQHandler
+ .text.NVIC_EnableIRQ
+                0x000072dc       0x2c ./drivers/fsl_slcd.o
+ .text.CLOCK_EnableClock
+                0x00007308       0x38 ./drivers/fsl_slcd.o
+ .text.EnableIRQ
+                0x00007340       0x2c ./drivers/fsl_slcd.o
+ .text.SLCD_GetInstance
+                0x0000736c       0x34 ./drivers/fsl_slcd.o
+ .text.SLCD_Init
+                0x000073a0      0x200 ./drivers/fsl_slcd.o
+                0x000073a0                SLCD_Init
+ .text.SLCD_GetDefaultConfig
+                0x000075a0       0x30 ./drivers/fsl_slcd.o
+                0x000075a0                SLCD_GetDefaultConfig
+ .text.SLCD_StartBlinkMode
+                0x000075d0       0x64 ./drivers/fsl_slcd.o
+                0x000075d0                SLCD_StartBlinkMode
+ .text.CLOCK_EnableClock
+                0x00007634       0x38 ./drivers/fsl_tpm.o
+ .text.TPM_GetInstance
+                0x0000766c       0x40 ./drivers/fsl_tpm.o
+ .text.TPM_Init
+                0x000076ac       0xd8 ./drivers/fsl_tpm.o
+                0x000076ac                TPM_Init
+ .text.TPM_GetDefaultConfig
+                0x00007784       0x4c ./drivers/fsl_tpm.o
+                0x00007784                TPM_GetDefaultConfig
+ .text.TPM_EnableInterrupts
+                0x000077d0       0x84 ./drivers/fsl_tpm.o
+                0x000077d0                TPM_EnableInterrupts
+ .text.NVIC_EnableIRQ
+                0x00007854       0x2c ./drivers/fsl_uart.o
+ .text.CLOCK_EnableClock
+                0x00007880       0x38 ./drivers/fsl_uart.o
+ .text.EnableIRQ
+                0x000078b8       0x2c ./drivers/fsl_uart.o
+ .text.UART_GetInstance
+                0x000078e4       0x40 ./drivers/fsl_uart.o
+                0x000078e4                UART_GetInstance
+ .text.UART_TransferGetRxRingBufferLength
+                0x00007924       0x50 ./drivers/fsl_uart.o
+ .text.UART_TransferIsRxRingBufferFull
+                0x00007974       0x3c ./drivers/fsl_uart.o
+ .text.UART_Init
+                0x000079b0      0x1d4 ./drivers/fsl_uart.o
+                0x000079b0                UART_Init
+ .text.UART_GetDefaultConfig
+                0x00007b84       0x2c ./drivers/fsl_uart.o
+                0x00007b84                UART_GetDefaultConfig
+ .text.UART_EnableInterrupts
+                0x00007bb0       0x58 ./drivers/fsl_uart.o
+                0x00007bb0                UART_EnableInterrupts
+ .text.UART_DisableInterrupts
+                0x00007c08       0x64 ./drivers/fsl_uart.o
+                0x00007c08                UART_DisableInterrupts
+ .text.UART_GetStatusFlags
+                0x00007c6c       0x28 ./drivers/fsl_uart.o
+                0x00007c6c                UART_GetStatusFlags
+ .text.UART_ClearStatusFlags
+                0x00007c94       0x80 ./drivers/fsl_uart.o
+                0x00007c94                UART_ClearStatusFlags
+ .text.UART_WriteNonBlocking
+                0x00007d14       0x34 ./drivers/fsl_uart.o
+ .text.UART_ReadNonBlocking
+                0x00007d48       0x38 ./drivers/fsl_uart.o
+ .text.UART_TransferCreateHandle
+                0x00007d80       0x7c ./drivers/fsl_uart.o
+                0x00007d80                UART_TransferCreateHandle
+ .text.UART_TransferStartRingBuffer
+                0x00007dfc       0x5c ./drivers/fsl_uart.o
+                0x00007dfc                UART_TransferStartRingBuffer
+ .text.UART_TransferHandleIRQ
+                0x00007e58      0x398 ./drivers/fsl_uart.o
+                0x00007e58                UART_TransferHandleIRQ
+ .text.UART_EnableTx
+                0x000081f0       0x40 ./drivers/fsl_uart_freertos.o
+ .text.UART_EnableRx
+                0x00008230       0x40 ./drivers/fsl_uart_freertos.o
+ .text.UART_RTOS_Callback
+                0x00008270       0xc8 ./drivers/fsl_uart_freertos.o
+ .text.UART_RTOS_Init
+                0x00008338      0x170 ./drivers/fsl_uart_freertos.o
+                0x00008338                UART_RTOS_Init
+ .text.CLOCK_SetSimSafeDivs
+                0x000084a8       0x20 ./board/clock_config.o
+ .text.BOARD_BootClockRUN
+                0x000084c8       0x34 ./board/clock_config.o
+                0x000084c8                BOARD_BootClockRUN
+ .text.CLOCK_EnableClock
+                0x000084fc       0x38 ./board/pin_mux.o
+ .text.PORT_SetPinConfig
+                0x00008534       0x28 ./board/pin_mux.o
+ .text.PORT_SetPinMux
+                0x0000855c       0x40 ./board/pin_mux.o
+ .text.BOARD_InitPins
+                0x0000859c       0xf0 ./board/pin_mux.o
+                0x0000859c                BOARD_InitPins
+ .text.BOARD_InitLCD
+                0x0000868c      0x1a4 ./board/pin_mux.o
+                0x0000868c                BOARD_InitLCD
+ .text.BOARD_InitBUTTONS
+                0x00008830       0x88 ./board/pin_mux.o
+                0x00008830                BOARD_InitBUTTONS
+ .text.BOARD_InitLEDs
+                0x000088b8       0x88 ./board/pin_mux.o
+                0x000088b8                BOARD_InitLEDs
+ .text.BOARD_InitDEBUG_UART
+                0x00008940       0x7c ./board/pin_mux.o
+                0x00008940                BOARD_InitDEBUG_UART
+ .text.SystemInit
+                0x000089bc       0x3c ./CMSIS/system_MKL43Z4.o
+                0x000089bc                SystemInit
+ .text          0x000089f8      0x114 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+                0x000089f8                __aeabi_uidiv
+                0x000089f8                __udivsi3
+                0x00008b04                __aeabi_uidivmod
+ .text          0x00008b0c      0x1d4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divsi3.o)
+                0x00008b0c                __divsi3
+                0x00008b0c                __aeabi_idiv
+                0x00008cd8                __aeabi_idivmod
+ .text          0x00008ce0        0x4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
+                0x00008ce0                __aeabi_idiv0
+                0x00008ce0                __aeabi_ldiv0
+ .text          0x00008ce4       0x40 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_aeabi_uldivmod.o)
+                0x00008ce4                __aeabi_uldivmod
+ .text          0x00008d24       0x58 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_muldi3.o)
+                0x00008d24                __muldi3
+                0x00008d24                __aeabi_lmul
+ .text          0x00008d7c      0x180 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivmoddi4.o)
+                0x00008d7c                __udivmoddi4
+ .text          0x00008efc      0x62c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(divdf3.o)
+                0x00008efc                __aeabi_ddiv
+ .text          0x00009528      0x4f4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(muldf3.o)
+                0x00009528                __aeabi_dmul
+ .text          0x00009a1c       0x6c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(fixdfsi.o)
+                0x00009a1c                __aeabi_d2iz
+ .text          0x00009a88       0x70 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(floatunsidf.o)
+                0x00009a88                __aeabi_ui2d
+ .text          0x00009af8       0x3c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_clzsi2.o)
+                0x00009af8                __clzsi2
+ .text          0x00009b34       0x18 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_clzdi2.o)
+                0x00009b34                __clzdi2
+ .text.atoi     0x00009b4c        0xc c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atoi.o)
+                0x00009b4c                atoi
+ .text.memcpy   0x00009b58       0x7c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memcpy-stub.o)
+                0x00009b58                memcpy
+ .text.memset   0x00009bd4       0x8c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memset.o)
+                0x00009bd4                memset
+ .text          0x00009c60       0x88 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strcmp.o)
+                0x00009c60                strcmp
+ .text.strcpy   0x00009ce8       0x10 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strcpy.o)
+                0x00009ce8                strcpy
+ .text.strlen   0x00009cf8       0x68 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strlen-stub.o)
+                0x00009cf8                strlen
+ .text._strtol_l.isra.0
+                0x00009d60      0x14c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strtol.o)
+ .text.strtol   0x00009eac       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strtol.o)
+                0x00009eac                strtol
+ .text.__locale_ctype_ptr_l
+                0x00009ed8        0x8 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-locale.o)
+                0x00009ed8                __locale_ctype_ptr_l
+ .text.__ascii_mbtowc
+                0x00009ee0       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-mbtowc_r.o)
+                0x00009ee0                __ascii_mbtowc
+ .text.__ascii_wctomb
+                0x00009f0c       0x1c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-wctomb_r.o)
+                0x00009f0c                __ascii_wctomb
+ .text.__main   0x00009f28        0xc c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(_cr__main.o)
+                0x00009f28                __main
+ .text._initio  0x00009f34       0x7c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(initio.o)
+                0x00009f34                _initio
+ .text.setvbuf  0x00009fb0       0x4c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(setvbuf.o)
+                0x00009fb0                setvbuf
+ .text._fdopen  0x00009ffc       0x74 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_fdopen.o)
+                0x00009ffc                _fdopen
+ .text.fclose   0x0000a070       0x5c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fclose.o)
+                0x0000a070                fclose
+ .text.fflush   0x0000a0cc       0x44 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fflush.o)
+                0x0000a0cc                fflush
+ .text.fseek    0x0000a110       0xf0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fseek.o)
+                0x0000a110                fseek
+ .text.ftell    0x0000a200       0x48 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(ftell.o)
+                0x0000a200                ftell
+ .text.remove   0x0000a248       0x12 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(remove.o)
+                0x0000a248                remove
+ *fill*         0x0000a25a        0x2 ff
+ .text._do_fflush
+                0x0000a25c       0x48 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_do_fflush.o)
+                0x0000a25c                _do_fflush
+ .text._fflush  0x0000a2a4       0x60 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_fflush.o)
+                0x0000a2a4                _fflush
+ .text._Cwritebuf
+                0x0000a304       0x6c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_writebuf.o)
+                0x0000a304                _Cwritebuf
+ .text.free     0x0000a370       0x2e c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(alloc.o)
+                0x0000a370                free
+ *fill*         0x0000a39e        0x2 ff
+ .text._deferredlazyseek
+                0x0000a3a0       0x40 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_deferredlazyseek.o)
+                0x0000a3a0                _deferredlazyseek
+ .text.__sys_close
+                0x0000a3e0        0x6 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_close.o)
+                0x0000a3e0                __sys_close
+ .text.__sys_flen
+                0x0000a3e6        0x6 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_flen.o)
+                0x0000a3e6                __sys_flen
+ .text.__sys_istty
+                0x0000a3ec        0x6 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_istty.o)
+                0x0000a3ec                __sys_istty
+ .text.__sys_remove
+                0x0000a3f2        0x6 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_remove.o)
+                0x0000a3f2                __sys_remove
+ .text.__sys_seek
+                0x0000a3f8        0x6 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_seek.o)
+                0x0000a3f8                __sys_seek
+ .text.__sys_tmpnam
+                0x0000a3fe        0x6 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_tmpnam.o)
+                0x0000a3fe                __sys_tmpnam
+ .text.__sys_write
+                0x0000a404        0x4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_write.o)
+                0x0000a404                __sys_write
+ *(.rodata .rodata.* .constdata .constdata.*)
+ .rodata        0x0000a408       0x2e ./source/SmartTorqueFW.o
+ *fill*         0x0000a436        0x2 ff
+ .rodata        0x0000a438      0x1c0 ./source/_Bluetooth.o
+ .rodata        0x0000a5f8        0x4 ./source/_Display.o
+ .rodata.Display_Number
+                0x0000a5fc       0x28 ./source/_Display.o
+ .rodata        0x0000a624       0x69 ./source/_HMI.o
+ *fill*         0x0000a68d        0x3 ff
+ .rodata        0x0000a690       0x14 ./source/_Sys_Control.o
+ .rodata.ConfigurationBuilder
+                0x0000a6a4       0x2c ./source/_Sys_Control.o
+ .rodata        0x0000a6d0       0x18 ./freertos/tasks.o
+                0x0000a6d8                FreeRTOSDebugConfig
+ .rodata        0x0000a6e8        0xd ./freertos/timers.o
+ *fill*         0x0000a6f5        0x3 ff
+ .rodata.prvProcessReceivedCommands
+                0x0000a6f8       0x28 ./freertos/timers.o
+ .rodata.CLOCK_GetFreq
+                0x0000a720       0x50 ./drivers/fsl_clock.o
+ .rodata.lircFreqs.5082
+                0x0000a770        0x8 ./drivers/fsl_clock.o
+ .rodata.s_dmaIRQNumber
+                0x0000a778        0x4 ./drivers/fsl_dma.o
+ .rodata.s_portBases
+                0x0000a77c       0x14 ./drivers/fsl_gpio.o
+ .rodata.s_gpioBases
+                0x0000a790       0x14 ./drivers/fsl_gpio.o
+ .rodata.s_i2cDividerTable
+                0x0000a7a4       0x80 ./drivers/fsl_i2c.o
+ .rodata.s_i2cBases
+                0x0000a824        0x8 ./drivers/fsl_i2c.o
+ .rodata.s_i2cIrqs
+                0x0000a82c        0x2 ./drivers/fsl_i2c.o
+ *fill*         0x0000a82e        0x2 ff
+ .rodata.s_i2cClocks
+                0x0000a830        0x8 ./drivers/fsl_i2c.o
+ .rodata.s_tpmBases
+                0x0000a838        0xc ./drivers/fsl_tpm.o
+ .rodata.s_tpmClocks
+                0x0000a844        0xc ./drivers/fsl_tpm.o
+ .rodata.s_uartBases
+                0x0000a850        0xc ./drivers/fsl_uart.o
+ .rodata.s_uartIRQ
+                0x0000a85c        0x3 ./drivers/fsl_uart.o
+ *fill*         0x0000a85f        0x1 ff
+ .rodata.s_uartClock
+                0x0000a860        0xc ./drivers/fsl_uart.o
+ .rodata.mcgliteConfig_BOARD_BootClockRUN
+                0x0000a86c        0x6 ./board/clock_config.o
+                0x0000a86c                mcgliteConfig_BOARD_BootClockRUN
+ *fill*         0x0000a872        0x2 ff
+ .rodata.simConfig_BOARD_BootClockRUN
+                0x0000a874        0x8 ./board/clock_config.o
+                0x0000a874                simConfig_BOARD_BootClockRUN
+ .rodata        0x0000a87c       0x40 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(divdf3.o)
+ .rodata        0x0000a8bc       0x40 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(muldf3.o)
+ .rodata.str1.4
+                0x0000a8fc       0x14 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-locale.o)
+                                 0x12 (size before relaxing)
+ .rodata._ctype_
+                0x0000a910      0x101 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-ctype_.o)
+                0x0000a910                _ctype_
+ .rodata.str1.1
+                0x0000aa11        0x4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(initio.o)
+ *fill*         0x0000aa15        0x3 ff
+ .rodata.__num_Ciob_streams
+                0x0000aa18        0x4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__ciob.o)
+                0x0000aa18                __num_Ciob_streams
+                0x0000aa1c                . = ALIGN (0x4)
+
+.glue_7         0x0000aa1c        0x0
+ .glue_7        0x0000aa1c        0x0 linker stubs
+
+.glue_7t        0x0000aa1c        0x0
+ .glue_7t       0x0000aa1c        0x0 linker stubs
+
+.vfp11_veneer   0x0000aa1c        0x0
+ .vfp11_veneer  0x0000aa1c        0x0 linker stubs
+
+.v4_bx          0x0000aa1c        0x0
+ .v4_bx         0x0000aa1c        0x0 linker stubs
+
+.init           0x0000aa1c        0x4
+ .init          0x0000aa1c        0x4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+                0x0000aa1c                _init
+
+.fini           0x0000aa20        0x4
+ .fini          0x0000aa20        0x4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+                0x0000aa20                _fini
+
+.iplt           0x0000aa24        0x0
+ .iplt          0x0000aa24        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x0000aa24                __exidx_start = .
+
+.ARM.exidx      0x0000aa24        0x8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x0000aa24        0x8 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivmoddi4.o)
+                0x0000aa2c                __exidx_end = .
+                0x0000aa2c                _etext = .
+
+.rel.dyn        0x0000aa2c        0x0
+ .rel.iplt      0x0000aa2c        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+
+.m_usb_data
+ *(m_usb_bdt)
+
+.mtb_buffer_default
+                0x1fffe000       0x80
+ *(.mtb*)
+ .mtb.$RAM1     0x1fffe000       0x80 ./board/mtb.o
+                0x1fffe000                __mtb_buffer__
+
+.uninit_RESERVED
+                0x1fffe080        0x0
+ *(.bss.$RESERVED*)
+                0x1fffe080                . = ALIGN (0x4)
+                0x1fffe080                _end_uninit_RESERVED = .
+
+.data           0x1fffe080      0x5b8 load address 0x0000aa2c
+ FILL mask 0xff
+                0x1fffe080                _data = .
+ *(vtable)
+ *(.ramfunc*)
+ *(.data*)
+ .data.uart_config
+                0x1fffe080       0x18 ./source/_Bluetooth.o
+                0x1fffe080                uart_config
+ .data.uxCriticalNesting
+                0x1fffe098        0x4 ./freertos/port.o
+ .data.SystemCoreClock
+                0x1fffe09c        0x4 ./CMSIS/system_MKL43Z4.o
+                0x1fffe09c                SystemCoreClock
+ .data.impure_data
+                0x1fffe0a0      0x428 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x1fffe4c8        0x4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-impure.o)
+                0x1fffe4c8                _impure_ptr
+ .data.__global_locale
+                0x1fffe4cc      0x16c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-locale.o)
+                0x1fffe4cc                __global_locale
+                0x1fffe638                . = ALIGN (0x4)
+                0x1fffe638                _edata = .
+
+.igot.plt       0x1fffe638        0x0 load address 0x0000afe4
+ .igot.plt      0x1fffe638        0x0 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+
+.bss            0x1fffe638     0x2d90 load address 0x0000afe4
+                0x1fffe638                _bss = .
+ *(.bss*)
+ .bss.s_debugConsole
+                0x1fffe638       0x10 ./utilities/fsl_debug_console.o
+ .bss.ulCount.9348
+                0x1fffe648        0x4 ./source/SmartTorqueFW.o
+ .bss.adc16ChanConfig
+                0x1fffe64c        0x8 ./source/_ADCSense.o
+                0x1fffe64c                adc16ChanConfig
+ .bss.adc16Config
+                0x1fffe654        0x9 ./source/_ADCSense.o
+                0x1fffe654                adc16Config
+ *fill*         0x1fffe65d        0x3 
+ .bss.DMA_handle
+                0x1fffe660       0x10 ./source/_ADCSense.o
+                0x1fffe660                DMA_handle
+ .bss.DMA_transfer
+                0x1fffe670       0x10 ./source/_ADCSense.o
+                0x1fffe670                DMA_transfer
+ .bss.gBatterySense
+                0x1fffe680       0x20 ./source/_ADCSense.o
+                0x1fffe680                gBatterySense
+ .bss.temp      0x1fffe6a0        0x4 ./source/_ADCSense.o
+                0x1fffe6a0                temp
+ .bss.ADC16_Array
+                0x1fffe6a4       0x80 ./source/_ADCSense.o
+                0x1fffe6a4                ADC16_Array
+ .bss.TorqueVoltage
+                0x1fffe724        0x4 ./source/_ADCSense.o
+                0x1fffe724                TorqueVoltage
+ .bss.BatteryVoltage
+                0x1fffe728        0x4 ./source/_ADCSense.o
+                0x1fffe728                BatteryVoltage
+ .bss.channelswap.6167
+                0x1fffe72c        0x2 ./source/_ADCSense.o
+ *fill*         0x1fffe72e        0x2 
+ .bss.bglib_temp_msg
+                0x1fffe730       0x1c ./source/_Bluetooth.o
+                0x1fffe730                bglib_temp_msg
+ .bss.bglib_output
+                0x1fffe74c        0x4 ./source/_Bluetooth.o
+                0x1fffe74c                bglib_output
+ .bss.msg_Head  0x1fffe750        0x4 ./source/_Bluetooth.o
+                0x1fffe750                msg_Head
+ .bss.btBuffer  0x1fffe754       0x40 ./source/_Bluetooth.o
+                0x1fffe754                btBuffer
+ .bss.respBuffer
+                0x1fffe794       0x40 ./source/_Bluetooth.o
+                0x1fffe794                respBuffer
+ .bss.pck       0x1fffe7d4        0x4 ./source/_Bluetooth.o
+                0x1fffe7d4                pck
+ .bss.Bluetooth_rx
+                0x1fffe7d8       0x40 ./source/_Bluetooth.o
+                0x1fffe7d8                Bluetooth_rx
+ .bss.Bluetooth_len
+                0x1fffe818        0x1 ./source/_Bluetooth.o
+                0x1fffe818                Bluetooth_len
+ .bss.message_recieved
+                0x1fffe819        0x1 ./source/_Bluetooth.o
+                0x1fffe819                message_recieved
+ *fill*         0x1fffe81a        0x2 
+ .bss.my_address
+                0x1fffe81c        0x6 ./source/_Bluetooth.o
+                0x1fffe81c                my_address
+ *fill*         0x1fffe822        0x2 
+ .bss.connected_address
+                0x1fffe824        0x6 ./source/_Bluetooth.o
+                0x1fffe824                connected_address
+ *fill*         0x1fffe82a        0x2 
+ .bss.uart_handle
+                0x1fffe82c       0x28 ./source/_Bluetooth.o
+                0x1fffe82c                uart_handle
+ .bss.t_uart_handle
+                0x1fffe854       0x30 ./source/_Bluetooth.o
+                0x1fffe854                t_uart_handle
+ .bss.endpoint  0x1fffe884        0x1 ./source/_Bluetooth.o
+                0x1fffe884                endpoint
+ .bss.BTConnected
+                0x1fffe885        0x1 ./source/_Bluetooth.o
+                0x1fffe885                BTConnected
+ .bss.rxIndex   0x1fffe886        0x1 ./source/_Bluetooth.o
+                0x1fffe886                rxIndex
+ .bss.serviceLocation
+                0x1fffe887        0x1 ./source/_Bluetooth.o
+                0x1fffe887                serviceLocation
+ .bss.g_m_handle
+                0x1fffe888       0x28 ./source/_FRAM.o
+                0x1fffe888                g_m_handle
+ .bss.completionFlag
+                0x1fffe8b0        0x1 ./source/_FRAM.o
+                0x1fffe8b0                completionFlag
+ .bss.nakFlag   0x1fffe8b1        0x1 ./source/_FRAM.o
+                0x1fffe8b1                nakFlag
+ *fill*         0x1fffe8b2        0x2 
+ .bss._FRAM     0x1fffe8b4       0x38 ./source/_FRAM.o
+                0x1fffe8b4                _FRAM
+ .bss.UP_FLAG   0x1fffe8ec        0x1 ./source/_HMI.o
+                0x1fffe8ec                UP_FLAG
+ .bss.DOWN_FLAG
+                0x1fffe8ed        0x1 ./source/_HMI.o
+                0x1fffe8ed                DOWN_FLAG
+ .bss.CLEAR_FLAG
+                0x1fffe8ee        0x1 ./source/_HMI.o
+                0x1fffe8ee                CLEAR_FLAG
+ .bss.MODE_FLAG
+                0x1fffe8ef        0x1 ./source/_HMI.o
+                0x1fffe8ef                MODE_FLAG
+ .bss.POWER_FLAG
+                0x1fffe8f0        0x1 ./source/_HMI.o
+                0x1fffe8f0                POWER_FLAG
+ *fill*         0x1fffe8f1        0x3 
+ .bss.realTime  0x1fffe8f4        0x8 ./source/_RTC.o
+                0x1fffe8f4                realTime
+ .bss.mainConfig
+                0x1fffe8fc       0x14 ./source/_Sys_Control.o
+                0x1fffe8fc                mainConfig
+ .bss.builderConfig
+                0x1fffe910       0x14 ./source/_Sys_Control.o
+                0x1fffe910                builderConfig
+ .bss.save      0x1fffe924        0x1 ./source/_Sys_Control.o
+                0x1fffe924                save
+ .bss.underConstruction
+                0x1fffe925        0x1 ./source/_Sys_Control.o
+                0x1fffe925                underConstruction
+ .bss.resume    0x1fffe926        0x1 ./source/_Sys_Control.o
+                0x1fffe926                resume
+ .bss.DOWN      0x1fffe927        0x1 ./source/_Sys_Control.o
+                0x1fffe927                DOWN
+ .bss.UP        0x1fffe928        0x1 ./source/_Sys_Control.o
+                0x1fffe928                UP
+ *fill*         0x1fffe929        0x3 
+ .bss.xBuildHandle
+                0x1fffe92c        0x4 ./source/_Sys_Control.o
+                0x1fffe92c                xBuildHandle
+ .bss.count     0x1fffe930        0x2 ./source/_Timer.o
+                0x1fffe930                count
+ *fill*         0x1fffe932        0x2 
+ .bss.ucHeap    0x1fffe934     0x2800 ./freertos/heap_4.o
+ .bss.xStart    0x20001134        0x8 ./freertos/heap_4.o
+ .bss.pxEnd     0x2000113c        0x4 ./freertos/heap_4.o
+ .bss.xFreeBytesRemaining
+                0x20001140        0x4 ./freertos/heap_4.o
+ .bss.xMinimumEverFreeBytesRemaining
+                0x20001144        0x4 ./freertos/heap_4.o
+ .bss.xBlockAllocatedBit
+                0x20001148        0x4 ./freertos/heap_4.o
+ .bss.xQueueRegistry
+                0x2000114c       0x40 ./freertos/queue.o
+                0x2000114c                xQueueRegistry
+ .bss.pxCurrentTCB
+                0x2000118c        0x4 ./freertos/tasks.o
+                0x2000118c                pxCurrentTCB
+ .bss.pxReadyTasksLists
+                0x20001190       0x64 ./freertos/tasks.o
+ .bss.xDelayedTaskList1
+                0x200011f4       0x14 ./freertos/tasks.o
+ .bss.xDelayedTaskList2
+                0x20001208       0x14 ./freertos/tasks.o
+ .bss.pxDelayedTaskList
+                0x2000121c        0x4 ./freertos/tasks.o
+ .bss.pxOverflowDelayedTaskList
+                0x20001220        0x4 ./freertos/tasks.o
+ .bss.xPendingReadyList
+                0x20001224       0x14 ./freertos/tasks.o
+ .bss.xTasksWaitingTermination
+                0x20001238       0x14 ./freertos/tasks.o
+ .bss.uxDeletedTasksWaitingCleanUp
+                0x2000124c        0x4 ./freertos/tasks.o
+ .bss.xSuspendedTaskList
+                0x20001250       0x14 ./freertos/tasks.o
+ .bss.uxCurrentNumberOfTasks
+                0x20001264        0x4 ./freertos/tasks.o
+ .bss.xTickCount
+                0x20001268        0x4 ./freertos/tasks.o
+ .bss.uxTopReadyPriority
+                0x2000126c        0x4 ./freertos/tasks.o
+ .bss.xSchedulerRunning
+                0x20001270        0x4 ./freertos/tasks.o
+ .bss.uxPendedTicks
+                0x20001274        0x4 ./freertos/tasks.o
+ .bss.xYieldPending
+                0x20001278        0x4 ./freertos/tasks.o
+ .bss.xNumOfOverflows
+                0x2000127c        0x4 ./freertos/tasks.o
+ .bss.uxTaskNumber
+                0x20001280        0x4 ./freertos/tasks.o
+ .bss.xNextTaskUnblockTime
+                0x20001284        0x4 ./freertos/tasks.o
+ .bss.xIdleTaskHandle
+                0x20001288        0x4 ./freertos/tasks.o
+ .bss.uxSchedulerSuspended
+                0x2000128c        0x4 ./freertos/tasks.o
+ .bss.xActiveTimerList1
+                0x20001290       0x14 ./freertos/timers.o
+ .bss.xActiveTimerList2
+                0x200012a4       0x14 ./freertos/timers.o
+ .bss.pxCurrentTimerList
+                0x200012b8        0x4 ./freertos/timers.o
+ .bss.pxOverflowTimerList
+                0x200012bc        0x4 ./freertos/timers.o
+ .bss.xTimerQueue
+                0x200012c0        0x4 ./freertos/timers.o
+ .bss.xTimerTaskHandle
+                0x200012c4        0x4 ./freertos/timers.o
+ .bss.xLastTime.4599
+                0x200012c8        0x4 ./freertos/timers.o
+ .bss.g_xtal0Freq
+                0x200012cc        0x4 ./drivers/fsl_clock.o
+                0x200012cc                g_xtal0Freq
+ .bss.g_xtal32Freq
+                0x200012d0        0x4 ./drivers/fsl_clock.o
+                0x200012d0                g_xtal32Freq
+ .bss.s_DMAHandle
+                0x200012d4       0x10 ./drivers/fsl_dma.o
+ .bss.s_i2cHandle
+                0x200012e4        0x8 ./drivers/fsl_i2c.o
+ .bss.s_i2cMasterIsr
+                0x200012ec        0x4 ./drivers/fsl_i2c.o
+ .bss.s_i2cSlaveIsr
+                0x200012f0        0x4 ./drivers/fsl_i2c.o
+ .bss.s_lpuartHandle
+                0x200012f4        0x8 ./drivers/fsl_lpuart.o
+ .bss.s_lpuartIsr
+                0x200012fc        0x4 ./drivers/fsl_lpuart.o
+ .bss.s_uartHandle
+                0x20001300        0xc ./drivers/fsl_uart.o
+ .bss.s_uartIsr
+                0x2000130c        0x4 ./drivers/fsl_uart.o
+ .bss.errno     0x20001310        0x4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(errno.o)
+                0x20001310                errno
+ .bss.__Ciob    0x20001314       0xb4 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__ciob.o)
+                0x20001314                __Ciob
+ *(COMMON)
+                0x200013c8                . = ALIGN (0x4)
+                0x200013c8                _ebss = .
+                [!provide]                PROVIDE (end, .)
+
+.noinit         0x200013c8        0x0 load address 0x0000afe4
+                0x200013c8                _noinit = .
+ *(.noinit*)
+                0x200013c8                . = ALIGN (0x4)
+                0x200013c8                _end_noinit = .
+
+.heap           0x200013c8      0x800 load address 0x0000afe4
+                0x200013c8                _pvHeapStart = .
+                0x20001bc8                . = (. + 0x800)
+ *fill*         0x200013c8      0x800 
+                0x20001bc8                . = ALIGN (0x4)
+                0x20001bc8                _pvHeapLimit = .
+
+.heap2stackfill
+                0x20001bc8      0x800 load address 0x0000afe4
+                0x200023c8                . = (. + 0x800)
+ *fill*         0x20001bc8      0x800 
+
+.stack          0x20005800        0x0
+                0x20005800                _vStackBase = .
+                0x20005800                . = ALIGN (0x4)
+                0x20006000                _vStackTop = (. + 0x800)
+OUTPUT(SmartTorqueFW2.axf elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x28
+ .ARM.attributes
+                0x00000000       0x1e c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+ .ARM.attributes
+                0x0000001e       0x32 ./utilities/fsl_debug_console.o
+ .ARM.attributes
+                0x00000050       0x32 ./startup/startup_mkl43z4.o
+ .ARM.attributes
+                0x00000082       0x32 ./source/SmartTorqueFW.o
+ .ARM.attributes
+                0x000000b4       0x32 ./source/_ADCSense.o
+ .ARM.attributes
+                0x000000e6       0x32 ./source/_Bluetooth.o
+ .ARM.attributes
+                0x00000118       0x32 ./source/_Display.o
+ .ARM.attributes
+                0x0000014a       0x32 ./source/_FRAM.o
+ .ARM.attributes
+                0x0000017c       0x32 ./source/_HMI.o
+ .ARM.attributes
+                0x000001ae       0x32 ./source/_RTC.o
+ .ARM.attributes
+                0x000001e0       0x32 ./source/_Sys_Control.o
+ .ARM.attributes
+                0x00000212       0x32 ./source/_Timer.o
+ .ARM.attributes
+                0x00000244       0x32 ./freertos/event_groups.o
+ .ARM.attributes
+                0x00000276       0x32 ./freertos/fsl_tickless_lptmr.o
+ .ARM.attributes
+                0x000002a8       0x32 ./freertos/heap_4.o
+ .ARM.attributes
+                0x000002da       0x32 ./freertos/list.o
+ .ARM.attributes
+                0x0000030c       0x32 ./freertos/port.o
+ .ARM.attributes
+                0x0000033e       0x32 ./freertos/queue.o
+ .ARM.attributes
+                0x00000370       0x32 ./freertos/tasks.o
+ .ARM.attributes
+                0x000003a2       0x32 ./freertos/timers.o
+ .ARM.attributes
+                0x000003d4       0x32 ./drivers/fsl_adc16.o
+ .ARM.attributes
+                0x00000406       0x32 ./drivers/fsl_clock.o
+ .ARM.attributes
+                0x00000438       0x32 ./drivers/fsl_dma.o
+ .ARM.attributes
+                0x0000046a       0x32 ./drivers/fsl_dmamux.o
+ .ARM.attributes
+                0x0000049c       0x32 ./drivers/fsl_gpio.o
+ .ARM.attributes
+                0x000004ce       0x32 ./drivers/fsl_i2c.o
+ .ARM.attributes
+                0x00000500       0x32 ./drivers/fsl_lptmr.o
+ .ARM.attributes
+                0x00000532       0x32 ./drivers/fsl_lpuart.o
+ .ARM.attributes
+                0x00000564       0x32 ./drivers/fsl_slcd.o
+ .ARM.attributes
+                0x00000596       0x32 ./drivers/fsl_tpm.o
+ .ARM.attributes
+                0x000005c8       0x32 ./drivers/fsl_uart.o
+ .ARM.attributes
+                0x000005fa       0x32 ./drivers/fsl_uart_freertos.o
+ .ARM.attributes
+                0x0000062c       0x32 ./board/clock_config.o
+ .ARM.attributes
+                0x0000065e       0x32 ./board/mtb.o
+ .ARM.attributes
+                0x00000690       0x32 ./board/pin_mux.o
+ .ARM.attributes
+                0x000006c2       0x32 ./CMSIS/system_MKL43Z4.o
+ .ARM.attributes
+                0x000006f4       0x1e c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000712       0x1e c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x00000730       0x1e c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x0000074e       0x1e c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x0000076c       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_muldi3.o)
+ .ARM.attributes
+                0x00000798       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x000007c4       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(divdf3.o)
+ .ARM.attributes
+                0x000007f0       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(muldf3.o)
+ .ARM.attributes
+                0x0000081c       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(fixdfsi.o)
+ .ARM.attributes
+                0x00000848       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(floatunsidf.o)
+ .ARM.attributes
+                0x00000874       0x1e c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_clzsi2.o)
+ .ARM.attributes
+                0x00000892       0x1e c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_clzdi2.o)
+ .ARM.attributes
+                0x000008b0       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atoi.o)
+ .ARM.attributes
+                0x000008dc       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000908       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x00000934       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000960       0x1b c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strcmp.o)
+ .ARM.attributes
+                0x0000097b       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strcpy.o)
+ .ARM.attributes
+                0x000009a7       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strlen-stub.o)
+ .ARM.attributes
+                0x000009d3       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strtol.o)
+ .ARM.attributes
+                0x000009ff       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-locale.o)
+ .ARM.attributes
+                0x00000a2b       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-mbtowc_r.o)
+ .ARM.attributes
+                0x00000a57       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-wctomb_r.o)
+ .ARM.attributes
+                0x00000a83       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-ctype_.o)
+ .ARM.attributes
+                0x00000aaf       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(_cr__main.o)
+ .ARM.attributes
+                0x00000ae0       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(initio.o)
+ .ARM.attributes
+                0x00000b11       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(setvbuf.o)
+ .ARM.attributes
+                0x00000b42       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_fdopen.o)
+ .ARM.attributes
+                0x00000b73       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fclose.o)
+ .ARM.attributes
+                0x00000ba4       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fflush.o)
+ .ARM.attributes
+                0x00000bd5       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fseek.o)
+ .ARM.attributes
+                0x00000c06       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(ftell.o)
+ .ARM.attributes
+                0x00000c37       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(remove.o)
+ .ARM.attributes
+                0x00000c68       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_do_fflush.o)
+ .ARM.attributes
+                0x00000c99       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_fflush.o)
+ .ARM.attributes
+                0x00000cca       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_writebuf.o)
+ .ARM.attributes
+                0x00000cfb       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(alloc.o)
+ .ARM.attributes
+                0x00000d2c       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(errno.o)
+ .ARM.attributes
+                0x00000d5d       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_deferredlazyseek.o)
+ .ARM.attributes
+                0x00000d8e       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__ciob.o)
+ .ARM.attributes
+                0x00000dbf       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_close.o)
+ .ARM.attributes
+                0x00000df0       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_flen.o)
+ .ARM.attributes
+                0x00000e21       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_istty.o)
+ .ARM.attributes
+                0x00000e52       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_remove.o)
+ .ARM.attributes
+                0x00000e83       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_seek.o)
+ .ARM.attributes
+                0x00000eb4       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_tmpnam.o)
+ .ARM.attributes
+                0x00000ee5       0x31 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_write.o)
+
+.comment        0x00000000       0x6e
+ .comment       0x00000000       0x6e ./utilities/fsl_debug_console.o
+                                 0x6f (size before relaxing)
+ .comment       0x0000006e       0x6f ./startup/startup_mkl43z4.o
+ .comment       0x0000006e       0x6f ./source/SmartTorqueFW.o
+ .comment       0x0000006e       0x6f ./source/_ADCSense.o
+ .comment       0x0000006e       0x6f ./source/_Bluetooth.o
+ .comment       0x0000006e       0x6f ./source/_Display.o
+ .comment       0x0000006e       0x6f ./source/_FRAM.o
+ .comment       0x0000006e       0x6f ./source/_HMI.o
+ .comment       0x0000006e       0x6f ./source/_RTC.o
+ .comment       0x0000006e       0x6f ./source/_Sys_Control.o
+ .comment       0x0000006e       0x6f ./source/_Timer.o
+ .comment       0x0000006e       0x6f ./freertos/event_groups.o
+ .comment       0x0000006e       0x6f ./freertos/fsl_tickless_lptmr.o
+ .comment       0x0000006e       0x6f ./freertos/heap_4.o
+ .comment       0x0000006e       0x6f ./freertos/list.o
+ .comment       0x0000006e       0x6f ./freertos/port.o
+ .comment       0x0000006e       0x6f ./freertos/queue.o
+ .comment       0x0000006e       0x6f ./freertos/tasks.o
+ .comment       0x0000006e       0x6f ./freertos/timers.o
+ .comment       0x0000006e       0x6f ./drivers/fsl_adc16.o
+ .comment       0x0000006e       0x6f ./drivers/fsl_clock.o
+ .comment       0x0000006e       0x6f ./drivers/fsl_dma.o
+ .comment       0x0000006e       0x6f ./drivers/fsl_dmamux.o
+ .comment       0x0000006e       0x6f ./drivers/fsl_gpio.o
+ .comment       0x0000006e       0x6f ./drivers/fsl_i2c.o
+ .comment       0x0000006e       0x6f ./drivers/fsl_lptmr.o
+ .comment       0x0000006e       0x6f ./drivers/fsl_lpuart.o
+ .comment       0x0000006e       0x6f ./drivers/fsl_slcd.o
+ .comment       0x0000006e       0x6f ./drivers/fsl_tpm.o
+ .comment       0x0000006e       0x6f ./drivers/fsl_uart.o
+ .comment       0x0000006e       0x6f ./drivers/fsl_uart_freertos.o
+ .comment       0x0000006e       0x6f ./board/clock_config.o
+ .comment       0x0000006e       0x6f ./board/mtb.o
+ .comment       0x0000006e       0x6f ./board/pin_mux.o
+ .comment       0x0000006e       0x6f ./CMSIS/system_MKL43Z4.o
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(_cr__main.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(initio.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(setvbuf.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_fdopen.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fclose.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fflush.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(fseek.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(ftell.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(remove.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_do_fflush.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_fflush.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_writebuf.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(alloc.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(errno.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_c.a(_deferredlazyseek.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__ciob.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_close.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_flen.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_istty.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_remove.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_seek.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_tmpnam.o)
+ .comment       0x0000006e       0x6f c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libcr_nohost_nf.a(__sys_write.o)
+
+.debug_frame    0x00000000      0x418
+ .debug_frame   0x00000000       0x20 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00000020       0x20 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divsi3.o)
+ .debug_frame   0x00000040       0x34 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_muldi3.o)
+ .debug_frame   0x00000074       0x3c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x000000b0       0x3c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(divdf3.o)
+ .debug_frame   0x000000ec       0x3c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(muldf3.o)
+ .debug_frame   0x00000128       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(fixdfsi.o)
+ .debug_frame   0x00000154       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(floatunsidf.o)
+ .debug_frame   0x00000180       0x40 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atoi.o)
+ .debug_frame   0x000001c0       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x000001ec       0x2c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-memset.o)
+ .debug_frame   0x00000218       0x20 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strcmp.o)
+ .debug_frame   0x00000238       0x20 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strcpy.o)
+ .debug_frame   0x00000258       0x28 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strlen-stub.o)
+ .debug_frame   0x00000280       0x90 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-strtol.o)
+ .debug_frame   0x00000310       0x8c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-locale.o)
+ .debug_frame   0x0000039c       0x40 c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-mbtowc_r.o)
+ .debug_frame   0x000003dc       0x3c c:/nxp/mcuxpressoide_10.0.0_344/ide/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-wctomb_r.o)
