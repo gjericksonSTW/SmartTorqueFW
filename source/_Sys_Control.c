@@ -195,148 +195,232 @@ void ConfigurationBuilder(void* pvParameters){
 		state = Mode;
 
  		if (underConstruction){
-		Set_Display(0);
+			Set_Display(0);
 
-		//Set the builderConfiguration equal to the current configuration
-		builderConfig = mainConfig;
+			//Set the builderConfiguration equal to the current configuration
+			builderConfig = mainConfig;
 
-		Display_Blink();
-		/*
-		 * Being Configuration state machine where the user flips through a switch statement for setting
-		 * each parameter of the torque wrench manually through UP & DOWN buttons on the machine.
-		 * Once each parameter is set the new configuration is copied into the main configuration where it
-		 * will control all of the data entering and leaving the machine.
-		 * */
-		switch (state) {
-			case Mode:
-				setting = kSystemConfig_Mode_Manual;
-				while(!save){
-					if(UP && setting == kSystemConfig_Mode_Manual){
-						setting = kSystemConfig_Mode_Inspection;
+			Display_Blink();
+			/*
+			 * Being Configuration state machine where the user flips through a switch statement for setting
+			 * each parameter of the torque wrench manually through UP & DOWN buttons on the machine.
+			 * Once each parameter is set the new configuration is copied into the main configuration where it
+			 * will control all of the data entering and leaving the machine.
+			 * */
+			switch (state) {
+				case Mode:
+					setting = builderConfig.mode;
+					while(!save){
+						if(UP && setting == kSystemConfig_Mode_Manual){
+							setting = kSystemConfig_Mode_Inspection;
+							UP = false;
+						}
+						if(DOWN && setting == kSystemConfig_Mode_Inspection){
+							setting = kSystemConfig_Mode_Manual;
+							DOWN = false;
+						}
+
 						Set_Display(setting);
-						UP = false;
 					}
-					if(DOWN && setting == kSystemConfig_Mode_Inspection){
-						setting = kSystemConfig_Mode_Manual;
+					builderConfig.mode = setting;
+					save = false;
+					state = Units;
+				case Units:
+					setting = builderConfig.units;
+					while(!save){
+						if(UP && setting < 4){
+							setting++;
+							UP = false;
+						}
+						if(DOWN && setting > 0){
+							setting--;
+							DOWN = false;
+						}
+						if(DOWN || UP){
+							DOWN = false;
+							UP = false;
+						}
 						Set_Display(setting);
-						DOWN = false;
 					}
-				}
-				builderConfig.mode = setting;
-				save = false;
-				state = Units;
-			case Units:
-				setting = builderConfig.units;
-				while(!save){
-
-				}
-				save = false;
-				state = Upper_Limit;
-			case Upper_Limit:
-				setting = builderConfig.upperLimit.limit;
-				while(!save){
-					if(DOWN){
-						setting--;
-						DOWN = false;
-					}
-					if(UP){
-						setting++;
-						UP = false;
-					}
-					Set_Display(setting);
-				}
-				builderConfig.upperLimit.limit = setting;
-				save = false;
-				state = Lower_Limit;
-			case Lower_Limit:
-				setting = builderConfig.lowerLimit.limit;
-				while(!save){
-					if(DOWN){
-						setting--;
-						DOWN = false;
-					}
-					if(UP){
-						setting++;
-						UP = false;
-					}
-					Set_Display(setting);
-				}
-				builderConfig.lowerLimit.limit = setting;
-				save = false;
-				state = Rotation;
-			case Rotation:
-				while(!save){
-					Set_Display(builderConfig.rotation);
-				}
+					builderConfig.units = setting;
 					save = false;
-				state = Memory;
-			case Memory:
-				while(!save){
-					Set_Display(builderConfig.memory.saveTime);
-				}
-					save = false;
-				state = Display;
-			case Display:
-				while(!save){
-					Set_Display(builderConfig.display);
-				}
-					save = false;
-				state = Delay;
-			case Delay:
-				while(!save){
-					Set_Display(builderConfig.delay.milliseconds);
-				}
-					save = false;
-				state = Judgment;
-			case Judgment:
-				while(!save){
-					Set_Display(builderConfig.judge);
-				}
-					save = false;
-				state = Buzzer;
-			case Buzzer:
-				while(!save){
-					Set_Display(builderConfig.buzzer);
-				}
-					save = false;
-				state = Default;
-			case Default:
-				setting = builderConfig._default;
-				while(!save){
-					if(UP && setting == kSystemConfig_Not_Default){
-						setting = kSystemConfig_Set_Default;
+					state = Upper_Limit;
+				case Upper_Limit:
+					setting = builderConfig.upperLimit.limit;
+					while(!save){
+						if(DOWN){
+							setting--;
+							DOWN = false;
+						}
+						if(UP){
+							setting++;
+							UP = false;
+						}
 						Set_Display(setting);
-						UP = false;
 					}
-					if(DOWN && setting == kSystemConfig_Set_Default){
-						setting = kSystemConfig_Not_Default;
-						Set_Display(setting);
-						DOWN = false;
-					}
-					Set_Display(setting);
-				}
-				builderConfig._default = setting;
+					builderConfig.upperLimit.limit = setting;
 					save = false;
-				break;
-			}
+					state = Lower_Limit;
+				case Lower_Limit:
+					setting = builderConfig.lowerLimit.limit;
+					while(!save){
+						if(DOWN){
+							setting--;
+							DOWN = false;
+						}
+						if(UP){
+							setting++;
+							UP = false;
+						}
+						Set_Display(setting);
+					}
+					builderConfig.lowerLimit.limit = setting;
+					save = false;
+					state = Rotation;
+				case Rotation:
+					setting = builderConfig.rotation;
+					while(!save){
+						if(UP && setting < 2){
+							setting++;
+							UP = false;
+						}
+						if(DOWN && setting > 0){
+							setting--;
+							DOWN = false;
+						}
+						if(DOWN || UP){
+							DOWN = false;
+							UP = false;
+						}
+						Set_Display(setting);
+					}
+					builderConfig.rotation = setting;
+					save = false;
+					state = Memory;
+				case Memory:
+					setting = builderConfig.memory.saveTime;
+					while(!save){
+						if(DOWN){
+							setting--;
+							DOWN = false;
+						}
+						if(UP){
+							setting++;
+							UP = false;
+						}
+						Set_Display(setting);
 
-			//Set main configuration with new information
-			mainConfig = builderConfig;
+					}
+					builderConfig.memory.saveTime = setting;
+					save = false;
+					state = Display;
+				case Display:
+					setting = builderConfig.display;
+					while(!save){
+						if(DOWN && setting > 0){
+							setting--;
+						}
+						if(UP && setting < 1){
+							setting++;
+						}
+						if(DOWN || UP){
+							DOWN = false;
+							UP = false;
+						}
+						Set_Display(setting);
+					}
+					builderConfig.display = setting;
+					save = false;
+					state = Delay;
+				case Delay:
+					setting = builderConfig.delay.milliseconds;
+					while(!save){
+						if(DOWN){
+							setting--;
+						}
+						if(UP){
+							setting++;
+						}
+						if(DOWN || UP){
+							DOWN = false;
+							UP = false;
+						}
+						Set_Display(setting);
+					}
+					builderConfig.delay.milliseconds = setting;
+					save = false;
+					state = Judgment;
+				case Judgment:
+					setting = builderConfig.judge;
+					while(!save){
+						if(DOWN && setting > 0){
+							setting--;
+						}
+						if(UP && setting < 1){
+							setting++;
+						}
+						if(DOWN || UP){
+							DOWN = false;
+							UP = false;
+						}
+						Set_Display(setting);
+					}
+					builderConfig.judge = setting;
+					save = false;
+					state = Buzzer;
+				case Buzzer:
+					setting = builderConfig.buzzer;
+					while(!save){
+						if(DOWN && setting > 0){
+							setting--;
+						}
+						if(UP && setting < 1){
+							setting++;
+						}
+						if(DOWN || UP){
+							DOWN = false;
+							UP = false;
+						}
+						Set_Display(setting);
+					}
+					builderConfig.buzzer = setting;
+					save = false;
+					state = Default;
+				case Default:
+					setting = builderConfig._default;
+					while(!save){
+						if(UP && setting == kSystemConfig_Not_Default){
+							setting = kSystemConfig_Set_Default;
+							UP = false;
+						}
+						if(DOWN && setting == kSystemConfig_Set_Default){
+							setting = kSystemConfig_Not_Default;
+							DOWN = false;
+						}
+						Set_Display(setting);
+					}
+					builderConfig._default = setting;
+					save = false;
+					break;
+				}
 
-			//Write the new settings to the FRAM
-			_FRAM.write(0x0001, (uint8_t *) &mainConfig, sizeof(mainConfig), kI2C_TransferDefaultFlag);
+				//Set main configuration with new information
+				mainConfig = builderConfig;
 
-			// If default is selected reset the machine to its factory settings
-			if (mainConfig._default){
-				Set_Configuration_default();
-			}
+				//Write the new settings to the FRAM
+				_FRAM.write(0x0001, (uint8_t *) &mainConfig, sizeof(mainConfig), kI2C_TransferDefaultFlag);
 
-			//Flip the under construction flag back to false
-			underConstruction = false;
+				// If default is selected reset the machine to its factory settings
+				if (mainConfig._default){
+					Set_Configuration_default();
+				}
 
-			//Set the display back to normal
-			Display_Stop_Blink();
- 		}
+				//Flip the under construction flag back to false
+				underConstruction = false;
+
+				//Set the display back to normal
+				Display_Stop_Blink();
+ 			}
 
  		//Suspend the task until user wants to configure the device again
 		vTaskSuspend(NULL);

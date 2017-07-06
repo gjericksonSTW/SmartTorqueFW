@@ -5,7 +5,7 @@
  * Generated linker script file for MKL43Z256xxx4
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.23
- * MCUXpresso IDE v10.0.0 [Build 344] [2017-03-21]  on Jul 6, 2017 12:07:11 PM
+ * MCUXpresso IDE v10.0.0 [Build 344] [2017-03-21]  on Jul 6, 2017 1:42:25 PM
  */
 
 INCLUDE "SmartTorqueFW2_Release_library.ld"
