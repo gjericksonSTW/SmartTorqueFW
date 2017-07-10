@@ -105,23 +105,32 @@ void vSystemControllerTask(void* pvParameters){
 	//Initialize values for controlling rate of Bluetooth communication *Temporary Implementation*
 	uint8_t count = 0;
 	bool sendTorque = false;
-
 	//Allocate 4 bytes of space for the Header and Payload of Bluetooth message
 	char Header[4];
 	char Payload[4];
 	int value = 0;
+	uint32_t percent, temp;
+	double conv = 0.0;
 
 	//Set memory location of Header and Payload of Bluetooth message to zeroes
 	memset(&Header, '\0', 4);
 	memset(&Payload, 0, 4);
 
-	delay_ms(10);
+//	delay_ms(10);
 
 	while(1){
 
+	//	conv = ((double) TorqueVoltage / 312.0) * (mainConfig.upperLimit.limit);
+
+		percent = (uint32_t) (mainConfig.upperLimit.limit - TorqueVoltage) * 100 / mainConfig.upperLimit.limit;
+
+		if(temp != percent){
+			UpdatePWM(percent);
+		}
+
+		temp = percent;
 		//Manage the inputs to the system
 		HandleButtons();
-
 		//Resume configuration mode if the user sets the under construction flag
 		//otherwise continue updating display with current torque values
 		if (!underConstruction) {
@@ -166,6 +175,7 @@ void vSystemControllerTask(void* pvParameters){
 				strcpy(Payload, (char *) Bluetooth_rx + 3);
 				value = atoi(Payload);
 				mainConfig.upperLimit.limit = (uint16_t) value;
+				_FRAM.write(0x0001,(uint8_t *) &mainConfig, sizeof(mainConfig), kI2C_TransferDefaultFlag);
 			}
 
 			//W12 command to set Tightening Torque setting
@@ -173,6 +183,7 @@ void vSystemControllerTask(void* pvParameters){
 				strcpy(Payload, (char *) Bluetooth_rx + 3);
 				value = atoi(Payload);
 				mainConfig.lowerLimit.limit = (uint16_t) value;
+				_FRAM.write(0x0001,(uint8_t *) &mainConfig, sizeof(mainConfig), kI2C_TransferDefaultFlag);
 			}
 			message_recieved = false;
 		}
@@ -199,7 +210,6 @@ void ConfigurationBuilder(void* pvParameters){
 
 			//Set the builderConfiguration equal to the current configuration
 			builderConfig = mainConfig;
-
 			Display_Blink();
 			/*
 			 * Being Configuration state machine where the user flips through a switch statement for setting

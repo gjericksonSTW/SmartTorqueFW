@@ -6,6 +6,7 @@
  */
 
 #include <_Bluetooth.h>
+#include "Public.h"
 
 BGLIB_DEFINE();
 
@@ -20,6 +21,10 @@ uint8_t msg_Head[4];
 uint8_t btBuffer[MAX_BT_LEN];
 uint8_t respBuffer[MAX_BT_LEN];
 struct dumo_cmd_packet* pck;
+
+
+char *DeviceId = "CEM50N3X12G_BTD";
+char *conn_msg = "Connected to: ";
 
 //Received Bluetooth messages
 uint8_t Bluetooth_rx[64];
@@ -140,12 +145,12 @@ void vBluetoothTask(void *pvParameters){
 
 	Bluetooth_Reset();
 
-	delay_us(750);
+//	delay_us(750);
 
 	while(1) {
 		//If the receiving buffer has not been serviced yet and has not reached end of the Bluetooth buffer
 		if(serviceLocation != rxIndex){
-			//Copy the header of the incoming response message to obtain packet information
+		//Copy the header of the incoming response message to obtain packet information
 			memcpy(&msg_Head, &btBuffer[serviceLocation], 4);
 
 			/* Use 2nd field of header file to read out of the buffer up the length specified
@@ -238,6 +243,8 @@ void vBluetoothTask(void *pvParameters){
 					memcpy(&connected_address, &pck->evt_bt_rfcomm_opened.address.addr, 6);
 					endpoint = pck->evt_bt_rfcomm_opened.endpoint;
 					BTConnected = true;
+					dumo_cmd_endpoint_send(endpoint, strlen(conn_msg), (uint8_t *) conn_msg);
+					dumo_cmd_endpoint_send(endpoint, strlen(DeviceId), (uint8_t *) DeviceId);
 					PRINTF("endpoint is : %02x\r\n", endpoint);
 					break;
 

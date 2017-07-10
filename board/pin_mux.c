@@ -28,17 +28,21 @@ void BOARD_InitBootPins(void) {
 #define PIN1_IDX                         1u   /*!< Pin number for pin 1 in a port */
 #define PIN2_IDX                         2u   /*!< Pin number for pin 2 in a port */
 #define PIN3_IDX                         3u   /*!< Pin number for pin 3 in a port */
+#define PIN5_IDX						 5u
 #define PIN6_IDX                         6u   /*!< Pin number for pin 6 in a port */
 #define PIN7_IDX                         7u   /*!< Pin number for pin 7 in a port */
 #define PIN12_IDX                       12u   /*!< Pin number for pin 12 in a port */
 #define PIN13_IDX                       13u   /*!< Pin number for pin 13 in a port */
 #define PIN16_IDX                       16u   /*!< Pin number for pin 16 in a port */
 #define PIN17_IDX                       17u   /*!< Pin number for pin 17 in a port */
+#define PIN18_IDX						18U
+#define PIN19_IDX						19U
 #define PIN20_IDX                       20u   /*!< Pin number for pin 20 in a port */
 #define PIN22_IDX                       22u   /*!< Pin number for pin 22 in a port */
 #define PIN23_IDX                       23u   /*!< Pin number for pin 23 in a port */
 #define PIN29_IDX                       29u   /*!< Pin number for pin 29 in a port */
 #define PIN30_IDX                       30u   /*!< Pin number for pin 30 in a port */
+#define PIN31_IDX						31u
 
 /*
  * TEXT BELOW IS USED AS SETTING FOR TOOLS *************************************
@@ -71,29 +75,36 @@ BOARD_InitPins:
  *
  *END**************************************************************************/
 void BOARD_InitPins(void) {
-  CLOCK_EnableClock(kCLOCK_PortA);                           /* Port A Clock Gate Control: Clock enabled */
-  CLOCK_EnableClock(kCLOCK_PortB);                           /* Port B Clock Gate Control: Clock enabled */
-  CLOCK_EnableClock(kCLOCK_PortC);                           /* Port C Clock Gate Control: Clock enabled */
-  CLOCK_EnableClock(kCLOCK_PortD);                           /* Port D Clock Gate Control: Clock enabled */
-  CLOCK_EnableClock(kCLOCK_PortE);                           /* Port E Clock Gate Control: Clock enabled */
+	CLOCK_EnableClock(kCLOCK_PortA);                           /* Port A Clock Gate Control: Clock enabled */
+	CLOCK_EnableClock(kCLOCK_PortB);                           /* Port B Clock Gate Control: Clock enabled */
+	CLOCK_EnableClock(kCLOCK_PortC);                           /* Port C Clock Gate Control: Clock enabled */
+	CLOCK_EnableClock(kCLOCK_PortD);                           /* Port D Clock Gate Control: Clock enabled */
+	CLOCK_EnableClock(kCLOCK_PortE);                           /* Port E Clock Gate Control: Clock enabled */
 
-  PORT_SetPinMux(PORTC, PIN1_IDX, kPORT_MuxAsGpio);
-  PORT_SetPinMux(PORTB, PIN0_IDX, kPORT_MuxAsGpio);
-  PORT_SetPinMux(PORTC, PIN2_IDX, kPORT_PinDisabledOrAnalog); /* PORTC2 (pin 45) is configured as ADC0_SE11 */
-  PORT_SetPinMux(PORTD, PIN6_IDX, kPORT_PinDisabledOrAnalog); /* PORTD6 (pin 63) is configured as ADC0_SE7b */
-  PORT_SetPinMux(PORTE, PIN22_IDX, kPORT_MuxAlt4);           /* PORTE22 (pin 11) is configured as UART2_TX */
-  PORT_SetPinMux(PORTE, PIN23_IDX, kPORT_MuxAlt4);           /* PORTE23 (pin 12) is configured as UART2_RX */
+	PORT_SetPinMux(PORTA, PIN18_IDX, kPORT_MuxAlt4); /* PORTA18 (pin 32) is configured as EXTAL0 */
+	PORT_SetPinMux(PORTA, PIN19_IDX, kPORT_PinDisabledOrAnalog);
+	PORT_SetPinMux(PORTC, PIN1_IDX, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTB, PIN0_IDX, kPORT_MuxAsGpio);
+	PORT_SetPinMux(PORTC, PIN2_IDX, kPORT_PinDisabledOrAnalog); /* PORTC2 (pin 45) is configured as ADC0_SE11 */
+	PORT_SetPinMux(PORTD, PIN6_IDX, kPORT_PinDisabledOrAnalog); /* PORTD6 (pin 63) is configured as ADC0_SE7b */
+	PORT_SetPinMux(PORTE, PIN22_IDX, kPORT_MuxAlt4);           /* PORTE22 (pin 11) is configured as UART2_TX */
+	PORT_SetPinMux(PORTE, PIN23_IDX, kPORT_MuxAlt4);           /* PORTE23 (pin 12) is configured as UART2_RX */
+	PORT_SetPinMux(PORTD, PIN5_IDX, kPORT_MuxAlt4);
 
-  const port_pin_config_t button_config = {
-      kPORT_PullDown,                                            /* Internal pull-up resistor is enabled */
-      kPORT_FastSlewRate,                                      /* Fast slew rate is configured */
-      kPORT_PassiveFilterDisable,                              /* Passive filter is disabled */
-      kPORT_LowDriveStrength,                                  /* Low drive strength is configured */
-      kPORT_MuxAsGpio,                                         /* Pin is configured as PTA4 */
-    };
-    PORT_SetPinConfig(PORTA, PIN12_IDX, &button_config);  /* PORTA4 (pin 26) is configured as PTA4 */
-    PORT_SetPinConfig(PORTA, PIN13_IDX, &button_config);
-    PORT_SetPinConfig(PORTD, PIN7_IDX, &button_config);
+	const port_pin_config_t button_config = {
+	  kPORT_PullDown,                                            /* Internal pull-up resistor is enabled */
+	  kPORT_FastSlewRate,                                      /* Fast slew rate is configured */
+	  kPORT_PassiveFilterDisable,                              /* Passive filter is disabled */
+	  kPORT_LowDriveStrength,                                  /* Low drive strength is configured */
+	  kPORT_MuxAsGpio,                                         /* Pin is configured as PTA4 */
+	};
+	PORT_SetPinConfig(PORTA, PIN12_IDX, &button_config);  /* PORTA4 (pin 26) is configured as PTA4 */
+	PORT_SetPinConfig(PORTA, PIN13_IDX, &button_config);
+	PORT_SetPinConfig(PORTD, PIN7_IDX, &button_config);
+
+	SIM->SOPT1 |= SIM_SOPT1_OSC32KSEL(2);
+	SIM->SOPT2 |= SIM_SOPT2_RTCCLKOUTSEL(1);
+
 }
 
 
@@ -112,8 +123,6 @@ void BOARD_InitPins(void) {
 #define PIN6_IDX                         6u   /*!< Pin number for pin 6 in a port */
 
 #define PIN7_IDX                         7u   /*!< Pin number for pin 7 in a port */
-#define PIN18_IDX                       18u   /*!< Pin number for pin 18 in a port */
-#define PIN19_IDX                       19u   /*!< Pin number for pin 19 in a port */
 
 #define PIN20_IDX                       20u   /*!< Pin number for pin 20 in a port */
 #define PIN21_IDX                       21u   /*!< Pin number for pin 21 in a port */
@@ -312,14 +321,14 @@ void BOARD_InitLEDs(void) {
   CLOCK_EnableClock(kCLOCK_PortD);                           /* Port D Clock Gate Control: Clock enabled */
   CLOCK_EnableClock(kCLOCK_PortE);                           /* Port E Clock Gate Control: Clock enabled */
 
-  const port_pin_config_t portd5_pin62_config = {
-    kPORT_PullDisable,                                       /* Internal pull-up/down resistor is disabled */
-    kPORT_SlowSlewRate,                                      /* Slow slew rate is configured */
-    kPORT_PassiveFilterDisable,                              /* Passive filter is disabled */
-    kPORT_LowDriveStrength,                                  /* Low drive strength is configured */
-    kPORT_MuxAsGpio,                                         /* Pin is configured as PTD5 */
-  };
-  PORT_SetPinConfig(PORTD, PIN5_IDX, &portd5_pin62_config);  /* PORTD5 (pin 62) is configured as PTD5 */
+//  const port_pin_config_t portd5_pin62_config = {
+//    kPORT_PullDisable,                                       /* Internal pull-up/down resistor is disabled */
+//    kPORT_SlowSlewRate,                                      /* Slow slew rate is configured */
+//    kPORT_PassiveFilterDisable,                              /* Passive filter is disabled */
+//    kPORT_LowDriveStrength,                                  /* Low drive strength is configured */
+//    kPORT_MuxAsGpio,                                         /* Pin is configured as PTD5 */
+//  };
+//  PORT_SetPinConfig(PORTD, PIN5_IDX, &portd5_pin62_config);  /* PORTD5 (pin 62) is configured as PTD5 */
   const port_pin_config_t porte31_pin19_config = {
     kPORT_PullDisable,                                       /* Internal pull-up/down resistor is disabled */
     kPORT_SlowSlewRate,                                      /* Slow slew rate is configured */
@@ -503,10 +512,6 @@ void BOARD_InitACCEL_I2C(void) {
 }
 
 
-
-#define PIN18_IDX                       18u   /*!< Pin number for pin 18 in a port */
-
-#define PIN19_IDX                       19u   /*!< Pin number for pin 19 in a port */
 /*
  * TEXT BELOW IS USED AS SETTING FOR TOOLS *************************************
 BOARD_InitOSC:

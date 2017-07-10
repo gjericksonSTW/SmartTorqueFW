@@ -40,7 +40,7 @@ void FRAM_INIT(void){
 	i2c_master_config_t masterConfig;
 	uint32_t sourceClock;
 
-	BOARD_I2C_ReleaseBus();
+//	BOARD_I2C_ReleaseBus();
 	I2C_MasterTransferCreateHandle(I2C_BASE, &g_m_handle, i2c_master_callback, NULL);
 
 	//Configure I2C instance as a master with 100k baud and 48MHz clk
@@ -152,7 +152,6 @@ void write(uint16_t address, uint8_t* data, size_t dataSize, uint32_t flag){
 	{
 		completionFlag = false;
 	}
-
 }
 
 void read(uint16_t address, uint8_t* readBuff, size_t dataSize, uint32_t flag){

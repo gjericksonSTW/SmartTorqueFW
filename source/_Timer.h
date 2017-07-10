@@ -15,16 +15,28 @@
 #include "pin_mux.h"
 #include "fsl_gpio.h"
 
+//Timer used for PWM for LED and Buzzer
+#define PWM_BASE TPM0
+#define PWM_IRQn TPM0_IRQn
+#define PWM_Handler TPM0_IRQHandler
+#define OSC0_CLK 2U
+
+
+//Timer used for delays
 #define TIMER_BASE TPM1
 #define TIMER_IRQn TPM1_IRQn
 #define TIMER_Handler TPM1_IRQHandler
 
-#define TPM_CLK (CLOCK_GetFreq(kCLOCK_McgIrc48MClk)/2)
+#define PWM_CLK (CLOCK_GetFreq(kCLOCK_Osc0ErClk)*2)
+#define TPM_CLK (CLOCK_GetFreq(kCLOCK_Osc0ErClk)/32)
+
+void UpdatePWM(uint32_t percent);
 
 void delay_ms(uint32_t milliseconds);
 void delay_us(uint32_t microseconds);
 
 void Timer_INIT(void);
 void TIMER_Handler(void);
+void PWM_Handler(void);
 
 #endif /* TIMER_H_ */

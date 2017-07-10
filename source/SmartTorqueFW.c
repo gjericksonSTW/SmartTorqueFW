@@ -49,9 +49,10 @@ int main(void)
 {
     /* Initialize board hardware. */
 	BOARD_I2C_ReleaseBus();
-    BOARD_InitPins();	// Configure all hardware related pin assignments **Does not notify you to turn on certain pins
+    BOARD_InitOSC();
     BOARD_BootClockRUN();
     BOARD_InitLEDs();
+    BOARD_InitPins();	// Configure all hardware related pin assignments **Does not notify you to turn on certain pins
     BOARD_InitLCD();
     BOARD_InitDEBUG_UART();
     Timer_INIT();

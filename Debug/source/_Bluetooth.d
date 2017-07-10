@@ -39,7 +39,7 @@ source/_Bluetooth.o source/_Bluetooth.d: ../source/_Bluetooth.c \
  C:\SmartTorque\SmartTorqueFW2\source/Public.h \
  C:\SmartTorque\SmartTorqueFW2\source/_Timer.h \
  C:\SmartTorque\SmartTorqueFW2\drivers/fsl_tpm.h \
- C:\SmartTorque\SmartTorqueFW2\board/pin_mux.h
+ C:\SmartTorque\SmartTorqueFW2\board/pin_mux.h ../source/Public.h
 
 C:\SmartTorque\SmartTorqueFW2\source/_Bluetooth.h:
 
@@ -122,3 +122,5 @@ C:\SmartTorque\SmartTorqueFW2\source/_Timer.h:
 C:\SmartTorque\SmartTorqueFW2\drivers/fsl_tpm.h:
 
 C:\SmartTorque\SmartTorqueFW2\board/pin_mux.h:
+
+../source/Public.h:

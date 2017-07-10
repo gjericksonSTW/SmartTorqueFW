@@ -14,6 +14,7 @@
 
 #include "FreeRTOS.h"
 #include "task.h"
+#include "board.h"
 #include "fsl_adc16.h"
 #include "fsl_debug_console.h"
 #include "fsl_dma.h"

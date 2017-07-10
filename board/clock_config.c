@@ -121,14 +121,20 @@ const sim_clock_config_t simConfig_BOARD_BootClockRUN =
     };
 const osc_config_t oscConfig_BOARD_BootClockRUN =
     {
-        .freq = 0U,                               /* Oscillator frequency: 0Hz */
-        .capLoad = (OSC_CAP0P),                   /* Oscillator capacity load: 0pF */
+        .freq = 32768U,                               /* Oscillator frequency: 0Hz */
+        .capLoad = 0u,                   /* Oscillator capacity load: 0pF */
         .workMode = kOSC_ModeOscLowPower,         /* Oscillator low power */
         .oscerConfig =
             {
-                .enableMode = kOSC_ErClkEnable,   /* Enable external reference clock, disable external reference clock in STOP mode */
+                .enableMode = kOSC_ErClkEnable | kOSC_ErClkEnableInStop,   /* Enable external reference clock, disable external reference clock in STOP mode */
             }
     };
+
+const oscer_config_t config =
+   {
+       .enableMode = kOSC_ErClkEnable | kOSC_ErClkEnableInStop
+   };
+
 
 /*******************************************************************************
  * Code for BOARD_BootClockRUN configuration
@@ -143,6 +149,11 @@ void BOARD_BootClockRUN(void)
     CLOCK_SetSimConfig(&simConfig_BOARD_BootClockRUN);
     /* Set SystemCoreClock variable. */
     SystemCoreClock = BOARD_BOOTCLOCKRUN_CORE_CLOCK;
+
+    CLOCK_SetXtal0Freq(32768);
+    OSC_SetExtRefClkConfig(OSC0, &config);
+    CLOCK_InitOsc0(&oscConfig_BOARD_BootClockRUN);
+    MCG->C2 |= MCG_C2_EREFS0(0);
 }
 
 /*******************************************************************************

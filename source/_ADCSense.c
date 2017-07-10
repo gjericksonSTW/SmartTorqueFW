@@ -35,7 +35,8 @@ volatile int TorqueVoltage, BatteryVoltage;
 void ADC_INIT(ADC_Type *base){
 
 	ADC16_GetDefaultConfig(&adc16Config);
-	TorqueVoltage, BatteryVoltage = 0;
+	TorqueVoltage = 0;
+	BatteryVoltage = 40;
 	temp = 0;
 	//Use built in ADC clock
 	adc16Config.clockSource = kADC16_ClockSourceAsynchronousClock;
@@ -133,7 +134,7 @@ void DMA_IRQHandler(void){
 	/* Clear transaction done interrupt flag */
 	DMA_ClearChannelStatusFlags(DMA_BASEADDR, DMA_CHANNEL, kDMA_TransactionsDoneFlag);
 	/* Setup transfer to poll the battery every 5 minutes */
-	if(channelswap < 750){
+	if(channelswap < 100){
 		adc16ChanConfig.channelNumber = ADC16_TORQUE_CHANNEL;
 		ADC16_SetChannelConfig(ADC16_BASE, ADC16_CHANNEL_GROUP, &adc16ChanConfig);
 		DMA_PrepareTransfer(&DMA_transfer, (void *)ADC16_RESULT_REG_ADDR, sizeof(uint32_t),
@@ -188,30 +189,18 @@ void LPTMR_TRIG(void){
 
 //ADC RTOS Task for handling both channels of interest
 void vADC16Task(void *pvParameters){
+
+
+//	uint8_t i = 50;
 //
-//	// Initialize the DMA to handle ADC
-//	DMA_CONFIG();
-//	// Set the timing constraints for the Low Power Timer 1kHz clk src
-//	LPTMR_TRIG();
-//	// Set the Low Power Timer as hardware trigger for the ADC
-//	BOARD_ConfigTrigger();
-//	// Begin the Low Power Timer
-//	LPTMR_StartTimer(LPTMR_BASE);
-//	getMeasurements();
-	delay_ms(25);
-
-	uint8_t i = 50;
-
-	while(i--){
-		getMeasurements();
-		delay_ms(1);
-	}
+//	while(i--){
+//		getMeasurements();
+////		delay_ms(1);
+//	}
 
 	while(1){
 		//Loop grabbing measurements from the registers and converting to the proper voltage level
-
 		getMeasurements();
-
 		vTaskDelay(66);
 	}
 }
