@@ -164,14 +164,14 @@ void getMeasurements(void){
 		TorqueAve += ADC16_Array[i];
 	}
 	TorqueAve /= 32;
-	TorqueVoltage = (int) ( 100 * ( 3.12 * (double) TorqueAve / ADC_VDD ));
+	TorqueVoltage = (int) ( 1000 * ( 3.12 * (double) TorqueAve / ADC_VDD ));
 
 	for(uint8_t i = 0; i < 8; i++){
 		BatteryAve += gBatterySense[i];
 	}
 
 	BatteryAve /= 8;
-	BatteryVoltage = (int) ( 100 * ( 3.12 * (double) BatteryAve / ADC_VDD ));
+	BatteryVoltage = (int) ( 1000 * ( 3.12 * (double) BatteryAve / ADC_VDD ));
 }
 
 //enable the hardware trigger source for the ADC to DMA transfer / conversion

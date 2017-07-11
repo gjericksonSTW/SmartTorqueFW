@@ -144,6 +144,7 @@ void vBluetoothTask(void *pvParameters){
 		{	vTaskSuspend(NULL); }
 
 	Bluetooth_Reset();
+	dumo_cmd_system_set_local_name(strlen(DeviceId), DeviceId);
 
 //	delay_us(750);
 
@@ -173,6 +174,7 @@ void vBluetoothTask(void *pvParameters){
 	    ** is noted within a the my_address variable. The connected_address will change depending on connected
 	    ** device.
 		*/
+
 			pck = BGLIB_MSG(respBuffer);
 
 			switch(BGLIB_MSG_ID(respBuffer)){
@@ -233,6 +235,7 @@ void vBluetoothTask(void *pvParameters){
 
 			//Print address of device connected to device (Works for both BR and BLE)
 				case dumo_evt_bt_connection_opened_id:
+					BTConnected = true;
 					PRINTF("Bonding with ID: %02x\r\n", pck->evt_bt_connection_opened.bonding);
 					break;
 
@@ -242,7 +245,6 @@ void vBluetoothTask(void *pvParameters){
 					print_address(pck->evt_bt_rfcomm_opened.address.addr);
 					memcpy(&connected_address, &pck->evt_bt_rfcomm_opened.address.addr, 6);
 					endpoint = pck->evt_bt_rfcomm_opened.endpoint;
-					BTConnected = true;
 					dumo_cmd_endpoint_send(endpoint, strlen(conn_msg), (uint8_t *) conn_msg);
 					dumo_cmd_endpoint_send(endpoint, strlen(DeviceId), (uint8_t *) DeviceId);
 					PRINTF("endpoint is : %02x\r\n", endpoint);

@@ -64,7 +64,6 @@ void Display_Init(void){
 	SLCD_SetBackPlanePhase(LCD, 15, kSLCD_PhaseDActivate); /* SLCD COM4 --- LCD_P15. */
 
 	SLCD_StartDisplay(LCD);
-	Set_Display(0);
 }
 
 //Wrapper for entering LCD blinker mode
@@ -78,7 +77,7 @@ void Display_Stop_Blink(void){
 }
 
 //Breakdown digits of numeric to be sent to LCD
-void Set_Display(uint16_t num){
+void Set_Display(uint16_t num, uint8_t dp){
 
 	uint8_t o, ten, h, th;
 
@@ -87,14 +86,17 @@ void Set_Display(uint16_t num){
 	h = ((num / 100) % 10);
 	th = ((num / 1000) % 10);
 
-	Display_Number(th, 20, 24);
-	Display_Number(h, 26, 27);
-	Display_Number(ten, 40, 42);
-	Display_Number(o, 43, 44);
+	Display_Number(th, 20, 24, dp);
+	Display_Number(h, 26, 27, dp);
+	Display_Number(ten, 40, 42, dp);
+	Display_Number(o, 43, 44, 0);
+	if(dp == 3){
+		SLCD_SetFrontPlaneOnePhase(LCD, 42, kSLCD_PhaseAIndex, 1);
+	}
 }
 
 //Activating the segments of the LCD for each number
-void Display_Number(uint8_t num, uint8_t pin1, uint8_t pin2){
+void Display_Number(uint8_t num, uint8_t pin1, uint8_t pin2, uint8_t dp){
 	switch (num){
 	case 1:
 		SLCD_SetFrontPlaneSegments(LCD, pin1, 0);

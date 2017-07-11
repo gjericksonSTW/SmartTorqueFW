@@ -95,7 +95,7 @@ void HandleButtons(void){
 
 // Determine what Mode the system is in and implement the corresponding display
 void UpdateDisplay(void){
-	Set_Display(TorqueVoltage);
+	Set_Display(TorqueVoltage, 3);
 }
 
 // RTOS task for managing all of the inputs and outputs of the system
@@ -110,7 +110,6 @@ void vSystemControllerTask(void* pvParameters){
 	char Payload[4];
 	int value = 0;
 	uint32_t percent, temp;
-	double conv = 0.0;
 
 	//Set memory location of Header and Payload of Bluetooth message to zeroes
 	memset(&Header, '\0', 4);
@@ -119,8 +118,6 @@ void vSystemControllerTask(void* pvParameters){
 //	delay_ms(10);
 
 	while(1){
-
-	//	conv = ((double) TorqueVoltage / 312.0) * (mainConfig.upperLimit.limit);
 
 		percent = (uint32_t) (mainConfig.upperLimit.limit - TorqueVoltage) * 100 / mainConfig.upperLimit.limit;
 
@@ -206,7 +203,7 @@ void ConfigurationBuilder(void* pvParameters){
 		state = Mode;
 
  		if (underConstruction){
-			Set_Display(0);
+			Set_Display(0,0);
 
 			//Set the builderConfiguration equal to the current configuration
 			builderConfig = mainConfig;
@@ -230,7 +227,7 @@ void ConfigurationBuilder(void* pvParameters){
 							DOWN = false;
 						}
 
-						Set_Display(setting);
+						Set_Display(setting, 0);
 					}
 					builderConfig.mode = setting;
 					save = false;
@@ -250,7 +247,7 @@ void ConfigurationBuilder(void* pvParameters){
 							DOWN = false;
 							UP = false;
 						}
-						Set_Display(setting);
+						Set_Display(setting, 0);
 					}
 					builderConfig.units = setting;
 					save = false;
@@ -266,7 +263,7 @@ void ConfigurationBuilder(void* pvParameters){
 							setting++;
 							UP = false;
 						}
-						Set_Display(setting);
+						Set_Display(setting, 3);
 					}
 					builderConfig.upperLimit.limit = setting;
 					save = false;
@@ -282,7 +279,7 @@ void ConfigurationBuilder(void* pvParameters){
 							setting++;
 							UP = false;
 						}
-						Set_Display(setting);
+						Set_Display(setting, 3);
 					}
 					builderConfig.lowerLimit.limit = setting;
 					save = false;
@@ -302,7 +299,7 @@ void ConfigurationBuilder(void* pvParameters){
 							DOWN = false;
 							UP = false;
 						}
-						Set_Display(setting);
+						Set_Display(setting, 0);
 					}
 					builderConfig.rotation = setting;
 					save = false;
@@ -318,7 +315,7 @@ void ConfigurationBuilder(void* pvParameters){
 							setting++;
 							UP = false;
 						}
-						Set_Display(setting);
+						Set_Display(setting, 0);
 
 					}
 					builderConfig.memory.saveTime = setting;
@@ -337,7 +334,7 @@ void ConfigurationBuilder(void* pvParameters){
 							DOWN = false;
 							UP = false;
 						}
-						Set_Display(setting);
+						Set_Display(setting, 0);
 					}
 					builderConfig.display = setting;
 					save = false;
@@ -355,7 +352,7 @@ void ConfigurationBuilder(void* pvParameters){
 							DOWN = false;
 							UP = false;
 						}
-						Set_Display(setting);
+						Set_Display(setting, 0);
 					}
 					builderConfig.delay.milliseconds = setting;
 					save = false;
@@ -373,7 +370,7 @@ void ConfigurationBuilder(void* pvParameters){
 							DOWN = false;
 							UP = false;
 						}
-						Set_Display(setting);
+						Set_Display(setting, 0);
 					}
 					builderConfig.judge = setting;
 					save = false;
@@ -391,7 +388,7 @@ void ConfigurationBuilder(void* pvParameters){
 							DOWN = false;
 							UP = false;
 						}
-						Set_Display(setting);
+						Set_Display(setting, 0);
 					}
 					builderConfig.buzzer = setting;
 					save = false;
@@ -407,7 +404,7 @@ void ConfigurationBuilder(void* pvParameters){
 							setting = kSystemConfig_Not_Default;
 							DOWN = false;
 						}
-						Set_Display(setting);
+						Set_Display(setting, 0);
 					}
 					builderConfig._default = setting;
 					save = false;

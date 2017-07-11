@@ -82,7 +82,7 @@ int main(void)
     xTaskCreate(vSystemControllerTask, "SystemControl", 500, NULL, 1, NULL);
 
     //Begin Bluetooth communication task via UART2 and Debug/LPUART task to send information to the console
-    xTaskCreate(vBluetoothTask, "Bluetooth", 600, NULL, 1, NULL);
+    xTaskCreate(vBluetoothTask, "Bluetooth", 1200, NULL, 1, NULL);
 
     //Reset the Bluetooth chip before starting the scheduler so it is in a known state
     Bluetooth_Reset();

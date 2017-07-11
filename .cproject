@@ -77,7 +77,7 @@
 									<listOptionValue builtIn="false" value="CPU_MKL43Z256VLH4_cm0plus"/>
 									<listOptionValue builtIn="false" value="CPU_MKL43Z256VLH4"/>
 									<listOptionValue builtIn="false" value=""/>
-									<listOptionValue builtIn="false" value="SDK_DEBUGCONSOLE=1"/>
+									<listOptionValue builtIn="false" value="SDK_DEBUGCONSOLE=0"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.undef.symbol.988813217" name="Undefined symbols (-U)" superClass="gnu.c.compiler.option.preprocessor.undef.symbol" useByScannerDiscovery="false"/>
 								<option id="gnu.c.compiler.option.include.paths.1848426910" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
@@ -333,7 +333,7 @@
 									<listOptionValue builtIn="false" value="SDK_OS_FREE_RTOS"/>
 									<listOptionValue builtIn="false" value="CPU_MKL43Z256VLH4_cm0plus"/>
 									<listOptionValue builtIn="false" value="CPU_MKL43Z256VLH4"/>
-									<listOptionValue builtIn="false" value="SDK_DEBUGCONSOLE=1"/>
+									<listOptionValue builtIn="false" value="SDK_DEBUGCONSOLE=0"/>
 									<listOptionValue builtIn="false" value="__NEWLIB__"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.undef.symbol.2010188235" name="Undefined symbols (-U)" superClass="gnu.c.compiler.option.preprocessor.undef.symbol" useByScannerDiscovery="false"/>
