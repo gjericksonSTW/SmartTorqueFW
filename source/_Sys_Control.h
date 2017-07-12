@@ -157,5 +157,6 @@ void Set_Configuration_default(void);
 
 //Function called when controller requests a torquing procedure
 void Start_Torquing(void);
+bool TorqueWithinRange();
 
 #endif /* SYS_CONTROL_H_ */

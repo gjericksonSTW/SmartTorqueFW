@@ -38,10 +38,16 @@ void Timer_INIT(void){
 void UpdatePWM(uint32_t percent){
 	uint32_t count;
 
+	//Make sure the percentage is never 0
 	percent += 1;
+
+	//Convert the percentage to a count for the MOD 1000 = 1s
 	count = percent * 250;
 
+	//place the count value directly into the MOD registers of the TPM
 	PWM_BASE->MOD = count;
+
+	//Divide the MOD by 2 for the threshold of the PWM signal giving an even square wave
 	PWM_BASE->CONTROLS[5].CnV = count/2;
 
 }

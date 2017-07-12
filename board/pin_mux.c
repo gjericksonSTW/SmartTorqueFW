@@ -87,9 +87,9 @@ void BOARD_InitPins(void) {
 	PORT_SetPinMux(PORTB, PIN0_IDX, kPORT_MuxAsGpio);
 	PORT_SetPinMux(PORTC, PIN2_IDX, kPORT_PinDisabledOrAnalog); /* PORTC2 (pin 45) is configured as ADC0_SE11 */
 	PORT_SetPinMux(PORTD, PIN6_IDX, kPORT_PinDisabledOrAnalog); /* PORTD6 (pin 63) is configured as ADC0_SE7b */
-	PORT_SetPinMux(PORTE, PIN22_IDX, kPORT_MuxAlt4);           /* PORTE22 (pin 11) is configured as UART2_TX */
-	PORT_SetPinMux(PORTE, PIN23_IDX, kPORT_MuxAlt4);           /* PORTE23 (pin 12) is configured as UART2_RX */
-	PORT_SetPinMux(PORTD, PIN5_IDX, kPORT_MuxAlt4);
+	PORT_SetPinMux(PORTE, PIN22_IDX, kPORT_MuxAlt4);            /* PORTE22 (pin 11) is configured as UART2_TX */
+	PORT_SetPinMux(PORTE, PIN23_IDX, kPORT_MuxAlt4);            /* PORTE23 (pin 12) is configured as UART2_RX */
+	PORT_SetPinMux(PORTD, PIN5_IDX, kPORT_MuxAlt4);			    /* PORTD5 is configured as TPM0-Chnl5 output  */
 
 	const port_pin_config_t button_config = {
 	  kPORT_PullDown,                                            /* Internal pull-up resistor is enabled */

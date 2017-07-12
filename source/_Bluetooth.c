@@ -143,10 +143,8 @@ void vBluetoothTask(void *pvParameters){
 	if( 0 > UART_RTOS_Init(&uart_handle, &t_uart_handle, &uart_config))
 		{	vTaskSuspend(NULL); }
 
-	Bluetooth_Reset();
+	// Will have to update this to a randomly generated ID for each wrench
 	dumo_cmd_system_set_local_name(strlen(DeviceId), DeviceId);
-
-//	delay_us(750);
 
 	while(1) {
 		//If the receiving buffer has not been serviced yet and has not reached end of the Bluetooth buffer
@@ -216,9 +214,10 @@ void vBluetoothTask(void *pvParameters){
 
 			//Once GAP is set for Bluetooth Classic, also set GAP for BLE
 				case dumo_rsp_bt_gap_set_mode_id:
-					if( pck->rsp_bt_gap_set_mode.result == 0 ){
-						dumo_cmd_le_gap_set_mode(2, 2);
-					}
+					// Uncomment to advertise on the BLE channel
+//					if( pck->rsp_bt_gap_set_mode.result == 0 ){
+//						dumo_cmd_le_gap_set_mode(2, 2);
+//					}
 					break;
 
 			//Print to console that the device is now bondable
@@ -237,6 +236,13 @@ void vBluetoothTask(void *pvParameters){
 				case dumo_evt_bt_connection_opened_id:
 					BTConnected = true;
 					PRINTF("Bonding with ID: %02x\r\n", pck->evt_bt_connection_opened.bonding);
+					dumo_cmd_bt_gap_set_mode(0, 0, 0);
+
+					break;
+
+				case dumo_evt_bt_connection_closed_id:
+					BTConnected = false;
+					dumo_cmd_bt_gap_set_mode(1, 1, 0);
 					break;
 
 			//Print to console that SPP connect is made and with what address
@@ -244,32 +250,32 @@ void vBluetoothTask(void *pvParameters){
 					PRINTF("SPP Connection opened with: ");
 					print_address(pck->evt_bt_rfcomm_opened.address.addr);
 					memcpy(&connected_address, &pck->evt_bt_rfcomm_opened.address.addr, 6);
+					dumo_cmd_endpoint_send(endpoint, strlen("E00\r\n\0"), "E00\r\n\0");
 					endpoint = pck->evt_bt_rfcomm_opened.endpoint;
-					dumo_cmd_endpoint_send(endpoint, strlen(conn_msg), (uint8_t *) conn_msg);
-					dumo_cmd_endpoint_send(endpoint, strlen(DeviceId), (uint8_t *) DeviceId);
 					PRINTF("endpoint is : %02x\r\n", endpoint);
 					break;
 
 			//Print to console the address of BLE connection
 				case dumo_evt_le_connection_opened_id:
-					memcpy(&connected_address, &pck->evt_le_connection_opened.address.addr, 6);
-					PRINTF("BLE Connection opened with: ");
-					print_address(connected_address);
+//					memcpy(&connected_address, &pck->evt_le_connection_opened.address.addr, 6);
+//					PRINTF("BLE Connection opened with: ");
+//					dumo_cmd_endpoint_send(endpoint, strlen("E00\r\n\0"), "E00\r\n\0");
+//					print_address(connected_address);
 					break;
 
 			//Print the error code and connection number when a LE connection closes
 				case dumo_evt_le_connection_closed_id:
-					PRINTF("Connection closed -> Error code: %04x -> Connection: %02x\r\n", pck->evt_le_connection_closed.reason,
-							pck->evt_le_connection_closed.connection);
-					dumo_cmd_le_gap_set_mode(2, 2);
+//					PRINTF("Connection closed -> Error code: %04x -> Connection: %02x\r\n", pck->evt_le_connection_closed.reason,
+//							pck->evt_le_connection_closed.connection);
+//					dumo_cmd_le_gap_set_mode(2, 2);
 					break;
 
 			//After the Low Energy GAP is set, make the security manager bondable
 				case dumo_rsp_le_gap_set_mode_id:
-					if ( pck->rsp_bt_gap_set_mode.result == 0 ){
-						dumo_cmd_sm_set_bondable_mode(1);
-						PRINTF("Device now bondable\r\n");
-					}
+//					if ( pck->rsp_bt_gap_set_mode.result == 0 ){
+//						dumo_cmd_sm_set_bondable_mode(1);
+//						PRINTF("Device now bondable\r\n");
+//					}
 					break;
 
 			//Acknowledge that endpoint is closing and close the endpoint
@@ -306,12 +312,12 @@ void vBluetoothTask(void *pvParameters){
 	}
 }
 
-void Bluetooth_Send(uint8_t* data){
+void Bluetooth_Send(uint8_t* data, uint8_t data_len){
 	if (BTConnected == false && !(endpoint > 0)){
 		__NOP();
 	}
 	else{
-		dumo_cmd_endpoint_send(endpoint, sizeof(data), data);
+		dumo_cmd_endpoint_send(endpoint, data_len, data);
 	}
 }
 

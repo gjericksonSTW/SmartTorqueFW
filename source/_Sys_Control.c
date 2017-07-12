@@ -14,9 +14,10 @@
 // Configuration structures for holding current and intermediate setting values
 system_config_t mainConfig, builderConfig;
 volatile bool save, underConstruction, resume;
-bool DOWN, UP;
+bool DOWN, UP, Torquing;
 TaskHandle_t xBuildHandle;
-
+char strTorque[13];
+char Terminator[6] = "E00\r\n\0";
 /*******************************************************************************
  * Code
  ******************************************************************************/
@@ -29,6 +30,9 @@ void Sys_Control_INIT(void){
 	UP = false;
 	LED_RED_INIT(0);
 	LED_RED_OFF();
+
+	Torquing = false;
+	strcpy(strTorque, "RE,000,000.0\0");
 
 	//boolean to determine if settings are already written in memory
 	bool memEmpty = true;
@@ -102,34 +106,78 @@ void UpdateDisplay(void){
 void vSystemControllerTask(void* pvParameters){
 
 	TorqueVoltage = 55;
-	//Initialize values for controlling rate of Bluetooth communication *Temporary Implementation*
-	uint8_t count = 0;
-	bool sendTorque = false;
+
 	//Allocate 4 bytes of space for the Header and Payload of Bluetooth message
 	char Header[4];
 	char Payload[4];
 	int value = 0;
-	uint32_t percent, temp;
 
+	char hInt[4];
+
+	memset(hInt, '\0', 3);
+
+	uint32_t percent, temp;
+	uint8_t delay_count = 0;
+	bool start_counting;
 	//Set memory location of Header and Payload of Bluetooth message to zeroes
 	memset(&Header, '\0', 4);
 	memset(&Payload, 0, 4);
 
-//	delay_ms(10);
 
 	while(1){
 
-		percent = (uint32_t) (mainConfig.upperLimit.limit - TorqueVoltage) * 100 / mainConfig.upperLimit.limit;
+		// Manage the inputs to the system
+		HandleButtons();
 
-		if(temp != percent){
-			UpdatePWM(percent);
+		// When torquing procedure has begun
+		if(Torquing){
+
+			// Determine the rate for the PWM related to the Torquing
+			if(TorqueVoltage > mainConfig.lowerLimit.limit){
+				percent = 0;
+			}else{
+				percent = (uint32_t) (mainConfig.lowerLimit.limit - TorqueVoltage) * 100 / mainConfig.lowerLimit.limit;
+			}
+			if(temp != percent){
+				UpdatePWM(percent);
+			}
+			temp = percent;
+
+			if(TorqueWithinRange()){
+				start_counting = true;
+			}
+
+			delay_count++;
+
+			if((delay_count*100) == mainConfig.delay.milliseconds){
+				itoa(TorqueVoltage, hInt, 10);
+
+				if(TorqueVoltage < 1000){
+					strTorque[7] = '0';
+					memcpy(&strTorque[8], &hInt, 2);
+					memcpy(&strTorque[11], &hInt[2], 1);
+				}else{
+					memcpy(&strTorque[7], &hInt, 3);
+					memcpy(&strTorque[11], &hInt[3], 1);
+				}
+
+				printf("Sending Torque Value: %s\r\n", strTorque);
+
+				Bluetooth_Send((uint8_t *) strTorque, strlen(strTorque));
+
+				Torquing = false;
+				start_counting = false;
+				delay_count = 0;
+
+				Bluetooth_Send((uint8_t *) Terminator, strlen(Terminator));
+			}
+			delay_count = (start_counting) ? delay_count : 0;
+
+			start_counting = false;
 		}
 
-		temp = percent;
-		//Manage the inputs to the system
-		HandleButtons();
-		//Resume configuration mode if the user sets the under construction flag
-		//otherwise continue updating display with current torque values
+		// Resume configuration mode if the user sets the under construction flag
+		// otherwise continue updating display with current torque values
 		if (!underConstruction) {
 			UpdateDisplay();
 		}
@@ -137,19 +185,6 @@ void vSystemControllerTask(void* pvParameters){
 		if(resume){
 			vTaskResume(xBuildHandle);
 			resume = false;
-		}
-
-		//Send the torque value over Bluetooth if it is within the desired range
-		if (TorqueVoltage < mainConfig.upperLimit.limit && TorqueVoltage > mainConfig.lowerLimit.limit){
-				sendTorque = true;
-		}
-		//Implement counter so the data is sent every 2 seconds
-		if(count == 120){
-			if (sendTorque){
-				Bluetooth_Send((uint8_t *) &TorqueVoltage);
-				sendTorque = false;
-			}
-			count = 0;
 		}
 
 		/***
@@ -164,10 +199,10 @@ void vSystemControllerTask(void* pvParameters){
 			for(uint8_t i = 0; i < Bluetooth_len; i++){
 				PRINTF("%c", (char) Bluetooth_rx[i]);
 			}
-			//Pull out first 3 bytes as header of command
+			// Pull out first 3 bytes as header of command
 			memcpy(&Header, &Bluetooth_rx, 3);
 
-			//W13 command to set Upper Torque Limit value
+			// W13 command to set Upper Torque Limit value
 			if (strcmp(Header, "W13") == 0){
 				strcpy(Payload, (char *) Bluetooth_rx + 3);
 				value = atoi(Payload);
@@ -175,28 +210,29 @@ void vSystemControllerTask(void* pvParameters){
 				_FRAM.write(0x0001,(uint8_t *) &mainConfig, sizeof(mainConfig), kI2C_TransferDefaultFlag);
 			}
 
-			//W12 command to set Tightening Torque setting
+			// W12 command to set Tightening Torque setting
 			else if(strcmp(Header, "W12") == 0){
 				strcpy(Payload, (char *) Bluetooth_rx + 3);
 				value = atoi(Payload);
 				mainConfig.lowerLimit.limit = (uint16_t) value;
 				_FRAM.write(0x0001,(uint8_t *) &mainConfig, sizeof(mainConfig), kI2C_TransferDefaultFlag);
+				Torquing = true;
 			}
 			message_recieved = false;
+			memset(&Header, '\0', 4);
 		}
 
-		//Turn off and on LED based on Bluetooth connectivity
+		// Turn off and on LED based on Bluetooth connectivity
 		(BTConnected) ?	LED_RED_ON() : LED_RED_OFF();
-		count++;
 		vTaskDelay(100);
 	}
 }
 
-//Call function when entering configurations mode for choosing settings manually
+// Call function when entering configurations mode for choosing settings manually
 void ConfigurationBuilder(void* pvParameters){
 
-	//TaskHandle_t handle = xTaskGetHandle("Builder");
-	//Initialize variables to run through configuration state machine
+	// TaskHandle_t handle = xTaskGetHandle("Builder");
+	// Initialize variables to run through configuration state machine
 	Config_State state;
 	uint16_t setting;
 	while(1){
@@ -205,7 +241,7 @@ void ConfigurationBuilder(void* pvParameters){
  		if (underConstruction){
 			Set_Display(0,0);
 
-			//Set the builderConfiguration equal to the current configuration
+			// Set the builderConfiguration equal to the current configuration
 			builderConfig = mainConfig;
 			Display_Blink();
 			/*
@@ -449,4 +485,16 @@ void Set_Configuration_default(void){
 	mainConfig.sleep.delay = 20000U;
 	mainConfig.display = kSystemConfig_Display_DUAL;
 	mainConfig._default = kSystemConfig_Not_Default;
+}
+
+bool TorqueWithinRange(){
+	if(TorqueVoltage < mainConfig.lowerLimit.limit){
+		return false;
+	}
+	uint32_t tolerance = mainConfig.lowerLimit.limit * 1000 * 11 / 10000;
+
+	if(TorqueVoltage >= mainConfig.lowerLimit.limit && TorqueVoltage < tolerance){
+		return true;
+	}
+	return false;
 }

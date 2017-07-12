@@ -38,7 +38,7 @@
 
 void vBluetoothTask(void *pvParameters);
 void Bluetooth_INIT(void);
-void Bluetooth_Send(uint8_t* data);
+void Bluetooth_Send(uint8_t* data, uint8_t data_len);
 void Bluetooth_Reset(void);
 void print_address(uint8_t address[6]);
 void UART_IRQ(void);

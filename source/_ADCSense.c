@@ -38,6 +38,7 @@ void ADC_INIT(ADC_Type *base){
 	TorqueVoltage = 0;
 	BatteryVoltage = 40;
 	temp = 0;
+
 	//Use built in ADC clock
 	adc16Config.clockSource = kADC16_ClockSourceAsynchronousClock;
 	adc16Config.clockDivider = kADC16_ClockDivider1;
@@ -190,13 +191,6 @@ void LPTMR_TRIG(void){
 //ADC RTOS Task for handling both channels of interest
 void vADC16Task(void *pvParameters){
 
-
-//	uint8_t i = 50;
-//
-//	while(i--){
-//		getMeasurements();
-////		delay_ms(1);
-//	}
 
 	while(1){
 		//Loop grabbing measurements from the registers and converting to the proper voltage level
