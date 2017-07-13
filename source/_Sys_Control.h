@@ -149,5 +149,7 @@ void Set_Configuration_default(void);
 void Start_Torquing(void);
 bool TorqueWithinRange(uint32_t torque);
 void HandleTorch(uint32_t torque);
+void ManageTransmission(void);
+void HandleCommands(void);
 
 #endif /* SYS_CONTROL_H_ */
