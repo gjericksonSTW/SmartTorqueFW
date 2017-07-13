@@ -36,7 +36,7 @@ typedef enum CONFIG_STATE{
 	Mode = 0U,
 	Units = 1U,
 	Upper_Limit = 2U,
-	Lower_Limit = 3U,
+	Target = 3U,
 	Rotation = 4U,
 	Memory = 5U,
 	Display = 6U,
@@ -63,16 +63,6 @@ typedef enum System_Units{
 	kSystemConfig_Units_kgfcm = 3U,
 	kSystemConfig_Units_lbfft = 4U
 } system_units_t;
-
-//Struct for holding upper torque limit
-typedef struct System_Upper_Limit{
-	uint16_t limit;
-} system_upper_t;
-
-//Struct for holding lower torque limit
-typedef struct System_Lower_Limit{
-	uint16_t limit;
-} system_lower_t;
 
 //Enumeration to describe rotational mode of the wrench
 typedef enum System_Rotation{
@@ -124,8 +114,8 @@ typedef enum System_DFT{
 typedef struct System_Configuration{
 	system_mode_t mode;
 	system_units_t units;
-	system_upper_t upperLimit;
-	system_lower_t lowerLimit;
+	uint32_t upperLimit;
+	uint32_t target;
 	system_rotation_t rotation;
 	system_memory_t memory;
 	system_display_t display;
@@ -157,6 +147,7 @@ void Set_Configuration_default(void);
 
 //Function called when controller requests a torquing procedure
 void Start_Torquing(void);
-bool TorqueWithinRange();
+bool TorqueWithinRange(uint32_t torque);
+void HandleTorch(uint32_t torque);
 
 #endif /* SYS_CONTROL_H_ */

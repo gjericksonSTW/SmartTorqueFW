@@ -11,15 +11,15 @@
  * Globals
  ******************************************************************************/
 
-//Global variables to be used for holding configuration settings and values
+// Global variables to be used for holding configuration settings and values
 adc16_channel_config_t adc16ChanConfig;
 adc16_config_t adc16Config;
 
-//Global handles for the DMA
+// Global handles for the DMA
 dma_handle_t DMA_handle;
 dma_transfer_config_t DMA_transfer;
 
-//Global variables for storing the ADC values and sending voltage values over the System Control
+// Global variables for storing the ADC values and sending voltage values over the System Control
 uint32_t volatile gTorqueSense;
 uint32_t gMaxTorque;
 uint32_t gBatterySense[8];
@@ -31,7 +31,7 @@ volatile int TorqueVoltage, BatteryVoltage;
  * Code
  ******************************************************************************/
 
-//Initialize ADC
+// Initialize ADC
 void ADC_INIT(ADC_Type *base){
 
 	ADC16_GetDefaultConfig(&adc16Config);
@@ -94,12 +94,13 @@ void ADC_INIT(ADC_Type *base){
 	getMeasurements();
 }
 
+// Hardware trigger for the DMA being run from the LPTMR
 void BOARD_ConfigTrigger(void){
 	/* Configure SIM for ADC hw trigger source selection */
 	SIM->SOPT7 |= SIM_SOPT7_ADC0TRGSEL(14) | SIM_SOPT7_ADC0ALTTRGEN(1);
 }
 
-//Initialize the DMA for routing ADC information into a storage array
+// Initialize the DMA for routing ADC information into a storage array
 void DMA_CONFIG(void){
 
 	//Initialize the DMAMUX to be set to service the ADC Peripheral
@@ -127,7 +128,7 @@ void DMA_CONFIG(void){
 	NVIC_EnableIRQ(DMA_IRQ);
 }
 
-//Handle the ADC conversions with the DMA switching channels once every 5 minutes for the battery level
+// Handle the ADC conversions with the DMA switching channels once every 5 minutes for the battery level
 void DMA_IRQHandler(void){
 	static uint16_t channelswap = 0;
 	/* Stop trigger */
@@ -155,7 +156,7 @@ void DMA_IRQHandler(void){
 	LPTMR_StartTimer(LPTMR_BASE);
 }
 
-//Convert values from their binary value over to a voltage
+// Convert values from their binary value over to a voltage
 void getMeasurements(void){
 
 	uint32_t TorqueAve = 0;
@@ -175,7 +176,7 @@ void getMeasurements(void){
 	BatteryVoltage = (int) ( 1000 * ( 3.12 * (double) BatteryAve / ADC_VDD ));
 }
 
-//enable the hardware trigger source for the ADC to DMA transfer / conversion
+// Enable the hardware trigger source for the ADC to DMA transfer / conversion
 void LPTMR_TRIG(void){
 
 	lptmr_config_t lptmrUserConfig;
@@ -188,7 +189,7 @@ void LPTMR_TRIG(void){
 	LPTMR_SetTimerPeriod(LPTMR_BASE, CONV_RATE);
 }
 
-//ADC RTOS Task for handling both channels of interest
+// ADC RTOS Task for handling both channels of interest
 void vADC16Task(void *pvParameters){
 
 

@@ -12,31 +12,9 @@
  * Code
  ******************************************************************************/
 
-//Initialize the pins required for controlling LCD display
-void InitPins(void) {
-  CLOCK_EnableClock(kCLOCK_PortB);                           /* Port B Clock Gate Control: Clock enabled */
-  CLOCK_EnableClock(kCLOCK_PortC);                           /* Port C Clock Gate Control: Clock enabled */
-  CLOCK_EnableClock(kCLOCK_PortD);                           /* Port D Clock Gate Control: Clock enabled */
-  CLOCK_EnableClock(kCLOCK_PortE);                           /* Port E Clock Gate Control: Clock enabled */
-
-  PORT_SetPinMux(PORTB, 18U, kPORT_PinDisabledOrAnalog); /* PORTB18 (pin 41) is configured as LCD_P14 */
-  PORT_SetPinMux(PORTB, 19U, kPORT_PinDisabledOrAnalog); /* PORTB19 (pin 42) is configured as LCD_P15 */
-  PORT_SetPinMux(PORTC, 0U, kPORT_PinDisabledOrAnalog); /* PORTC0 (pin 43) is configured as LCD_P20 */
-  PORT_SetPinMux(PORTC, 4U, kPORT_PinDisabledOrAnalog); /* PORTC4 (pin 53) is configured as LCD_P24 */
-  PORT_SetPinMux(PORTC, 6U, kPORT_PinDisabledOrAnalog); /* PORTC6 (pin 55) is configured as LCD_P26 */
-  PORT_SetPinMux(PORTC, 7U, kPORT_PinDisabledOrAnalog); /* PORTC7 (pin 56) is configured as LCD_P27 */
-  PORT_SetPinMux(PORTD, 0U, kPORT_PinDisabledOrAnalog); /* PORTD0 (pin 57) is configured as LCD_P40 */
-  PORT_SetPinMux(PORTD, 2U, kPORT_PinDisabledOrAnalog); /* PORTD2 (pin 59) is configured as LCD_P42 */
-  PORT_SetPinMux(PORTD, 3U, kPORT_PinDisabledOrAnalog); /* PORTD3 (pin 60) is configured as LCD_P43 */
-  PORT_SetPinMux(PORTD, 4U, kPORT_PinDisabledOrAnalog); /* PORTD4 (pin 61) is configured as LCD_P44 */
-  PORT_SetPinMux(PORTE, 20U, kPORT_PinDisabledOrAnalog); /* PORTE20 (pin 9) is configured as LCD_P59 */
-  PORT_SetPinMux(PORTE, 21U, kPORT_PinDisabledOrAnalog); /* PORTE21 (pin 10) is configured as LCD_P60 */
-}
-
-//Configure general settings for the display driver
+// Configure general settings for the display driver
 void Display_Init(void){
 
-	InitPins();
 	slcd_config_t config;
 	slcd_clock_config_t clkConfig = {
 			kSLCD_AlternateClk1,

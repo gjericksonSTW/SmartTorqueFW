@@ -23,20 +23,23 @@
 
 
 //Timer used for delays
-#define TIMER_BASE TPM1
-#define TIMER_IRQn TPM1_IRQn
-#define TIMER_Handler TPM1_IRQHandler
+//#define TIMER_BASE TPM1
+//#define TIMER_IRQn TPM1_IRQn
+//#define TIMER_Handler TPM1_IRQHandler
 
 #define PWM_CLK (CLOCK_GetFreq(kCLOCK_Osc0ErClk)*2)
-#define TPM_CLK (CLOCK_GetFreq(kCLOCK_Osc0ErClk)/32)
+//#define TPM_CLK (CLOCK_GetFreq(kCLOCK_Osc0ErClk)/32)
 
 void UpdatePWM(uint32_t percent);
 
-void delay_ms(uint32_t milliseconds);
-void delay_us(uint32_t microseconds);
+//void delay_ms(uint32_t milliseconds);
+//void delay_us(uint32_t microseconds);
 
 void Timer_INIT(void);
-void TIMER_Handler(void);
+//void TIMER_Handler(void);
+
 void PWM_Handler(void);
+void Stop_Torch(void);
+void Enable_Torch(void);
 
 #endif /* TIMER_H_ */

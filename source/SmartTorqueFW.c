@@ -44,7 +44,7 @@ void vApplicationIdleHook(void);
  * Code
  ******************************************************************************/
 
-//Main function initiating all RTOS tasks and configuring pins / peripherals
+// Main function initiating all RTOS tasks and configuring pins / peripherals
 int main(void)
 {
     /* Initialize board hardware. */

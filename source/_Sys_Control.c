@@ -14,10 +14,11 @@
 // Configuration structures for holding current and intermediate setting values
 system_config_t mainConfig, builderConfig;
 volatile bool save, underConstruction, resume;
-bool DOWN, UP, Torquing;
+bool DOWN, UP, targetSet;
 TaskHandle_t xBuildHandle;
-char strTorque[13];
+char strTorque[15];
 char Terminator[6] = "E00\r\n\0";
+
 /*******************************************************************************
  * Code
  ******************************************************************************/
@@ -25,23 +26,26 @@ char Terminator[6] = "E00\r\n\0";
 // Initializing the System configuration for it to be in a known state. Using previously saved state or factory settings
 void Sys_Control_INIT(void){
 
-	//Initialize HMI flags and on-board red LED
+	// Initialize HMI flags and on-board red torch showing Bluetooth connection
 	DOWN = false;
 	UP = false;
 	LED_RED_INIT(0);
 	LED_RED_OFF();
 
-	Torquing = false;
-	strcpy(strTorque, "RE,000,000.0\0");
 
-	//boolean to determine if settings are already written in memory
+	targetSet = false;
+
+	// Format for sending off data to the host application
+	strcpy(strTorque, "RE,000,000.0\r\n\0");
+
+	// flag set if the memory already has been loaded with configuration data
 	bool memEmpty = true;
 
-	//Set memory locations for configuration data all to zero before pulling from FRAM or setting to factory settings
+	// Set memory locations for configuration data all to zero before pulling from FRAM or setting to factory settings
 	memset(&mainConfig, 0, sizeof(mainConfig));
 	memset(&builderConfig, 0 , sizeof(builderConfig));
 
-	//Make sure system is not in manual configuration mode
+	// Make sure system is not in manual configuration mode
 	underConstruction = false;
 
 	/***
@@ -55,7 +59,7 @@ void Sys_Control_INIT(void){
 		// When there is nothing in memory set everything to default
 		Set_Configuration_default();
 
-		//Write the default configuration to memory and sign that there is information in memory
+		// Write the default configuration to memory and sign that there is information in memory
 		_FRAM.write(0, (uint8_t *) 1, 1, kI2C_TransferDefaultFlag);
 		_FRAM.write(0x0001,(uint8_t *) &mainConfig, sizeof(mainConfig), kI2C_TransferDefaultFlag);
 	}
@@ -64,7 +68,7 @@ void Sys_Control_INIT(void){
 		_FRAM.read(0x0001, (uint8_t *) &mainConfig, sizeof(mainConfig), kI2C_TransferDefaultFlag);
 	}
 
-	//Start the Configuration Building task to remain in suspended state until activated through MODE button
+	// Start the Configuration Building task to remain in suspended state until activated through MODE button
 	xTaskCreate(ConfigurationBuilder, "Builder", 300, NULL, 1, &xBuildHandle);
 
 }
@@ -74,23 +78,23 @@ void HandleButtons(void){
 	if(UP_FLAG){
 		UP_FLAG = false;
 		UP = true;
-		//Handle up button
+		// Handle up button
 	}
 	if(DOWN_FLAG){
 		DOWN_FLAG = false;
 		DOWN = true;
-		//Handle down button
+		// Handle down button
 	}
 	if(CLEAR_FLAG){
 		CLEAR_FLAG = false;
 		save = true;
-		//Handle clear button
+		// Handle clear button
 	}
 	if(MODE_FLAG){
 		MODE_FLAG = false;
 		underConstruction = true;
 		resume = true;
-		//Handle mode flag
+		// Handle mode flag
 	}
 	if(POWER_FLAG){
 		POWER_FLAG = false;
@@ -105,9 +109,11 @@ void UpdateDisplay(void){
 // RTOS task for managing all of the inputs and outputs of the system
 void vSystemControllerTask(void* pvParameters){
 
+	uint32_t maxTorque = 0;
+	uint32_t tempTorque = 0;
 	TorqueVoltage = 55;
 
-	//Allocate 4 bytes of space for the Header and Payload of Bluetooth message
+	// Allocate 4 bytes of space for the Header and Payload of Bluetooth message
 	char Header[4];
 	char Payload[4];
 	int value = 0;
@@ -116,68 +122,78 @@ void vSystemControllerTask(void* pvParameters){
 
 	memset(hInt, '\0', 3);
 
-	uint32_t percent, temp;
 	uint8_t delay_count = 0;
 	bool start_counting;
-	//Set memory location of Header and Payload of Bluetooth message to zeroes
+
+	// Set memory location of Header and Payload of Bluetooth message to zeroes
 	memset(&Header, '\0', 4);
 	memset(&Payload, 0, 4);
 
+	Stop_Torch();
 
 	while(1){
 
 		// Manage the inputs to the system
 		HandleButtons();
 
-		// When torquing procedure has begun
-		if(Torquing){
+		// When torquing procedure has begun reset the max torquing value
+		if(targetSet){
+			maxTorque = 0;
+			targetSet = false;
+		}
 
-			// Determine the rate for the PWM related to the Torquing
-			if(TorqueVoltage > mainConfig.lowerLimit.limit){
-				percent = 0;
-			}else{
-				percent = (uint32_t) (mainConfig.lowerLimit.limit - TorqueVoltage) * 100 / mainConfig.lowerLimit.limit;
-			}
-			if(temp != percent){
-				UpdatePWM(percent);
-			}
-			temp = percent;
+		HandleTorch(TorqueVoltage);
 
-			if(TorqueWithinRange()){
-				start_counting = true;
-			}
+		maxTorque = (maxTorque < TorqueVoltage) ? TorqueVoltage : maxTorque;
 
-			delay_count++;
+		// Check of the torquing has reached the right value and start delay before sending
+		if(TorqueWithinRange(maxTorque)){
+			start_counting = true;
+		}
 
-			if((delay_count*100) == mainConfig.delay.milliseconds){
-				itoa(TorqueVoltage, hInt, 10);
+		delay_count++;
 
-				if(TorqueVoltage < 1000){
+		// Wait for the delay to reach its value before sending off torque value to host device
+		if((delay_count*100) >= mainConfig.delay.milliseconds && maxTorque > mainConfig.target){
+			if (tempTorque != maxTorque){
+				// Convert Integer torque value to a string
+				itoa(maxTorque, hInt, 10);
+
+				if (maxTorque < 100){
+					strTorque[7] = '0';
+					strTorque[8] = '0';
+					memcpy(&strTorque[9], &hInt, 1);
+					memcpy(&strTorque[11], &hInt[1], 1);
+				}
+				else if(maxTorque < 1000 && maxTorque > 100){
 					strTorque[7] = '0';
 					memcpy(&strTorque[8], &hInt, 2);
 					memcpy(&strTorque[11], &hInt[2], 1);
-				}else{
+				}
+				else{
 					memcpy(&strTorque[7], &hInt, 3);
 					memcpy(&strTorque[11], &hInt[3], 1);
 				}
 
-				printf("Sending Torque Value: %s\r\n", strTorque);
+				//printf("Sending Torque Value: %s\r\n", strTorque);
 
 				Bluetooth_Send((uint8_t *) strTorque, strlen(strTorque));
 
-				Torquing = false;
 				start_counting = false;
 				delay_count = 0;
-
-				Bluetooth_Send((uint8_t *) Terminator, strlen(Terminator));
 			}
-			delay_count = (start_counting) ? delay_count : 0;
-
-			start_counting = false;
+			tempTorque = maxTorque;
 		}
 
-		// Resume configuration mode if the user sets the under construction flag
-		// otherwise continue updating display with current torque values
+		delay_count = (start_counting) ? delay_count : 0;
+
+		start_counting = false;
+
+
+		/***
+		 *  Resume configuration mode if the user sets the under construction flag
+		 *  otherwise continue updating display with current torque values
+		 ***/
 		if (!underConstruction) {
 			UpdateDisplay();
 		}
@@ -188,12 +204,12 @@ void vSystemControllerTask(void* pvParameters){
 		}
 
 		/***
-		 * Process the received messages over Bluetooth by splitting the header from body
-		 * the header will describe what is being written to the wrench and the body holds
-		 * the payload value to be written into the registers. Currently the torque wrench
-		 * only receives upper and lower torque values given by headers of W13 & W12 respectively
-		 * The number of commands received by the wrench may be expanding from this by defining more
-		 * header commands.
+		 *  Process the received messages over Bluetooth by splitting the header from body
+		 *  the header will describe what is being written to the wrench and the body holds
+		 *  the payload value to be written into the registers. Currently the torque wrench
+		 *  only receives upper and lower torque values given by headers of W13 & W12 respectively
+		 *  The number of commands received by the wrench may be expanding from this by defining more
+		 *  header commands.
 		 ***/
 		if (message_recieved){
 			for(uint8_t i = 0; i < Bluetooth_len; i++){
@@ -206,7 +222,7 @@ void vSystemControllerTask(void* pvParameters){
 			if (strcmp(Header, "W13") == 0){
 				strcpy(Payload, (char *) Bluetooth_rx + 3);
 				value = atoi(Payload);
-				mainConfig.upperLimit.limit = (uint16_t) value;
+				mainConfig.upperLimit = (uint16_t) value;
 				_FRAM.write(0x0001,(uint8_t *) &mainConfig, sizeof(mainConfig), kI2C_TransferDefaultFlag);
 			}
 
@@ -214,9 +230,9 @@ void vSystemControllerTask(void* pvParameters){
 			else if(strcmp(Header, "W12") == 0){
 				strcpy(Payload, (char *) Bluetooth_rx + 3);
 				value = atoi(Payload);
-				mainConfig.lowerLimit.limit = (uint16_t) value;
+				mainConfig.target = (uint16_t) value;
 				_FRAM.write(0x0001,(uint8_t *) &mainConfig, sizeof(mainConfig), kI2C_TransferDefaultFlag);
-				Torquing = true;
+				targetSet = true;
 			}
 			message_recieved = false;
 			memset(&Header, '\0', 4);
@@ -234,7 +250,7 @@ void ConfigurationBuilder(void* pvParameters){
 	// TaskHandle_t handle = xTaskGetHandle("Builder");
 	// Initialize variables to run through configuration state machine
 	Config_State state;
-	uint16_t setting;
+	uint32_t setting;
 	while(1){
 		state = Mode;
 
@@ -244,12 +260,13 @@ void ConfigurationBuilder(void* pvParameters){
 			// Set the builderConfiguration equal to the current configuration
 			builderConfig = mainConfig;
 			Display_Blink();
-			/*
-			 * Being Configuration state machine where the user flips through a switch statement for setting
-			 * each parameter of the torque wrench manually through UP & DOWN buttons on the machine.
-			 * Once each parameter is set the new configuration is copied into the main configuration where it
-			 * will control all of the data entering and leaving the machine.
-			 * */
+
+			/***
+			 *  Being Configuration state machine where the user flips through a switch statement for setting
+			 *  each parameter of the torque wrench manually through UP & DOWN.
+			 *  Once each parameter is set the new configuration is loaded into the main configuration
+			 *  the new configuration is saved in the FRAM
+			 ***/
 			switch (state) {
 				case Mode:
 					setting = builderConfig.mode;
@@ -289,7 +306,7 @@ void ConfigurationBuilder(void* pvParameters){
 					save = false;
 					state = Upper_Limit;
 				case Upper_Limit:
-					setting = builderConfig.upperLimit.limit;
+					setting = builderConfig.upperLimit;
 					while(!save){
 						if(DOWN){
 							setting--;
@@ -301,11 +318,11 @@ void ConfigurationBuilder(void* pvParameters){
 						}
 						Set_Display(setting, 3);
 					}
-					builderConfig.upperLimit.limit = setting;
+					builderConfig.upperLimit = setting;
 					save = false;
-					state = Lower_Limit;
-				case Lower_Limit:
-					setting = builderConfig.lowerLimit.limit;
+					state = Target;
+				case Target:
+					setting = builderConfig.target;
 					while(!save){
 						if(DOWN){
 							setting--;
@@ -317,7 +334,7 @@ void ConfigurationBuilder(void* pvParameters){
 						}
 						Set_Display(setting, 3);
 					}
-					builderConfig.lowerLimit.limit = setting;
+					builderConfig.target = setting;
 					save = false;
 					state = Rotation;
 				case Rotation:
@@ -379,10 +396,10 @@ void ConfigurationBuilder(void* pvParameters){
 					setting = builderConfig.delay.milliseconds;
 					while(!save){
 						if(DOWN){
-							setting--;
+							setting -= 100;
 						}
 						if(UP){
-							setting++;
+							setting += 100;
 						}
 						if(DOWN || UP){
 							DOWN = false;
@@ -444,13 +461,13 @@ void ConfigurationBuilder(void* pvParameters){
 					}
 					builderConfig._default = setting;
 					save = false;
-					break;
+				break;
 				}
 
-				//Set main configuration with new information
+				// Set main configuration with new information
 				mainConfig = builderConfig;
 
-				//Write the new settings to the FRAM
+				// Write the new settings to the FRAM
 				_FRAM.write(0x0001, (uint8_t *) &mainConfig, sizeof(mainConfig), kI2C_TransferDefaultFlag);
 
 				// If default is selected reset the machine to its factory settings
@@ -458,14 +475,14 @@ void ConfigurationBuilder(void* pvParameters){
 					Set_Configuration_default();
 				}
 
-				//Flip the under construction flag back to false
+				// Flip the under construction flag back to false
 				underConstruction = false;
 
-				//Set the display back to normal
+				// Set the display back to normal
 				Display_Stop_Blink();
  			}
 
- 		//Suspend the task until user wants to configure the device again
+ 		// Suspend the task until user wants to configure the device again
 		vTaskSuspend(NULL);
 	}
 }
@@ -475,8 +492,8 @@ void Set_Configuration_default(void){
 
 	mainConfig.mode = kSystemConfig_Mode_Manual;
 	mainConfig.units = kSystemConfig_Units_NM;
-	mainConfig.upperLimit.limit = 45U;
-	mainConfig.lowerLimit.limit = 0U;
+	mainConfig.upperLimit = 45U;
+	mainConfig.target = 0U;
 	mainConfig.rotation = kSystemConfig_Rotation_BI;
 	mainConfig.memory.saveTime = 1000U;
 	mainConfig.buzzer = kSystemConfig_Buzzer_ON;
@@ -487,14 +504,36 @@ void Set_Configuration_default(void){
 	mainConfig._default = kSystemConfig_Not_Default;
 }
 
-bool TorqueWithinRange(){
-	if(TorqueVoltage < mainConfig.lowerLimit.limit){
+// Function for returning status if the current Torque value is within the range
+bool TorqueWithinRange(uint32_t torque){
+	if(torque < mainConfig.target){
 		return false;
 	}
-	uint32_t tolerance = mainConfig.lowerLimit.limit * 1000 * 11 / 10000;
+	//uint32_t tolerance = mainConfig.target * 1000 * 11 / 10000;
 
-	if(TorqueVoltage >= mainConfig.lowerLimit.limit && TorqueVoltage < tolerance){
+	if(torque >= mainConfig.target){
 		return true;
 	}
 	return false;
 }
+
+void HandleTorch(uint32_t torque){
+
+	static uint32_t percent, temp;
+	// Determine the rate for the PWM related to the Torquing
+	if(torque > mainConfig.target){
+		percent = 0;
+	}else{
+		percent = (uint32_t) (mainConfig.target - TorqueVoltage) * 100 / mainConfig.target;
+	}
+	if(temp != percent){ // Update PWM only on a change
+		UpdatePWM(percent);
+	}
+	temp = percent;
+
+	(torque > (mainConfig.target * 75 / 100)) ? Enable_Torch() : Stop_Torch();
+}
+
+
+
+
