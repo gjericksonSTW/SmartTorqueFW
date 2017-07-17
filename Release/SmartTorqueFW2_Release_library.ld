@@ -5,12 +5,11 @@
  * Generated linker script file for MKL43Z256xxx4
  * Created from library.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.23
- * MCUXpresso IDE v10.0.2 [Build 411] [2017-07-11]  on Jul 13, 2017 2:54:10 PM
+ * MCUXpresso IDE v10.0.2 [Build 411] [2017-07-11]  on Jul 17, 2017 9:48:11 AM
  */
 
 GROUP (
-  libgcc.a
-  libc.a
-  libm.a
-  libcr_newlib_semihost.a
+  libcr_nohost_nf.a
+  libcr_c.a
+  libcr_eabihelpers.a
 )

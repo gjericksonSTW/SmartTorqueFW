@@ -40,10 +40,10 @@ void FRAM_INIT(void){
 	i2c_master_config_t masterConfig;
 	uint32_t sourceClock;
 
-//	BOARD_I2C_ReleaseBus();
+	// BOARD_I2C_ReleaseBus();
 	I2C_MasterTransferCreateHandle(I2C_BASE, &g_m_handle, i2c_master_callback, NULL);
 
-	//Configure I2C instance as a master with 100k baud and 48MHz clk
+	// Configure I2C instance as a master with 100k baud and 48MHz clk
 	I2C_MasterGetDefaultConfig(&masterConfig);
 	masterConfig.baudRate_Bps = I2C_BAUD_RATE;
 	masterConfig.enableMaster = true;

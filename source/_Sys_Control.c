@@ -116,11 +116,11 @@ void vSystemControllerTask(void* pvParameters){
 		// Manage the inputs to the system
 		HandleButtons();
 
-		// Update PWM for LED to indicate proximity to target torque
-		HandleTorch(TorqueVoltage);
-
 		// Function that will manage communication to host application
 		ManageTransmission();
+
+		// Update PWM for LED to indicate proximity to target torque
+		HandleTorch(TorqueVoltage);
 
 		// Function to process commands coming in from the host application
 		HandleCommands();
@@ -405,15 +405,12 @@ void Set_Configuration_default(void){
 
 // Function for returning status if the current Torque value is within the range
 bool TorqueWithinRange(uint32_t torque){
-	if(torque < mainConfig.target){
-		return false;
-	}
-	//uint32_t tolerance = mainConfig.target * 1000 * 11 / 10000;
-
 	if(torque >= mainConfig.target){
 		return true;
 	}
-	return false;
+	else{
+		return false;
+	}
 }
 
 // Update PWM for LED to indicate proximity to target torque
@@ -431,7 +428,7 @@ void HandleTorch(uint32_t torque){
 	}
 	temp = percent;
 
-	(torque > (mainConfig.target * 75 / 100)) ? Enable_Torch() : Stop_Torch();
+	(torque > (mainConfig.target * 50 / 100)) ? Enable_Torch() : Stop_Torch();
 }
 
 // Function that will manage communication to host application
@@ -439,13 +436,15 @@ void ManageTransmission(void){
 
 	static uint32_t maxTorque = 0;
 	static uint32_t tempTorque = 0;
-
-	static uint8_t delay_count = 0;
-	static bool start_counting;
+	const uint16_t offset = 1600;
+	static uint8_t delay_count, release_count = 0;
+	static bool start_counting, relaxed;
 	char hInt[4];
-
+	relaxed = false;
 	start_counting = false;
 	memset(hInt, '\0', 3);
+
+	TorqueVoltage -= offset;
 
 	// When torquing procedure has begun reset the max torquing value
 	if(targetSet){
@@ -460,10 +459,18 @@ void ManageTransmission(void){
 		start_counting = true;
 	}
 
+
+	if(TorqueVoltage < 10){
+		release_count++;
+		if(release_count > 5){
+			relaxed = true;
+		}
+	}
+
 	delay_count++;
 
 	// Wait for the delay to reach its value before sending off torque value to host device
-	if((delay_count*100) >= mainConfig.delay.milliseconds && maxTorque > mainConfig.target){
+	if((delay_count*100) >= mainConfig.delay.milliseconds && maxTorque > mainConfig.target && relaxed){
 		if (tempTorque != maxTorque){
 			// Convert Integer torque value to a string
 			itoa(maxTorque, hInt, 10);
@@ -490,6 +497,7 @@ void ManageTransmission(void){
 
 			start_counting = false;
 			delay_count = 0;
+			release_count = 0;
 		}
 		tempTorque = maxTorque;
 	}
@@ -543,7 +551,6 @@ void HandleCommands(void){
 		message_recieved = false;
 		memset(&Header, '\0', 4);
 	}
-
 }
 
 

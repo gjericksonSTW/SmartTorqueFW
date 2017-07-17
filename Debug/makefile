@@ -35,7 +35,7 @@ all: SmartTorqueFW2.axf
 SmartTorqueFW2.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -Xlinker -Map="SmartTorqueFW2.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m0plus -mthumb -T SmartTorqueFW2_Debug.ld -o "SmartTorqueFW2.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -Xlinker -Map="SmartTorqueFW2.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m0plus -mthumb -u _printf_float -u _scanf_float -T SmartTorqueFW2_Debug.ld -o "SmartTorqueFW2.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

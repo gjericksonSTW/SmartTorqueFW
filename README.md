@@ -16,4 +16,3 @@ In the future the firmware will be merged over to the KL33Z chip to run the enti
 1. Download [MCUxpresso IDE](http://www.nxp.com/products/software-and-tools/run-time-software/mcuxpresso-software-and-tools/mcuxpresso-integrated-development-environment-ide:MCUXpresso-IDE) from NXP
 2. Install SDK for KL43Z [Here](https://mcuxpresso.nxp.com/en/welcome)
 3. Copy the SDK to the **Installed SDK** window of MCUxpresso
-
