@@ -1,5 +1,5 @@
-# SHELL TECHWORKS
-# SMART TORQUE WRENCH FIRMWARE
+## SHELL TECHWORKS
+## SMART TORQUE WRENCH FIRMWARE
 *********************************************************************
 
 Source code for a Bluetooth enabled, ultra-low powered Torque Wrenched designed to be used within
