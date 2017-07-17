@@ -192,7 +192,6 @@ void LPTMR_TRIG(void){
 // ADC RTOS Task for handling both channels of interest
 void vADC16Task(void *pvParameters){
 
-
 	while(1){
 		//Loop grabbing measurements from the registers and converting to the proper voltage level
 		getMeasurements();
