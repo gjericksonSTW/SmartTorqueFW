@@ -17,7 +17,7 @@ volatile bool save, underConstruction, resume;
 bool DOWN, UP, targetSet;
 TaskHandle_t xBuildHandle;
 char strTorque[15];
-char Terminator[6] = "E00\r\n\0";
+uint16_t TASK_INTERVAL;
 
 /*******************************************************************************
  * Code
@@ -31,9 +31,17 @@ void Sys_Control_INIT(void){
 	UP = false;
 	LED_RED_INIT(0);
 	LED_RED_OFF();
-
+	TASK_INTERVAL = 65;
 	TorqueVoltage = 55;
 	Stop_Torch();
+
+	status_t f_ch = _FRAM.test();
+
+	if(f_ch != 0){
+		printf("FRAM not working.\r\n");
+	}
+
+	uint8_t data[3] = {0x11, 0x22, 0x33};
 
 	targetSet = false;
 
@@ -55,6 +63,7 @@ void Sys_Control_INIT(void){
 	 * one bit is set at address 0x0000 when the main configuration data is written
 	***/
 
+	_FRAM.write(0x0300, data, sizeof(data), kI2C_TransferDefaultFlag);
 	_FRAM.read(0x0000,(uint8_t *) &memEmpty, 1, kI2C_TransferDefaultFlag);
 
 	if (memEmpty){
@@ -62,7 +71,7 @@ void Sys_Control_INIT(void){
 		Set_Configuration_default();
 
 		// Write the default configuration to memory and sign that there is information in memory
-		_FRAM.write(0, (uint8_t *) 1, 1, kI2C_TransferDefaultFlag);
+		_FRAM.write(0, (uint8_t *) 0, 1, kI2C_TransferDefaultFlag);
 		_FRAM.write(0x0001,(uint8_t *) &mainConfig, sizeof(mainConfig), kI2C_TransferDefaultFlag);
 	}
 	else{
@@ -72,7 +81,6 @@ void Sys_Control_INIT(void){
 
 	// Start the Configuration Building task to remain in suspended state until activated through MODE button
 	xTaskCreate(ConfigurationBuilder, "Builder", 300, NULL, 1, &xBuildHandle);
-
 }
 
 // Process all Button inputs based on what flags are set via NVIC
@@ -139,7 +147,8 @@ void vSystemControllerTask(void* pvParameters){
 
 		// Turn off and on LED based on Bluetooth connectivity
 		(BTConnected) ?	LED_RED_ON() : LED_RED_OFF();
-		vTaskDelay(100);
+
+		vTaskDelay(TASK_INTERVAL);
 	}
 }
 
@@ -292,13 +301,13 @@ void ConfigurationBuilder(void* pvParameters){
 					save = false;
 					state = Delay;
 				case Delay:
-					setting = builderConfig.delay.milliseconds;
+					setting = builderConfig.comm_delay;
 					while(!save){
 						if(DOWN){
-							setting -= 100;
+							setting -= TASK_INTERVAL;
 						}
 						if(UP){
-							setting += 100;
+							setting += TASK_INTERVAL;
 						}
 						if(DOWN || UP){
 							DOWN = false;
@@ -306,7 +315,7 @@ void ConfigurationBuilder(void* pvParameters){
 						}
 						Set_Display(setting, 0);
 					}
-					builderConfig.delay.milliseconds = setting;
+					builderConfig.comm_delay = setting;
 					save = false;
 					state = Judgment;
 				case Judgment:
@@ -396,7 +405,7 @@ void Set_Configuration_default(void){
 	mainConfig.rotation = kSystemConfig_Rotation_BI;
 	mainConfig.memory.saveTime = 1000U;
 	mainConfig.buzzer = kSystemConfig_Buzzer_ON;
-	mainConfig.delay.milliseconds = 500U;
+	mainConfig.comm_delay = 500U;
 	mainConfig.judge = kSystemConfig_Judgment_ON;
 	mainConfig.sleep.delay = 20000U;
 	mainConfig.display = kSystemConfig_Display_DUAL;
@@ -437,7 +446,7 @@ void ManageTransmission(void){
 	static uint32_t maxTorque = 0;
 	static uint32_t tempTorque = 0;
 	const uint16_t offset = 1600;
-	static uint8_t delay_count, release_count = 0;
+	static uint16_t delay_count, release_count = 0;
 	static bool start_counting, relaxed;
 	char hInt[4];
 	relaxed = false;
@@ -446,6 +455,9 @@ void ManageTransmission(void){
 
 	TorqueVoltage -= offset;
 
+	if(TorqueVoltage < 0){
+		TorqueVoltage = 0;
+	}
 	// When torquing procedure has begun reset the max torquing value
 	if(targetSet){
 		maxTorque = 0;
@@ -459,10 +471,9 @@ void ManageTransmission(void){
 		start_counting = true;
 	}
 
-
 	if(TorqueVoltage < 10){
-		release_count++;
-		if(release_count > 5){
+		release_count += TASK_INTERVAL;
+		if(release_count > mainConfig.comm_delay){
 			relaxed = true;
 		}
 	}
@@ -470,7 +481,7 @@ void ManageTransmission(void){
 	delay_count++;
 
 	// Wait for the delay to reach its value before sending off torque value to host device
-	if((delay_count*100) >= mainConfig.delay.milliseconds && maxTorque > mainConfig.target && relaxed){
+	if((delay_count * TASK_INTERVAL) >= mainConfig.comm_delay && maxTorque >= mainConfig.target && relaxed){
 		if (tempTorque != maxTorque){
 			// Convert Integer torque value to a string
 			itoa(maxTorque, hInt, 10);
@@ -526,28 +537,36 @@ void HandleCommands(void){
 	 *  header commands.
 	 ***/
 	if (message_recieved){
-		for(uint8_t i = 0; i < Bluetooth_len; i++){
-			PRINTF("%c", (char) Bluetooth_rx[i]);
-		}
+//		for(uint8_t i = 0; i < Bluetooth_len; i++){
+//			PRINTF("%c", (char) Bluetooth_rx[i]);
+//		}
+		printf("Data: %s", (char *) Bluetooth_rx);
+		printf("\r\n");
 		// Pull out first 3 bytes as header of command
 		memcpy(&Header, &Bluetooth_rx, 3);
 
 		// W13 command to set Upper Torque Limit value
 		if (strcmp(Header, "W13") == 0){
-			strcpy(Payload, (char *) Bluetooth_rx + 3);
+			memcpy(Payload, (char *) Bluetooth_rx + 3, 4);
 			value = atoi(Payload);
 			mainConfig.upperLimit = (uint16_t) value;
 			_FRAM.write(0x0001,(uint8_t *) &mainConfig, sizeof(mainConfig), kI2C_TransferDefaultFlag);
+			_FRAM.write(0, (uint8_t *) 0, 1, kI2C_TransferDefaultFlag);
 		}
 
 		// W12 command to set Tightening Torque setting
 		else if(strcmp(Header, "W12") == 0){
-			strcpy(Payload, (char *) Bluetooth_rx + 3);
+			value = 0;
+//			strcpy(Payload, (char *) Bluetooth_rx + 3);
+			memcpy(Payload, (char *) Bluetooth_rx + 3, 4);
 			value = atoi(Payload);
 			mainConfig.target = (uint16_t) value;
 			_FRAM.write(0x0001,(uint8_t *) &mainConfig, sizeof(mainConfig), kI2C_TransferDefaultFlag);
+			_FRAM.write(0, (uint8_t *) 0, 1, kI2C_TransferDefaultFlag);
 			targetSet = true;
 		}
+
+		//else if(strcmp)
 		message_recieved = false;
 		memset(&Header, '\0', 4);
 	}

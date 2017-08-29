@@ -57,7 +57,9 @@
 typedef struct i2c_FRAM	{
 	void (*write)(uint16_t address, uint8_t* data, size_t dataSize, uint32_t flag);
 	void (*read)(uint16_t address, uint8_t* readBuff, size_t dataSize, uint32_t flag);
-	void (*sleep)();
+	void (*sleep)(void);
+	status_t (*test)(void);
+	void (*wakeup)(void);
 	struct System_Configuration* (*readConfig)(uint16_t address, size_t dataSize);
 	i2c_master_handle_t master_handle;
 } i2c_FRAM_t;
@@ -78,5 +80,8 @@ void i2c_master_callback(I2C_Type *base, i2c_master_handle_t *handle, status_t s
 //Functions to interface over to the FRAM from separate subsystem
 void write(uint16_t address, uint8_t* data, size_t dataSize, uint32_t flag);
 void read(uint16_t address, uint8_t* readBuff, size_t dataSize, uint32_t flag);
+void sleep(void);
+status_t test(void);
+void wakeup(void);
 
 #endif /* FRAM_H_ */

@@ -111,8 +111,8 @@ void DMA_CONFIG(void){
 	//Setup the DMA and create handle/ transfer structure
 	DMA_Init(DMA_BASEADDR);
 	DMA_CreateHandle(&DMA_handle, DMA_BASEADDR, DMA_CHANNEL);
-	DMA_PrepareTransfer(&DMA_transfer, (void *)ADC16_RESULT_REG_ADDR, sizeof(uint32_t),
-			(void*) ADC16_Array, sizeof(uint32_t),  sizeof(ADC16_Array),
+	DMA_PrepareTransfer(&DMA_transfer, (void *)ADC16_RESULT_REG_ADDR, sizeof(int32_t),
+			(void*) ADC16_Array, sizeof(int32_t),  sizeof(ADC16_Array),
 			kDMA_PeripheralToMemory);
 
 	DMA_SetTransferConfig(DMA_BASEADDR, DMA_CHANNEL, &DMA_transfer);
@@ -167,7 +167,6 @@ void getMeasurements(void){
 	}
 	TorqueAve /= 32;
 	TorqueVoltage = (int) ( 1000 * ( 3.12 * (double) TorqueAve / ADC_VDD ));
-
 	for(uint8_t i = 0; i < 8; i++){
 		BatteryAve += gBatterySense[i];
 	}

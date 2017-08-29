@@ -54,7 +54,7 @@ void UpdatePWM(uint32_t percent){
 	percent += 1;
 
 	//Convert the percentage to a count for the MOD 1000 = 1s
-	count = percent * 250;
+	count = percent * 350;
 
 	//place the count value directly into the MOD registers of the TPM
 	PWM_BASE->MOD = count;
@@ -64,7 +64,9 @@ void UpdatePWM(uint32_t percent){
 
 }
 
-//Implement functions below for timer delay if needed
+/***
+ *	Implement functions below for timer delay if needed
+ ***/
 
 //void delay_ms(uint32_t milliseconds){
 //	TPM_SetTimerPeriod(TIMER_BASE, 1);

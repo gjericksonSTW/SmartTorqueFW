@@ -52,6 +52,9 @@ void FRAM_INIT(void){
 
 	_FRAM.write = write;
 	_FRAM.read = read;
+	_FRAM.sleep = sleep;
+	_FRAM.wakeup = wakeup;
+	_FRAM.test = test;
 	_FRAM.master_handle = g_m_handle;
 }
 
@@ -128,7 +131,6 @@ void BOARD_I2C_ReleaseBus(void)
 
 void write(uint16_t address, uint8_t* data, size_t dataSize, uint32_t flag){
 
-	BOARD_I2C_ReleaseBus();
 
 	i2c_master_transfer_t masterXfer;
 	memset(&masterXfer, 0, sizeof(masterXfer));
@@ -144,14 +146,17 @@ void write(uint16_t address, uint8_t* data, size_t dataSize, uint32_t flag){
 
 	I2C_MasterTransferNonBlocking(I2C_BASE, &g_m_handle, &masterXfer);
 
-	while ((!nakFlag) && (!completionFlag))	{}
+	while ((!nakFlag) && (!completionFlag))
+			{
+			}
 
-	nakFlag = false;
+		 nakFlag = false;
 
-	if (completionFlag == true)
-	{
-		completionFlag = false;
-	}
+		 if (completionFlag == true)
+		 {
+			completionFlag = false;
+		 }
+
 }
 
 void read(uint16_t address, uint8_t* readBuff, size_t dataSize, uint32_t flag){
@@ -181,3 +186,65 @@ void read(uint16_t address, uint8_t* readBuff, size_t dataSize, uint32_t flag){
 	 }
 }
 
+// Place the FRAM chip into a sleep mode for lower quiescent power draw
+void sleep(void){
+
+	i2c_master_transfer_t masterXfer;
+	memset(&masterXfer, 0, sizeof(masterXfer));
+
+	masterXfer.slaveAddress = 0x7C;
+	masterXfer.direction = kI2C_Write;
+	masterXfer.subaddress = 0xA0;
+	masterXfer.subaddressSize = 1;
+	masterXfer.flags = kI2C_TransferNoStopFlag;
+
+	I2C_MasterTransferBlocking(I2C_BASE, &masterXfer);
+
+	memset(&masterXfer, 0, sizeof(masterXfer));
+
+	masterXfer.slaveAddress = 0X43U;
+	masterXfer.direction = kI2C_Write;
+	masterXfer.flags = kI2C_TransferRepeatedStartFlag;
+
+	I2C_MasterTransferBlocking(I2C_BASE, &masterXfer);
+
+	for(uint32_t i = 0; i < 30; i++){
+		__NOP();
+	}
+	I2C_MasterStop(I2C_BASE);
+}
+
+
+void wakeup(void){
+
+	i2c_master_transfer_t masterXfer;
+
+	for(uint8_t i = 0; i < 8; i++){
+		memset(&masterXfer, 0, sizeof(masterXfer));
+		masterXfer.slaveAddress = (0xA0  >> 1) + i;
+		masterXfer.subaddress = 0xA0;
+		masterXfer.subaddressSize = 1;
+
+		masterXfer.direction = kI2C_Write;
+		masterXfer.flags = kI2C_TransferDefaultFlag;
+		I2C_MasterTransferBlocking(I2C_BASE, &masterXfer);
+		uint16_t j = 1000;
+		while(j--){
+			__NOP();
+		}
+	}
+
+	BOARD_I2C_ReleaseBus();
+}
+
+// Test to make certain that the FRAM chip is responding to commands and actively on I2C bus
+status_t test(void){
+
+	uint8_t checkBuff[3] = {0x11, 0x22, 0x33};
+	uint8_t readBuff[3];
+
+	_FRAM.read(0x0300, readBuff, sizeof(readBuff), kI2C_TransferDefaultFlag);
+
+	return memcmp(readBuff, checkBuff, 3);
+
+}

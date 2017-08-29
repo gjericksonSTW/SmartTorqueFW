@@ -221,7 +221,6 @@ void vBluetoothTask(void *pvParameters){
 						PRINTF("Started RFCOMM Server. Device is discoverable and bondable.\r\n");
 						dumo_cmd_bt_gap_set_mode(1, 1, 0);
 						dumo_cmd_sm_set_bondable_mode(1);
-
 					}
 					else{	PRINTF("SPP Server Start failed.\r\n");	}
 					break;
@@ -251,6 +250,8 @@ void vBluetoothTask(void *pvParameters){
 				case dumo_evt_bt_connection_opened_id:
 					BTConnected = true;
 					PRINTF("Bonding with ID: %02x\r\n", pck->evt_bt_connection_opened.bonding);
+
+//					dumo_cmd_bt_rfcomm_open(&pck->evt_bt_connection_opened.address, endpoint, 2, 0x1101);
 					dumo_cmd_bt_gap_set_mode(0, 0, 0);
 
 					break;
@@ -323,7 +324,7 @@ void vBluetoothTask(void *pvParameters){
 					break;
 		}
 		memset(&respBuffer, 0 , sizeof(respBuffer));
-		vTaskDelay(87);
+		vTaskDelay(50);
 	}
 }
 

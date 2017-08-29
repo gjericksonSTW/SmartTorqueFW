@@ -83,9 +83,7 @@ typedef enum System_Display{
 } system_display_t;
 
 //Struct for describing delay before sending data over Communication
-typedef struct System_Delay{
-	uint16_t milliseconds;
-} system_delay_t;
+//uint16_t system_delay;
 
 //Enumeration for describing if system is in judgment mode or not
 typedef enum System_Judgment{
@@ -119,7 +117,7 @@ typedef struct System_Configuration{
 	system_rotation_t rotation;
 	system_memory_t memory;
 	system_display_t display;
-	system_delay_t delay;
+	uint16_t comm_delay;
 	system_judgment_t judge;
 	system_buzzer_t buzzer;
 	system_sleep_t sleep;

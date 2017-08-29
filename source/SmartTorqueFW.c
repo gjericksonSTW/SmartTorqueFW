@@ -75,7 +75,7 @@ int main(void)
     //Initialize the RTC interface and peripheral, currently not implemented on RTOS (Time captured by host device)
     //RTC_INIT();
 
-    //Begin ADC task for reading values from the two channels to handle Torque and Battery sensing
+    //Begin ADC task for reading values from the stwo channels to handle Torque and Battery sensing
     xTaskCreate(vADC16Task, "VoltageConverter", 500, NULL, 1, NULL);
 
     //Begin the system configuration task that will handle all updates to the system settings/ communicate with FRAM
