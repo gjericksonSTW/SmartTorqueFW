@@ -1,5 +1,5 @@
 /*
- * zBluetooth.c
+ * _Bluetooth.c
  *
  *  Created on: Jun 12, 2017
  *      Author: gerickson
@@ -250,7 +250,6 @@ void vBluetoothTask(void *pvParameters){
 				case dumo_evt_bt_connection_opened_id:
 					BTConnected = true;
 					PRINTF("Bonding with ID: %02x\r\n", pck->evt_bt_connection_opened.bonding);
-
 //					dumo_cmd_bt_rfcomm_open(&pck->evt_bt_connection_opened.address, endpoint, 2, 0x1101);
 					dumo_cmd_bt_gap_set_mode(0, 0, 0);
 

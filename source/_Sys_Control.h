@@ -149,5 +149,6 @@ bool TorqueWithinRange(uint32_t torque);
 void HandleTorch(uint32_t torque);
 void ManageTransmission(void);
 void HandleCommands(void);
+void Format(uint32_t value);
 
 #endif /* SYS_CONTROL_H_ */

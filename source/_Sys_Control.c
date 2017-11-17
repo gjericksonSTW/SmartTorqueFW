@@ -29,8 +29,7 @@ void Sys_Control_INIT(void){
 	// Initialize HMI flags and on-board red torch showing Bluetooth connection
 	DOWN = false;
 	UP = false;
-	LED_RED_INIT(0);
-	LED_RED_OFF();
+
 	TASK_INTERVAL = 65;
 	TorqueVoltage = 55;
 	Stop_Torch();
@@ -80,7 +79,7 @@ void Sys_Control_INIT(void){
 	}
 
 	// Start the Configuration Building task to remain in suspended state until activated through MODE button
-	xTaskCreate(ConfigurationBuilder, "Builder", 300, NULL, 1, &xBuildHandle);
+//	xTaskCreate(ConfigurationBuilder, "Builder", 300, NULL, 1, &xBuildHandle);
 }
 
 // Process all Button inputs based on what flags are set via NVIC
@@ -445,19 +444,20 @@ void ManageTransmission(void){
 
 	static uint32_t maxTorque = 0;
 	static uint32_t tempTorque = 0;
-	const uint16_t offset = 1600;
+//	const uint16_t offset = 1600;
 	static uint16_t delay_count, release_count = 0;
 	static bool start_counting, relaxed;
 	char hInt[4];
 	relaxed = false;
 	start_counting = false;
-	memset(hInt, '\0', 3);
+	memset(hInt, '\0', 4);
 
-	TorqueVoltage -= offset;
+//	TorqueVoltage -= offset;
 
 	if(TorqueVoltage < 0){
 		TorqueVoltage = 0;
 	}
+
 	// When torquing procedure has begun reset the max torquing value
 	if(targetSet){
 		maxTorque = 0;
@@ -481,10 +481,12 @@ void ManageTransmission(void){
 	delay_count++;
 
 	// Wait for the delay to reach its value before sending off torque value to host device
-	if((delay_count * TASK_INTERVAL) >= mainConfig.comm_delay && maxTorque >= mainConfig.target && relaxed){
+	if((delay_count * TASK_INTERVAL) >= mainConfig.comm_delay && maxTorque >= mainConfig.target && relaxed && BTConnected){
 		if (tempTorque != maxTorque){
-			// Convert Integer torque value to a string
+//			 Convert Integer torque value to a string
 			itoa(maxTorque, hInt, 10);
+
+			printf("Torque Value: %s", hInt);
 
 			if (maxTorque < 100){
 				strTorque[7] = '0';
@@ -502,9 +504,7 @@ void ManageTransmission(void){
 				memcpy(&strTorque[11], &hInt[3], 1);
 			}
 
-			//printf("Sending Torque Value: %s\r\n", strTorque);
-
-			Bluetooth_Send((uint8_t *) strTorque, strlen(strTorque));
+			Bluetooth_Send((uint8_t *)strTorque, strlen(strTorque));
 
 			start_counting = false;
 			delay_count = 0;
@@ -537,11 +537,12 @@ void HandleCommands(void){
 	 *  header commands.
 	 ***/
 	if (message_recieved){
-//		for(uint8_t i = 0; i < Bluetooth_len; i++){
-//			PRINTF("%c", (char) Bluetooth_rx[i]);
-//		}
-		printf("Data: %s", (char *) Bluetooth_rx);
-		printf("\r\n");
+		//Print out the message
+		printf("Data: %s\r\n", (char *) Bluetooth_rx);
+
+		char TorqueString[5];
+		memcpy(&TorqueString, "/0", 5);
+
 		// Pull out first 3 bytes as header of command
 		memcpy(&Header, &Bluetooth_rx, 3);
 
@@ -557,7 +558,6 @@ void HandleCommands(void){
 		// W12 command to set Tightening Torque setting
 		else if(strcmp(Header, "W12") == 0){
 			value = 0;
-//			strcpy(Payload, (char *) Bluetooth_rx + 3);
 			memcpy(Payload, (char *) Bluetooth_rx + 3, 4);
 			value = atoi(Payload);
 			mainConfig.target = (uint16_t) value;
@@ -566,11 +566,35 @@ void HandleCommands(void){
 			targetSet = true;
 		}
 
-		//else if(strcmp)
+		//W10 reserved for calibration mode to send current Voltage from the ADC
+		else if(strcmp(Header, "W10") == 0){
+			char hInt[4];
+			memset(hInt, '\0', 4);
+
+			itoa(TorqueVoltage, hInt, 10);
+
+			if (TorqueVoltage < 100){
+				strTorque[7] = '0';
+				strTorque[8] = '0';
+				memcpy(&strTorque[9], &hInt, 1);
+				memcpy(&strTorque[11], &hInt[1], 1);
+			}
+			else if(TorqueVoltage < 1000 && TorqueVoltage > 100){
+				strTorque[7] = '0';
+				memcpy(&strTorque[8], &hInt, 2);
+				memcpy(&strTorque[11], &hInt[2], 1);
+			}
+			else{
+				memcpy(&strTorque[7], &hInt, 3);
+				memcpy(&strTorque[11], &hInt[3], 1);
+			}
+
+			Bluetooth_Send((uint8_t *)strTorque, sizeof(strTorque));
+		}
 		message_recieved = false;
 		memset(&Header, '\0', 4);
+		memset(&Bluetooth_rx, '\0', sizeof(Bluetooth_rx));
 	}
 }
-
 
 
